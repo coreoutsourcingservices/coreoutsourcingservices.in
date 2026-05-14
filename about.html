@@ -29,6 +29,7 @@
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<link rel="stylesheet" href="./css/bpo_sevrvis.css">
 	<link rel="icon" href="images/favicon.png" id="fav-icon" type="image/x-icon">
 
 	<!--[if lt IE 9]>
@@ -970,6 +971,17 @@
 							<div class="divider-30 divider-lg-40"></div>
 						</div>
 
+						  <section class="ls s-py-60 s-py-lg-100 s-py-xl-120 c-gutter-30">
+                
+                        <div class="faq-wrapper">
+
+                            <!-- Left -->
+                        
+
+
+
+               
+
 						<div class="col-lg-6 animate" data-animation="fadeInDown">
 							<div class="accordion" id="accordion01" role="tablist">
 								<div class="card">
@@ -1301,6 +1313,60 @@
 
 		});
 	</script>
+	
+    <script>
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach((item) => {
+
+            const header = item.querySelector(".faq-header");
+            const content = item.querySelector(".faq-content");
+            const icon = item.querySelector(".icon");
+
+            // First item open
+            if (item.classList.contains("active")) {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+
+            header.addEventListener("click", () => {
+
+                faqItems.forEach((otherItem) => {
+
+                    const otherContent = otherItem.querySelector(".faq-content");
+                    const otherIcon = otherItem.querySelector(".icon");
+
+                    if (otherItem !== item) {
+
+                        otherItem.classList.remove("active");
+
+                        otherContent.style.maxHeight = null;
+
+                        otherIcon.innerHTML = "+";
+                    }
+
+                });
+
+                item.classList.toggle("active");
+
+                if (item.classList.contains("active")) {
+
+                    content.style.maxHeight = content.scrollHeight + "px";
+
+                    icon.innerHTML = "-";
+
+                } else {
+
+                    content.style.maxHeight = null;
+
+                    icon.innerHTML = "+";
+                }
+
+            });
+
+        });
+
+
+    </script>
 
 </body>
 

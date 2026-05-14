@@ -17837,7 +17837,7 @@ h3.small {
     height: 2px;
     left: 0;
     position: absolute;
-    width: 500px;
+    width: 300px;
     z-index: -1
 }
 .step-content{
@@ -17851,7 +17851,7 @@ h3.small {
 
     .steps .step .step-top {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction:subheading-reverse;
         justify-content: flex-end
     }
 
@@ -25701,7 +25701,7 @@ text-align: center;
 
 
 .outsourcing-section {
-  padding: 100px 20px;
+  padding: 50px 20px;
   background: #252525;
   font-family: Arial, sans-serif;
 }
@@ -25863,6 +25863,9 @@ text-align: center;
   .info-card {
     padding: 25px;
   }
+}
+.tag1{
+    font-size: 20px;
 }
 
 
@@ -26036,4 +26039,39 @@ padding-left: 20px;
     margin-bottom:15px;
 }
 
+
+.fed-section{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.faq-left,
+.faq-right{
+    flex: 1;
+}
+.faq-item{
+    background: #212121;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    transition: 0.3s;
+}
+
+.uppur-button{
+    border-radius: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+    
+    
+}
+.upper-left h4{
+    font-size:20px ;
+
+}
 
