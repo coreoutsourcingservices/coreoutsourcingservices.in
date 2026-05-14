@@ -1708,3 +1708,23 @@ table.shop_table th {
 	line-height: 1;
 }
 
+
+.fed-section{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.faq-left,
+.faq-right{
+    flex: 1;
+}
+.faq-item{
+    background: #212121;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    transition: 0.3s;
+}
