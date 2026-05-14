@@ -11,7 +11,7 @@
 }
 
 .faq-item{
-    background:#4a4a4a;
+    background:#303030;
     border-radius:12px;
     margin-top: 30px;
     margin-bottom:20px;
@@ -44,7 +44,7 @@
 
 .left-box h3{
     font-size:20px;
-    color: rgba(0, 0, 255, 0.432);
+    color: rgb(255, 255, 255);
 }
 
 .icon{
