@@ -9247,7 +9247,9 @@ body.boxed {
 }
 
 .vertical-item .item-media+.item-content {
-    padding-top: 25px
+    padding-top: 25px;
+
+    
 }
 
 @media(min-width:1200px) {
@@ -19073,7 +19075,7 @@ aside>*+* {
 }
 
 .widget_post_tabs .vertical-item {
-    margin-bottom: 2em
+    margin-bottom: 2em;
 }
 
 .widget_post_tabs .vertical-item:last-child {
@@ -26075,3 +26077,5 @@ padding-left: 20px;
 
 }
 
+.item-content a{
+}
