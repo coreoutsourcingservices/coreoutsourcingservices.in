@@ -1,4 +1,4 @@
-"use strict";
+
 //Wrapping all JavaScript code into a IIFE function for prevent global variables creation
 (function($){
 
@@ -773,7 +773,7 @@
         //PHP widgets - contact form, search, MailChimp//
         /////////////////////////////////////////////////
 
-        //contact form processing
+        // //contact form processing
         $('form.contact-form').on('submit', function( e ){
             e.preventDefault();
             var $form = $(this);

@@ -276,7 +276,7 @@
 								Today!
 							</h4>
 							<div class="divider-30 divider-lg-40"></div>
-							<form class="contact-form floating-label c-mb-10 c-gutter-30" method="post" action="https://html.modernwebtemplates.com/">
+							<form class="contact-form floating-label c-mb-10 c-gutter-30" >
 								<div class="row">
 
 									<div class="col-md-6">
@@ -337,7 +337,7 @@
 								<div class="row mt-20 mt-xl-40">
 									<div class="col-12">
 										<div class="form-group ">
-											<button type="submit" id="contact_form_submit" name="contact_submit" class="btn btn-wide btn-big btn-gradient"><span>Send</span></button>
+											<button onclick="submitForm()" id="contact_form_submit" name="contact_submit" class="btn btn-wide btn-big btn-gradient"><span>Send</span></button>
 										</div>
 									</div>
 
@@ -348,6 +348,50 @@
 					</div>
 				</div>
 			</section>
+
+
+
+<script>
+async function submitForm() {
+
+    const formData = {
+        name: document.getElementById("name").value,
+        number: document.getElementById("phone").value,
+        work: document.getElementById("email").value,
+        company_name: document.getElementById("company").value,
+        job_title: document.getElementById("job").value,
+        industry_work: document.getElementById("industry").value,
+        currenty_out: document.getElementById("outsourcing").value,
+        contect_center: document.getElementById("center").value,
+        how_work: document.getElementById("message").value,
+    };
+
+   
+
+    try {
+
+        const response = await fetch("http://localhost:4040/contact/form", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+        });
+
+        const data = await response.json();
+
+        
+
+        alert("Form Submitted 😎");
+
+    } catch (error) {
+
+        console.log("Error:", error);
+
+    }
+}
+</script>
+
                 <p><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3502.3825708349705!2d77.385999!3d28.618294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM3JzA1LjkiTiA3N8KwMjMnMDkuNiJF!5e0!3m2!1sen!2sin!4v1714625057916!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
 			<section class="ls s-py-60 s-py-lg-100 s-py-xl-120 c-gutter-30">
 				<div class="container" style="padding-top:60px; padding-bottom:60px">
