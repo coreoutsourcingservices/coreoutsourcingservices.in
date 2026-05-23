@@ -26080,6 +26080,144 @@ padding-left: 20px;
 .box-in-content{
     width: 50%;
 }
+/* =========================
+   PARTNER SECTION
+========================= */
+
 .partner-card{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:10px;
+}
+
+.partner-img{
+	width:140px;
+	height:90px;
+	object-fit:contain;
+	border-radius:10px;
+	transition:0.3s;
+}
+
+/* hover */
+
+.partner-img:hover{
+	transform:scale(1.08);
+}
+
+/* =========================
+   TEAM SECTION
+========================= */
+
+#teamSlider{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	gap:25px;
+	margin-top:40px;
+}
+
+.team-card{
+	width:260px;
+	/* background:#1b1b1b; */
+	border-radius:18px;
+	padding:18px;
+	text-align:center;
+	/* box-shadow:0 5px 20px rgba(0,0,0,0.4); */
+	transition:0.4s;
+	overflow:hidden;
+}
+
+.team-card:hover{
+	transform:translateY(-10px);
+}
+
+.team-img{
+	width:100%;
+	height:300px;
+	object-fit:cover;
+	border-radius:12px;
+	transition:0.4s;
+}
+
+.team-card:hover .team-img{
+	transform:scale(1.05);
+}
+
+.team-name{
+	color:#fff;
+	font-size:24px;
+	font-weight:700;
+	margin-top:15px;
+	margin-bottom:8px;
+}
+
+.team-status{
+	color:#aaa;
+	font-size:16px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+	/* partner */
+
+	.partner-img{
+		width:90px;
+		height:60px;
+	}
+
+	.partner-card{
+		padding:5px;
+	}
+
+	/* team */
+
+	#teamSlider{
+		gap:15px;
+		padding:0 10px;
+	}
+
+	.team-card{
+		width:100%;
+		max-width:320px;
+		padding:15px;
+	}
+
+	.team-img{
+		height:240px;
+	}
+
+	.team-name{
+		font-size:20px;
+	}
+
+	.team-status{
+		font-size:14px;
+	}
+
+}
+
+/* =========================
+   SMALL PHONE
+========================= */
+
+@media(max-width:480px){
+
+	.partner-img{
+		width:70px;
+		height:50px;
+	}
+
+	.team-card{
+		max-width:100%;
+	}
+
+	.team-img{
+		height:220px;
+	}
 
 }
