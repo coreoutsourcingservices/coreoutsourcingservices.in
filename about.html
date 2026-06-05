@@ -27,7 +27,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
-	<link rel="stylesheet" href="css/main.css?v-6" class="color-switcher-link">
+	<link rel="stylesheet" href="css/main.css?v-20" class="color-switcher-link">
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	<link rel="stylesheet" href="./css/bpo_sevrvis.css">
 	<link rel="icon" href="images/favicon.png" id="fav-icon" type="image/x-icon">
@@ -41,256 +41,350 @@
 		.box-in-content {
 			width: 50%;
 		}
+
+		/* =========================
+   TEAM SECTION
+========================= */
+
+		#team {
+			background: #1d1d1d;
+			padding: 70px 0;
+		}
+
+		#team .container {
+			width: 92%;
+			max-width: 1300px;
+			margin: auto;
+		}
+
+		/* =========================
+   TITLE
+========================= */
+
+		.special-heading.subheading {
+			color: #ff5e57;
+			font-size: 14px;
+			font-weight: 600;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+
+		.special-heading {
+			color: #f5a300;
+			font-size: 42px;
+			line-height: 1.3;
+			font-weight: 700;
+			margin-bottom: 20px;
+		}
+
+		/* =========================
+   GRID
+========================= */
+
+		#teamSlider1 {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 28px;
+			margin-top: 50px;
+		}
+
+		/* =========================
+   CARD
+========================= */
+
+		.team-second-card {
+			background: #232323;
+			border: 1px solid #3a3a3a;
+			border-radius: 10px;
+			overflow: hidden;
+			transition: 0.4s ease;
+			position: relative;
+		}
+
+		.team-second-card:hover {
+			transform: translateY(-8px);
+			border-color: #f5a300;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+		}
+
+		/* =========================
+   IMAGE
+========================= */
+
+		.team-second-image-box {
+			width: 100%;
+			height: 320px;
+			overflow: hidden;
+			background: #fff;
+		}
+
+		.team-second-image {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+			transition: 0.5s;
+		}
+
+		.team-second-card:hover .team-second-image {
+			transform: scale(1.06);
+		}
+
+		/* =========================
+   CONTENT
+========================= */
+
+		.team-second-content {
+			padding: 20px 12px;
+			text-align: center;
+		}
+
+		.team-second-name {
+			color: #f5a300;
+			font-size: 20px;
+			font-weight: 700;
+			margin-bottom: 8px;
+		}
+
+		.team-second-position {
+			color: #d6d6d6;
+			font-size: 14px;
+			margin: 0;
+			line-height: 1.5;
+		}
+
+		/* =========================
+   TABLET
+========================= */
+
+		@media(max-width:992px) {
+
+			#teamSlider1 {
+				grid-template-columns: repeat(3, 1fr);
+				gap: 20px;
+			}
+
+			.special-heading {
+				font-size: 34px;
+			}
+
+			.team-second-image-box {
+				height: 260px;
+			}
+
+		}
+
+		/* =========================
+   MOBILE
+========================= */
+
+		@media(max-width:768px) {
+
+			#team {
+				padding: 50px 0;
+			}
+
+			.special-heading {
+				font-size: 28px;
+				line-height: 1.4;
+			}
+
+			#teamSlider1 {
+				grid-template-columns: repeat(2, 1fr);
+				gap: 14px;
+				margin-top: 35px;
+			}
+
+			.team-second-image-box {
+				height: 190px;
+			}
+
+			.team-second-content {
+				padding: 14px 8px;
+			}
+
+			.team-second-name {
+				font-size: 15px;
+				margin-bottom: 5px;
+			}
+
+			.team-second-position {
+				font-size: 11px;
+			}
+
+		}
+
+		/* =========================
+   SMALL MOBILE
+========================= */
+
+		@media(max-width:480px) {
+
+			#teamSlider1 {
+				grid-template-columns: repeat(2, 1fr);
+				gap: 10px;
+			}
+
+			.special-heading {
+				font-size: 24px;
+			}
+
+			.team-second-image-box {
+				height: 160px;
+			}
+
+			.team-second-name {
+				font-size: 13px;
+			}
+
+			.team-second-position {
+				font-size: 10px;
+			}
+
+		}
 	</style>
-	<style>
 
-	#teamSlider1{
-		display:flex;
-		flex-wrap:wrap;
-		justify-content:center;
-		gap:30px;
-		padding:20px;
-	}
 
-	.team-second-card{
-		width:260px;
-		/* background:rgba(255,255,255,0.95); */
-		border-radius:25px;
-		padding:25px 20px;
-		text-align:center;
-		box-shadow:0 10px 30px rgba(0,0,0,0.08);
-		transition:0.4s ease;
-		backdrop-filter:blur(10px);
-		position:relative;
-		overflow:hidden;
-	}
-
-	.team-second-card::before{
-		content:"";
-		position:absolute;
-		top:0;
-		left:-100%;
-		width:100%;
-		height:100%;
-		background:linear-gradient(
-			120deg,
-			transparent,
-			rgba(255,255,255,0.5),
-			transparent
-		);
-		transition:0.6s;
-	}
-
-	.team-second-card:hover::before{
-		left:100%;
-	}
-
-	.team-second-card:hover{
-		transform:translateY(-10px);
-		box-shadow:0 18px 40px rgba(0,0,0,0.15);
-	}
-
-	.team-second-image-box{
-		width:200px;
-		height:200px;
-		margin:auto;
-		border-radius:50%;
-		overflow:hidden;
-		border:5px solid #f3f3f3;
-		box-shadow:0 8px 20px rgba(0,0,0,0.1);
-	}
-
-	.team-second-image{
-		width:100%;
-		height:100%;
-		object-fit:cover;
-		transition:0.5s;
-	}
-
-	.team-second-card:hover .team-second-image{
-		transform:scale(1.08);
-	}
-
-	.team-second-content{
-		margin-top:20px;
-	}
-
-	.team-second-name{
-		font-size:22px;
-		font-weight:700;
-		color:#222;
-		margin-bottom:8px;
-	}
-
-	.team-second-position{
-		font-size:15px;
-		color:#777;
-		font-weight:500;
-		letter-spacing:0.5px;
-		margin:0;
-	}
-
-	@media(max-width:768px){
-
-		.team-second-card{
-			width:90%;
-		}
-
-		.team-second-image-box{
-			width:170px;
-			height:170px;
-		}
-
-	}
-
-</style>
 
 	<style>
+		#teamSlider2 {
+			/* width: 100%; */
+			display: flex;
+			flex-wrap: wrap;
 
-	#teamSlider2{
-		/* width: 100%; */
-		display:flex;
-		flex-wrap:wrap;
-		justify-content:center;
-		gap:20px;
-		padding:10px;
-	}
-
-	.team-card{
-		width:250px;
-		
-		/* background:#fff; */
-		border-radius:10px;
-		overflow:hidden;
-		box-shadow:0 8px 25px rgba(0,0,0,0.1);
-		transition:0.4s ease;
-		text-align:center;
-		position:relative;
-	}
-
-	.team-card:hover{
-		transform:translateY(-10px);
-		box-shadow:0 15px 35px rgba(0,0,0,0.18);
-	}
-
-	.team-image-box{
-		overflow:hidden;
-		height:320px;
-	}
-
-	.team-image{
-		width:100%;
-		height:100%;
-		object-fit:cover;
-		transition:0.5s;
-	}
-
-	.team-card:hover .team-image{
-		transform:scale(1.08);
-	}
-
-	.team-content{
-		padding:20px;
-	}
-
-	.team-name{
-		font-size:22px;
-		font-weight:700;
-		margin-bottom:8px;
-		color:#222;
-	}
-
-	.team-position{
-		font-size:16px;
-		color:#777;
-		margin:0;
-		font-weight:500;
-		letter-spacing:0.5px;
-	}
-
-	@media(max-width:768px){
-
-		.team-card{
-			width:90%;
+			gap: 20px;
+			padding: 10px;
 		}
 
-	}
+		.team-card {
+			width: 250px;
 
-</style>
-
-<style>
-
-	#partnerSlider{
-		display:flex;
-		flex-wrap:wrap;
-		justify-content:center;
-		align-items:center;
-		gap:25px;
-		padding:30px 20px;
-	}
-
-	.partner-card1{
-		width:180px;
-		height:120px;
-		background:#fff;
-		border-radius:20px;
-		display:flex;
-		align-items:center;
-		justify-content:center;
-		padding:20px;
-		box-shadow:0 8px 25px rgba(0,0,0,0.08);
-		transition:0.4s ease;
-		cursor:pointer;
-		position:relative;
-		overflow:hidden;
-	}
-
-	.partner-card1::before{
-		content:"";
-		position:absolute;
-		width:100%;
-		height:100%;
-		background:linear-gradient(
-			135deg,
-			rgba(255,255,255,0.1),
-			rgba(255,255,255,0)
-		);
-		top:0;
-		left:0;
-	}
-
-	.partner-card1:hover{
-		transform:translateY(-8px);
-		box-shadow:0 15px 35px rgba(0,0,0,0.15);
-	}
-
-	.partner-img{
-		width:100%;
-		height:80px;
-		object-fit:contain;
-		/* filter:grayscale(100%); */
-		transition:0.4s ease;
-	}
-
-	.partner-card1:hover .partner-img{
-		filter:grayscale(0%);
-		transform:scale(1.08);
-	}
-
-	@media(max-width:768px){
-
-		.partner-card1{
-			width:140px;
-			height:100px;
+			/* background:#fff; */
+			border-radius: 10px;
+			overflow: hidden;
+			box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+			transition: 0.4s ease;
+			text-align: center;
+			position: relative;
 		}
 
-		.partner-img{
-			height:60px;
+		.team-card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
 		}
 
-	}
+		.team-image-box {
+			overflow: hidden;
+			height: 320px;
+		}
 
-</style>
+		.team-image {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: 0.5s;
+		}
+
+		.team-card:hover .team-image {
+			transform: scale(1.08);
+		}
+
+		.team-content {
+			padding: 20px;
+		}
+
+		.team-name {
+			font-size: 22px;
+			font-weight: 700;
+			margin-bottom: 8px;
+			color: #222;
+		}
+
+		.team-position {
+			font-size: 16px;
+			color: #777;
+			margin: 0;
+			font-weight: 500;
+			letter-spacing: 0.5px;
+		}
+
+		@media(max-width:768px) {
+
+			.team-card {
+				width: 90%;
+			}
+
+		}
+	</style>
+
+	<style>
+		#partnerSlider {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+			gap: 30px;
+			padding: 20px 0;
+		}
+
+		.partner-card1 {
+			background: #363636;
+
+			border-radius: 5px;
+			padding: 3px 5px;
+
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			position: relative;
+			overflow: hidden;
+
+			transition: 0.4s ease;
+			/* box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25); */
+		}
+
+
+		.partner-card1:hover {
+			transform: translateY(-8px);
+			/* border-color: #ffb400;
+			box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); */
+		}
+
+		.partner-img {
+			width: 100%;
+			max-width: 140px;
+			height: 80px;
+			object-fit: contain;
+
+			/* filter: grayscale(100%) brightness(0.9); */
+			transition: 0.4s ease;
+		}
+
+		.partner-card1:hover .partner-img {
+			/* filter: grayscale(0%) brightness(1); */
+			transform: scale(1.08);
+		}
+
+		@media(max-width:768px) {
+
+			#partnerSlider {
+				grid-template-columns: repeat(2, 1fr);
+				gap: 18px;
+			}
+
+			.partner-card1 {
+				height: 120px;
+				padding: 15px;
+			}
+
+			.partner-img {
+				max-width: 100px;
+				height: 60px;
+			}
+
+		}
+	</style>
 
 </head>
 
@@ -417,15 +511,16 @@
 											<!-- eof service -->
 
 											<li>
-												<!-- <a href="about">About Us</a> -->
-												 <a href="blog.html">Blogs</a>
+												<a href="about">About Us</a>
+												<!-- <a href="blog.html">Blogs</a> -->
 
 											</li>
 											<!-- eof pages -->
 
 											<!-- blog -->
 											<li>
-												<a href="blog-grid">Blogs</a>
+												<!-- <a href="blog-grid">Blogs</a> -->
+												<a href="blog.html">Blogs</a>
 											</li>
 
 											<!-- eof blog -->
@@ -438,11 +533,11 @@
 											</li>
 											<li>
 												<!-- <a href="https://coreoutsourcingservices.in/gallery/"> Gallery</a> -->
-												 <a href="gallery.html">Gallery</a>
+												<a href="gallery.html">Gallery</a>
 											</li>
 											<li>
 												<!-- <a href="careers">Careers</a> -->
-												  <a href="job.html">Careers</a>
+												<a href="job.html">Careers</a>
 
 											</li>
 											<!-- eof contacts -->
@@ -543,7 +638,7 @@
 				<h1 class="main-title">
 					Reliable <span>Outsourcing Company</span> Services
 				</h1>
-				<div style="display: flex ;width: 100%;">
+				<div style="display: flex ;width: 100%; gap:20px;">
 					<div class="box-in-content">
 
 
@@ -919,19 +1014,18 @@
 				</div>
 			</section>
 
-		</div><!-- eof #box_wrapper -->
-	</div><!-- eof #canvas -->
 
 
-	<!-- <section id="team" class="ls ms s-pt-55 s-pb-10 s-pt-lg-100 s-pb-lg-55 s-pt-xl-115 s-pb-xl-75">
+
+			<!-- <section id="team" class="ls ms s-pt-55 s-pb-10 s-pt-lg-100 s-pb-lg-55 s-pt-xl-115 s-pb-xl-75">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 text-center">
-							
+
 							<div id="teamSlider1">
 
 							</div> -->
-	<!-- <div class="owl-carousel owl-shadow-items" data-autoplay="false" data-loop="false"
+			<!-- <div class="owl-carousel owl-shadow-items" data-autoplay="false" data-loop="false"
 								data-responsive-lg="4" data-responsive-md="3" data-responsive-sm="2" data-nav="false"
 								data-dots="false">
 
@@ -1000,133 +1094,137 @@
 
 									</div>
 								</div>
-							</div> 
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-- TEAM SECTION START -->
 
-	<!-- TEAM SECTION END -->
+			<!-- TEAM SECTION END -->
 
 
 
-		<section class="sk ds ls ms s-pt-55 s-pb-25 s-pt-lg-95 s-pb-lg-65 s-pt-xl-115 s-pb-xl-75 with-particles">
-			<div class="container" style="padding-bottom:50px; padding-top:40px;">
 
-				<div class="row">
 
-					<div class="offset-lg-2 col-lg-8 text-center">
-						<h3 class="special-heading">
-							Partners
-						</h3>
 
-						<div class="divider-40 divider-lg-25"></div>
+
+			<section class="team-section" id="team1">
+
+				<div class="container">
+
+					<div class="section-title">
+
+						<p>OUR TEAM MANAGER</p>
+
+						<h2>
+							Our Best Specialists <br>
+							Work For You
+						</h2>
+
 					</div>
 
-					<div class="col-sm-12 text-center">
-
-						<div id="partnerSlider"></div>
+					<div class="team-grid" id="teamSlider2">
 
 					</div>
 
 				</div>
 
-			</div>
-		</section>
-
-	<script>
-
-	async function getPartners() {
-
-		try {
-
-			const response = await fetch(
-				"https://admin-panel-fawn-iota.vercel.app/partners/get-partners"
-			);
-
-			const result = await response.json();
-
-			const partners = result.data.partners;
-
-			const partnerSlider = document.getElementById("partnerSlider");
-
-			partnerSlider.innerHTML = "";
-
-			partners.forEach((item) => {
-
-				partnerSlider.innerHTML += `
-
-				<div class="partner-card1">
-
-					<img 
-						src="${item.image}" 
-						alt="${item.name}"
-						class="partner-img"
-					/>
-
-				</div>
-
-				`;
-
-			});
-
-		} catch (error) {
-
-			console.log(error);
-
-		}
-
-	}
-
-	getPartners();
-
-</script>
+			</section>
 
 
+			<script>
+
+				async function getOurTeam() {
+
+					try {
+
+						const response = await fetch(
+							"https://admin-panel-fawn-iota.vercel.app/ourteam/get-team"
+						);
+
+						const result = await response.json();
+
+						const teamData = result.data.team;
+
+						const teamSlider = document.getElementById("teamSlider2");
+
+						teamSlider.innerHTML = "";
+
+						teamData.forEach((item) => {
+
+							teamSlider.innerHTML += `
+
+                <div class="team-card" >
+
+                    <div class="team-image-box">
+
+                        <img
+                            src="${item.image}"
+                            alt="${item.name}"
+                            class="team-image"
+
+                        />
+
+                    </div>
+
+                    <div class="team-content">
+
+                        <h5 class="team-name" style=" color:#f5a300;">
+                            ${item.name}
+                        </h5>
+
+                        <p class="team-position">
+                            ${item.status}
+                        </p>
+
+                    </div>
+
+                </div>
+
+            `;
+
+						});
+
+					} catch (error) {
+
+						console.log("Error:", error);
+
+					}
+
+				}
+
+				getOurTeam();
+
+			</script>
 
 
-	<section id="team1" class="ls ms s-pt-55 s-pb-10 s-pt-lg-100 s-pb-lg-55 s-pt-xl-115 s-pb-xl-75" >
-		<div class="container">
-			<div class="row1" >
-				<div class=" text-center" >
-
-					<p class="special-heading subheading">
-						Our team  Manager
-					</p>
-					<h4 class="special-heading">
-						Our Best Specialists <br>
-						Work For You
-					</h4>
-					
-					<div id="teamSlider2">
-
-					</div>
 
 
-				</div>
-			</div>
-	</section>
 
-	<!-- Section  Team -->
-	<section id="team" class="ls ms s-pt-55 s-pb-10 s-pt-lg-100 s-pb-lg-55 s-pt-xl-115 s-pb-xl-75">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 text-center">
 
-					<p class="special-heading subheading">
-						Our team 
-					</p>
-					<h4 class="special-heading">
-						Our Best Specialists <br>
-						Work For You
-					</h4>
-					<div class="divider-30 divider-lg-40"></div>
-					<div id="teamSlider1">
 
-					</div>
 
-					<!-- <div class="owl-carousel owl-shadow-items" data-autoplay="false" data-loop="false"
+
+			<!-- Section  Team -->
+			<section id="team" class="ls ms s-pt-55 s-pb-10 s-pt-lg-100 s-pb-lg-55 s-pt-xl-115 s-pb-xl-75">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 text-center">
+
+							<p class="special-heading subheading">
+								Our team
+							</p>
+							<h4 class="special-heading">
+								Our Best Specialists <br>
+								Work For You
+							</h4>
+							<div class="divider-30 divider-lg-40"></div>
+							<div id="teamSlider1">
+
+							</div>
+
+							<!-- <div class="owl-carousel owl-shadow-items" data-autoplay="false" data-loop="false"
 								data-responsive-lg="4" data-responsive-md="3" data-responsive-sm="2" data-nav="false"
 								data-dots="false">
 
@@ -1195,106 +1293,39 @@
 									</div>
 								</div>
 							</div> -->
-				</div>
-			</div>
-		</div>
-	</section>
-<script>
-
-	async function getOurTeam() {
-
-		try {
-
-			const response = await fetch(
-				"https://admin-panel-fawn-iota.vercel.app/ourteam/get-team"
-			);
-
-			const result = await response.json();
-
-			const teamData = result.data.team;
-
-			const teamSlider = document.getElementById("teamSlider2");
-
-			teamSlider.innerHTML = "";
-
-			teamData.forEach((item) => {
-
-				teamSlider.innerHTML += `
-
-				<div class="team-card">
-
-					<div class="team-image-box">
-						<img 
-							src="${item.image}" 
-							alt="${item.name}"
-							class="team-image"
-						/>
+						</div>
 					</div>
-
-					<div class="team-content">
-
-						<h5 class="team-name">
-							${item.name}
-						</h5>
-
-						<p class="team-position">
-							${item.status}
-						</p>
-
-					</div>
-
 				</div>
+			</section>
 
-				`;
+			<script>
 
-			});
+				async function getTeamSecond() {
 
-		} catch (error) {
+					try {
 
-			console.log("Error:", error);
+						const response = await fetch(
+							"https://admin-panel-fawn-iota.vercel.app/teamsecond/get-team-second"
+						);
 
-		}
+						const result = await response.json();
 
-	}
+						const teamData = result.data;
 
-	getOurTeam();
+						const teamSlider = document.getElementById("teamSlider1");
 
-</script>
+						teamSlider.innerHTML = "";
 
+						teamData.forEach((item) => {
 
-
-
-
-
-
-<script>
-
-	async function getTeamSecond() {
-
-		try {
-
-			const response = await fetch(
-				"https://admin-panel-fawn-iota.vercel.app/teamsecond/get-team-second"
-			);
-
-			const result = await response.json();
-
-			const teamData = result.data;
-
-			const teamSlider = document.getElementById("teamSlider1");
-
-			teamSlider.innerHTML = "";
-
-			teamData.forEach((item) => {
-
-				teamSlider.innerHTML += `
+							teamSlider.innerHTML += `
 
 				<div class="team-second-card">
 
 					<div class="team-second-image-box">
 
-						<img 
-							src="${item.image}" 
+						<img
+							src="${item.image}"
 							alt="${item.name}"
 							class="team-second-image"
 						/>
@@ -1317,189 +1348,276 @@
 
 				`;
 
-			});
+						});
 
-		} catch (error) {
+					} catch (error) {
 
-			console.log("Error:", error);
+						console.log("Error:", error);
 
-		}
+					}
 
-	}
+				}
 
-	getTeamSecond();
+				getTeamSecond();
 
-</script>
+			</script>
 
 
-	<!-- Section Contact -->
-	<section class="ls ms s-pt-55 s-pb-60 s-pt-lg-95 s-pb-lg-100 s-pt-xl-115 s-pb-xl-120 c-gutter-40">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-12">
-					<p class="special-heading subheading text-center">
-						Contact Form
-					</p>
-					<h4 class="special-heading text-center">
-						Contact CORE<br>
-						Today!
-					</h4>
-					<div class="divider-30 divider-lg-40"></div>
-					<form class="contact-form floating-label c-mb-10 c-gutter-30">
-						<div class="row">
+			<section class="team-section" id="team1">
 
-							<div class="col-md-6">
+				<div class="container">
 
-								<div class="form-group">
-									<label for="name"><span>Your Name</span> <span class="required">*</span></label>
-									<input type="text" aria-required="true" size="30" value="" name="name" id="name"
-										class="form-control">
-								</div>
+					<div class="section-title">
 
-								<div class="form-group">
-									<label for="name"><span>Phone Number</span> <span class="required">*</span></label>
-									<input type="number" aria-required="true" size="30" value="" name="phone" id="phone"
-										class="form-control">
-								</div>
 
-								<div class="form-group">
-									<label for="email"><span>Work E-mail</span> <span class="required">*</span></label>
-									<input type="email" aria-required="true" size="30" value="" name="email" id="email"
-										class="form-control">
-								</div>
 
-								<div class="form-group">
-									<label for="name"><span>Company Name</span> <span class="required">*</span></label>
-									<input type="text" aria-required="true" size="30" value="" name="company"
-										id="company" class="form-control">
-								</div>
+						<h2>
+							Partners
+						</h2>
 
-								<div class="form-group">
-									<label for="name"><span>Job Title/Role</span> <span
-											class="required">*</span></label>
-									<input type="text" aria-required="true" size="30" value="" name="job" id="job"
-										class="form-control">
-								</div>
-
-							</div>
-
-							<div class="col-md-6">
-
-								<div class="form-group">
-									<label for="name"><span>What Industry do you work in?</span></label>
-									<input type="text" size="30" value="" name="industry" id="industry"
-										class="form-control">
-								</div>
-
-								<div class="form-group">
-									<label for="name"><span>Are you currently outsourcing?</span></label>
-									<input type="text" size="30" value="" name="outsourcing" id="outsourcing"
-										class="form-control">
-								</div>
-
-								<div class="form-group">
-									<label for="name"><span>Do you have contact center?</span></label>
-									<input type="text" size="30" value="" name="center" id="center"
-										class="form-control">
-								</div>
-
-								<div class="form-group">
-									<label for="message"><span>How can we help you?</span> <span
-											class="required">*</span></label>
-									<textarea aria-required="true" rows="3" cols="45" name="message" id="message"
-										class="form-control height-110"></textarea>
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="row mt-20 mt-xl-40">
-							<div class="col-12">
-								<div class="form-group ">
-									<button onclick="submitForm()" id="contact_form_submit" name="contact_submit"
-										class="btn btn-wide btn-big btn-gradient"><span>Send</span></button>
-								</div>
-							</div>
-
-						</div>
-					</form>
-					<div class="divider-60 divider-lg-0"></div>
-				</div><!-- .col-* -->
-				<div class="col-xs-12 col-12 col-lg-5 map-right">
-					<div class="page_map height-750">
-						<div class="marker">
-							<div class="marker-address">768 Nostrand Ave, Brooklyn, NY 11216, United States
-							</div>
-							<div class="marker-title">First Marker</div>
-							<div class="marker-description">
-								<ul class="list-unstyled">
-									<li>
-										<span class="icon-inline">
-											<span class="icon-styled color-main">
-												<i class="fa fa-map-marker"></i>
-											</span>
-
-											<span>
-												768 Nostrand Ave, Brooklyn, NY 11216, United States
-											</span>
-										</span>
-									</li>
-									<li>
-										<span class="icon-inline">
-											<span class="icon-styled color-main">
-												<i class="fa fa-phone"></i>
-											</span>
-											<span>
-												1 (800) 123-45-67
-											</span>
-										</span>
-									</li>
-									<li>
-										<span class="icon-inline">
-											<span class="icon-styled color-main">
-												<i class="fa fa-envelope"></i>
-											</span>
-											<span>
-												<a href="https://html.modernwebtemplates.com/cdn-cgi/l/email-protection"
-													class="__cf_email__"
-													data-cfemail="4528242c2905203d24283529206b262a28">[email&#160;protected]</a>
-											</span>
-										</span>
-									</li>
-								</ul>
-							</div> <!-- .marker -->
-							<img class="marker-icon" src="images/map_marker_icon.png" alt="">
-						</div>
-						<div class="marker">
-							<div class="marker-address">103-25-103-13 169th St Jamaica, NY 11433, USA</div>
-							<div class="marker-title">Second Marker</div>
-							<div class="marker-description">
-								<p><strong> 169th St Jamaica, NY 11433, USA</strong>.<br>
-									Curabitur vel malesuada tellus. Morbi posuere tortor nibh, a ullamcorper
-									diam
-									sollicitudin in. Duis a risus ac orci mollis porta non sed metus.
-								</p>
-							</div>
-							<img class="marker-icon" src="images/map_marker_icon.png" alt="">
-						</div><!-- .marker -->
-						<div class="marker">
-							<div class="marker-address">2782-2802 Brighton 8th St Brooklyn, NY 11235, USA</div>
-							<div class="marker-title">Third Marker</div>
-							<div class="marker-description">
-								<p><strong>Brighton 8th St Brooklyn, NY 11235, USA</strong>.<br>
-									Lorem ipsum dolor sit amet,
-									consectetur adipisicing elit. Aliquid cumque,
-									deserunt dolor.
-								</p>
-							</div>
-							<img class="marker-icon" src="images/map_marker_icon.png" alt="">
-						</div><!-- .marker -->
 					</div>
+
+					<div id="partnerSlider"></div>
 				</div>
-			</div><!-- .col-* -->
+
 		</div>
-	</section>
+
+		</section>
+
+
+
+
+
+
+		<script>
+
+			async function getPartners() {
+
+				try {
+
+					const response = await fetch(
+						"https://admin-panel-fawn-iota.vercel.app/partners/get-partners"
+					);
+
+					const result = await response.json();
+
+					const partners = result.data.partners;
+
+					const partnerSlider = document.getElementById("partnerSlider");
+
+					partnerSlider.innerHTML = "";
+
+					partners.forEach((item) => {
+
+						partnerSlider.innerHTML += `
+
+                <div class="partner-card1">
+
+                    <img
+                        src="${item.image}"
+                        alt="${item.name}"
+                        class="partner-img"
+						style="
+						border-radius:1px;
+						"
+                    />
+
+                </div>
+
+            `;
+
+					});
+
+				} catch (error) {
+
+					console.log(error);
+
+				}
+
+			}
+
+			getPartners();
+
+		</script>
+
+
+
+
+
+		<!-- Section Contact -->
+		<section class="ls ms s-pt-55 s-pb-60 s-pt-lg-95 s-pb-lg-100 s-pt-xl-115 s-pb-xl-120 c-gutter-40">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12">
+						<p class="special-heading subheading text-center">
+							Contact Form
+						</p>
+						<h4 class="special-heading text-center">
+							Contact CORE<br>
+							Today!
+						</h4>
+						<div class="divider-30 divider-lg-40"></div>
+						<form class="contact-form floating-label c-mb-10 c-gutter-30">
+							<div class="row">
+
+								<div class="col-md-6">
+
+									<div class="form-group">
+										<label for="name"><span>Your Name</span> <span class="required">*</span></label>
+										<input type="text" aria-required="true" size="30" value="" name="name" id="name"
+											class="form-control">
+									</div>
+
+									<div class="form-group">
+										<label for="name"><span>Phone Number</span> <span
+												class="required">*</span></label>
+										<input type="number" aria-required="true" size="30" value="" name="phone"
+											id="phone" class="form-control">
+									</div>
+
+									<div class="form-group">
+										<label for="email"><span>Work E-mail</span> <span
+												class="required">*</span></label>
+										<input type="email" aria-required="true" size="30" value="" name="email"
+											id="email" class="form-control">
+									</div>
+
+									<div class="form-group">
+										<label for="name"><span>Company Name</span> <span
+												class="required">*</span></label>
+										<input type="text" aria-required="true" size="30" value="" name="company"
+											id="company" class="form-control">
+									</div>
+
+									<div class="form-group">
+										<label for="name"><span>Job Title/Role</span> <span
+												class="required">*</span></label>
+										<input type="text" aria-required="true" size="30" value="" name="job" id="job"
+											class="form-control">
+									</div>
+
+								</div>
+
+								<div class="col-md-6">
+
+									<div class="form-group">
+										<label for="name"><span>What Industry do you work in?</span></label>
+										<input type="text" size="30" value="" name="industry" id="industry"
+											class="form-control">
+									</div>
+
+									<div class="form-group">
+										<label for="name"><span>Are you currently outsourcing?</span></label>
+										<input type="text" size="30" value="" name="outsourcing" id="outsourcing"
+											class="form-control">
+									</div>
+
+									<div class="form-group">
+										<label for="name"><span>Do you have contact center?</span></label>
+										<input type="text" size="30" value="" name="center" id="center"
+											class="form-control">
+									</div>
+
+									<div class="form-group">
+										<label for="message"><span>How can we help you?</span> <span
+												class="required">*</span></label>
+										<textarea aria-required="true" rows="3" cols="45" name="message" id="message"
+											class="form-control height-110"></textarea>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="row mt-20 mt-xl-40">
+								<div class="col-12">
+									<div class="form-group ">
+										<button onclick="submitForm()" id="contact_form_submit" name="contact_submit"
+											class="btn btn-wide btn-big btn-gradient"><span>Send</span></button>
+									</div>
+								</div>
+
+							</div>
+						</form>
+						<div class="divider-60 divider-lg-0"></div>
+					</div><!-- .col-* -->
+					<div class="col-xs-12 col-12 col-lg-5 map-right">
+						<div class="page_map height-750">
+							<div class="marker">
+								<div class="marker-address">768 Nostrand Ave, Brooklyn, NY 11216, United States
+								</div>
+								<div class="marker-title">First Marker</div>
+								<div class="marker-description">
+									<ul class="list-unstyled">
+										<li>
+											<span class="icon-inline">
+												<span class="icon-styled color-main">
+													<i class="fa fa-map-marker"></i>
+												</span>
+
+												<span>
+													768 Nostrand Ave, Brooklyn, NY 11216, United States
+												</span>
+											</span>
+										</li>
+										<li>
+											<span class="icon-inline">
+												<span class="icon-styled color-main">
+													<i class="fa fa-phone"></i>
+												</span>
+												<span>
+													1 (800) 123-45-67
+												</span>
+											</span>
+										</li>
+										<li>
+											<span class="icon-inline">
+												<span class="icon-styled color-main">
+													<i class="fa fa-envelope"></i>
+												</span>
+												<span>
+													<a href="https://html.modernwebtemplates.com/cdn-cgi/l/email-protection"
+														class="__cf_email__"
+														data-cfemail="4528242c2905203d24283529206b262a28">[email&#160;protected]</a>
+												</span>
+											</span>
+										</li>
+									</ul>
+								</div> <!-- .marker -->
+								<img class="marker-icon" src="images/map_marker_icon.png" alt="">
+							</div>
+							<div class="marker">
+								<div class="marker-address">103-25-103-13 169th St Jamaica, NY 11433, USA</div>
+								<div class="marker-title">Second Marker</div>
+								<div class="marker-description">
+									<p><strong> 169th St Jamaica, NY 11433, USA</strong>.<br>
+										Curabitur vel malesuada tellus. Morbi posuere tortor nibh, a ullamcorper
+										diam
+										sollicitudin in. Duis a risus ac orci mollis porta non sed metus.
+									</p>
+								</div>
+								<img class="marker-icon" src="images/map_marker_icon.png" alt="">
+							</div><!-- .marker -->
+							<div class="marker">
+								<div class="marker-address">2782-2802 Brighton 8th St Brooklyn, NY 11235, USA</div>
+								<div class="marker-title">Third Marker</div>
+								<div class="marker-description">
+									<p><strong>Brighton 8th St Brooklyn, NY 11235, USA</strong>.<br>
+										Lorem ipsum dolor sit amet,
+										consectetur adipisicing elit. Aliquid cumque,
+										deserunt dolor.
+									</p>
+								</div>
+								<img class="marker-icon" src="images/map_marker_icon.png" alt="">
+							</div><!-- .marker -->
+						</div>
+					</div>
+				</div><!-- .col-* -->
+			</div>
+		</section>
+
+	</div><!-- eof #box_wrapper -->
+	</div><!-- eof #canvas -->
 
 	<script>
 		async function submitForm() {
