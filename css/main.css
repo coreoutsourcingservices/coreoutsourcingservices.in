@@ -26219,3 +26219,21 @@ padding-left: 20px;
 
 }
 
+
+.all-outsourcing-services{
+width: auto;
+display: flex;
+justify-content: center;
+}
+.container{
+    margin: 10px;
+}
+
+
+.outsourcing-container p{
+    color:#bababa;
+}
+
+.outsourcing-container li{
+    color:#a8a7a7;
+}

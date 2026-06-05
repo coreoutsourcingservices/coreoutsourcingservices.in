@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="./css/bpo_sevrvis.css?v-15">
 	<link rel="stylesheet" href="css/font-awesome.css?v-11">
-	<link rel="stylesheet" href="css/main.css?v-16" class="color-switcher-link">
+	<link rel="stylesheet" href="css/main.css?v-20" class="color-switcher-link">
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	<link rel="icon" href="images/favicon.png" id="fav-icon" type="image/x-icon">
 
@@ -84,7 +84,7 @@
 
 		}
 
-		.partner-track img {
+		.partner-track .photo {
 
 			width: 220px;
 
@@ -96,15 +96,23 @@
 
 			transition: 0.3s;
 			background: transparent;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #28272756;
+			 border-radius:10px;
+			  border-radius:5px;
+
 
 
 		}
 
 		/* Hover Effect */
 
-		.partner-track img:hover {
+		.partner-track .photo:hover {
 
 			transform: scale(1.1);
+			border-radius:5px;
 
 		}
 
@@ -1398,12 +1406,13 @@
 					allPartners.forEach((item) => {
 
 						partnerSlider.innerHTML += `
-
+			<div class="photo" >
                 <img
                     src="${item.image}"
                     alt="${item.name}"
-					style="background-color: #252525;  border-radius:10px;  "
+
                 >
+			</div>
 
             `;
 
