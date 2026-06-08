@@ -63,6 +63,7 @@
 		.partner-slider {
 
 			width: 100%;
+			margin-left: 50px;
 
 			overflow: hidden;
 
@@ -74,9 +75,10 @@
 
 			display: flex;
 
+
 			align-items: center;
 
-			gap: 80px;
+			gap: 30px;
 
 			width: max-content;
 
@@ -100,8 +102,8 @@
 			justify-content: center;
 			align-items: center;
 			background-color: #28272756;
-			 border-radius:10px;
-			  border-radius:5px;
+			border-radius: 10px;
+			border-radius: 5px;
 
 
 
@@ -112,7 +114,7 @@
 		.partner-track .photo:hover {
 
 			transform: scale(1.1);
-			border-radius:5px;
+			border-radius: 5px;
 
 		}
 
@@ -159,262 +161,260 @@
 			}
 
 		}
-	/* =========================
+
+		/* =========================
    TEAM SECTION
 ========================= */
 
-.team-section{
-    padding:60px 0;
-    overflow:hidden;
-    /* background:#121212; */
-}
+		.team-section {
+			padding: 60px 0;
+			overflow: hidden;
+			/* background:#121212; */
+		}
 
-.team-section .container{
-    width:92%;
-    margin:auto;
-}
+		.team-section .container {
+			width: 92%;
+			margin: auto;
+		}
 
-/* =========================
+		/* =========================
    TITLE
 ========================= */
 
-.section-title{
-    text-align:center;
-    margin-bottom:40px;
-}
+		.section-title {
+			text-align: center;
+			margin-bottom: 40px;
+		}
 
-.section-title p{
-    color:#ff9900;
-    font-size:15px;
-    letter-spacing:2px;
-    margin-bottom:12px;
-    text-transform:uppercase;
-}
+		.section-title p {
+			color: #ff9900;
+			font-size: 15px;
+			letter-spacing: 2px;
+			margin-bottom: 12px;
+			text-transform: uppercase;
+		}
 
-.section-title h2{
-    color:#f39900;
-    font-size:42px;
-    font-weight:700;
-    line-height:1.3;
-    margin:0;
-}
+		.section-title h2 {
+			color: #f39900;
+			font-size: 42px;
+			font-weight: 700;
+			line-height: 1.3;
+			margin: 0;
+		}
 
-/* =========================
+		/* =========================
    SLIDER
 ========================= */
 
-.team-slider-wrapper{
-    width:100%;
-    overflow:hidden;
-    position:relative;
-}
+		.team-slider-wrapper {
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+		}
 
-.team-slider-track{
-    display:flex;
-    align-items:flex-start;
-    gap:24px;
-    width:max-content;
-    animation:teamScroll 60s linear infinite;
-}
+		.team-slider-track {
+			display: flex;
+			align-items: flex-start;
+			gap: 24px;
+			width: max-content;
+			animation: teamScroll 60s linear infinite;
+		}
 
-.team-slider-track:hover{
-    animation-play-state:paused;
-}
+		.team-slider-track:hover {
+			animation-play-state: paused;
+		}
 
-/* =========================
+		/* =========================
    CARD
 ========================= */
 
-.team-card{
-    width:280px;
-    flex-shrink:0;
-    /* background:#1b1b1b; */
-    border-radius:18px;
-    overflow:hidden;
-    transition:0.4s ease;
-}
+		.team-card {
+			width: 280px;
+			flex-shrink: 0;
+			/* background:#1b1b1b; */
+			border-radius: 18px;
+			overflow: hidden;
+			transition: 0.4s ease;
+		}
 
-.team-card:hover{
-    transform:translateY(-8px);
-}
+		.team-card:hover {
+			transform: translateY(-8px);
+		}
 
-.team-image{
-    width:100%;
-    height:320px;
-    overflow:hidden;
-}
+		.team-image {
+			width: 100%;
+			height: 320px;
+			overflow: hidden;
+		}
 
-.team-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-    transition:0.5s;
-}
+		.team-image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+			transition: 0.5s;
+		}
 
-.team-card:hover img{
-    transform:scale(1.08);
-}
+		.team-card:hover img {
+			transform: scale(1.08);
+		}
 
-.team-content{
-    padding:18px 15px;
-    text-align:center;
-}
+		.team-content {
+			padding: 18px 15px;
+			text-align: center;
+		}
 
-.team-content h3{
-    color:#f39900;
-    font-size:22px;
-    margin-bottom:6px;
-    font-weight:600;
-}
+		.team-content h3 {
+			color: #f39900;
+			font-size: 22px;
+			margin-bottom: 6px;
+			font-weight: 600;
+		}
 
-.team-content p{
-    color:#bdbdbd;
-    font-size:14px;
-    margin:0;
-}
+		.team-content p {
+			color: #bdbdbd;
+			font-size: 14px;
+			margin: 0;
+		}
 
-/* =========================
+		/* =========================
    TEAM ANIMATION
 ========================= */
 
-@keyframes teamScroll{
+		@keyframes teamScroll {
 
-    0%{
-        transform:translateX(0);
-    }
+			0% {
+				transform: translateX(0);
+			}
 
-    100%{
-        transform:translateX(-50%);
-    }
+			100% {
+				transform: translateX(-50%);
+			}
 
-}
+		}
 
-/* =========================
+		/* =========================
    TABLET
 ========================= */
 
-@media(max-width:992px){
+		@media(max-width:992px) {
 
-    .section-title h2{
-        font-size:34px;
-    }
+			.section-title h2 {
+				font-size: 34px;
+			}
 
-    .team-card{
-        width:230px;
-    }
+			.team-card {
+				width: 230px;
+			}
 
-    .team-image{
-        height:270px;
-    }
+			.team-image {
+				height: 270px;
+			}
 
-}
+		}
 
-/* =========================
+		/* =========================
    MOBILE
 ========================= */
 
-@media(max-width:768px){
+		@media(max-width:768px) {
 
-    .team-section{
-        padding:45px 0;
-    }
+			.team-section {
+				padding: 45px 0;
+			}
 
-    .section-title{
-        margin-bottom:28px;
-    }
+			.section-title {
+				margin-bottom: 28px;
+			}
 
-    .section-title p{
-        font-size:13px;
-    }
+			.section-title p {
+				font-size: 13px;
+			}
 
-    .section-title h2{
-        font-size:28px;
-        line-height:1.4;
-    }
+			.section-title h2 {
+				font-size: 28px;
+				line-height: 1.4;
+			}
 
-    .team-slider-track{
-        gap:16px;
-        animation:teamScroll 30s linear infinite;
-    }
+			.team-slider-track {
+				gap: 16px;
+				animation: teamScroll 30s linear infinite;
+			}
 
-    .team-card{
-        width:170px;
-        border-radius:14px;
-    }
+			.team-card {
+				width: 170px;
+				border-radius: 14px;
+			}
 
-    .team-image{
-        height:190px;
-    }
+			.team-image {
+				height: 190px;
+			}
 
-    .team-content{
-        padding:14px 10px;
-    }
+			.team-content {
+				padding: 14px 10px;
+			}
 
-    .team-content h3{
-        font-size:17px;
-    }
+			.team-content h3 {
+				font-size: 17px;
+			}
 
-    .team-content p{
-        font-size:12px;
-    }
+			.team-content p {
+				font-size: 12px;
+			}
 
-}
+		}
 
-/* =========================
+		/* =========================
    SMALL MOBILE
 ========================= */
 
-@media(max-width:480px){
+		@media(max-width:480px) {
 
-    .team-section .container{
-        width:95%;
-    }
+			.team-section .container {
+				width: 95%;
+			}
 
-    .section-title h2{
-        font-size:24px;
-    }
+			.section-title h2 {
+				font-size: 24px;
+			}
 
-    .team-slider-track{
-        gap:12px;
-    }
+			.team-slider-track {
+				gap: 12px;
+			}
 
-    .team-card{
-        width:150px;
-    }
+			.team-card {
+				width: 150px;
+			}
 
-    .team-image{
-        height:170px;
-    }
+			.team-image {
+				height: 170px;
+			}
 
-    .team-content h3{
-        font-size:15px;
-    }
+			.team-content h3 {
+				font-size: 15px;
+			}
 
-    .team-content p{
-        font-size:11px;
-    }
+			.team-content p {
+				font-size: 11px;
+			}
 
-}
+		}
 
-.partner-track{
-    animation:partnerScroll 60s linear infinite;
-}
+		.partner-track {
+			animation: partnerScroll 60s linear infinite;
+		}
 
-@keyframes partnerScroll{
+		@keyframes partnerScroll {
 
-    from{
-        transform:translateX(0);
-    }
+			from {
+				transform: translateX(0);
+			}
 
-    to{
-        transform:translateX(-20%);
-    }
+			to {
+				transform: translateX(-20%);
+			}
 
-}
-
-
-
+		}
 	</style>
 </head>
 
@@ -510,7 +510,7 @@
 
 
 	<!-- wrappers for visual page editor and boxed version of template -->
-	<div id="canvas">
+	<div id="canvas" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
 		<div id="box_wrapper">
 
 			<!-- template sections -->
@@ -765,229 +765,235 @@
 					</div><!-- .row -->
 				</div>
 			</section>
+		</div><!-- eof #box_wrapper -->
+	</div><!-- eof #canvas -->
 
-			<!-- Section About -->
-			<section id="about" class="ls s-py-60 s-pt-md-20 s-py-lg-100 s-py-xl-120 c-gutter-20">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-12 col-md-5 order-2 order-lg-1">
-							<div class="divider-40 divider-md-35"></div>
-							<p class="special-heading subheading">
-								About Call Center
-							</p>
-							<h4 class="special-heading">
-								World-Class<br>
-								Contact Center
-							</h4>
-							<div class="divider-30"></div>
-							<p>
-								Our agents are fully bilingual, bi-cultural, well educated and have expertise in a wide
-								array of
-								business functions such as Debt Collection, Customer Service.
-							</p>
-							<div class="divider--10 divider-md-30"></div>
-							<p class="progress-title text-uppercase">Customer Service</p>
-							<div class="progress">
-								<div class="progress-bar bg-maincolor" role="progressbar" data-transitiongoal="55"
-									aria-valuemin="0" aria-valuemax="100" aria-valuenow="55">
-									<span>55%</span>
+
+	<div
+		style="width: 100%; display: flex; justify-content: center; flex-direction: column; align-items: center; margin-right:-50px ;">
+		<!-- Section About -->
+		<section id="about" class="ls s-py-60 s-pt-md-20 s-py-lg-100 s-py-xl-120 c-gutter-20">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-5 order-2 order-lg-1">
+						<div class="divider-40 divider-md-35"></div>
+						<p class="special-heading subheading">
+							About Call Center
+						</p>
+						<h4 class="special-heading">
+							World-Class<br>
+							Contact Center
+						</h4>
+						<div class="divider-30"></div>
+						<p>
+							Our agents are fully bilingual, bi-cultural, well educated and have expertise in a wide
+							array of
+							business functions such as Debt Collection, Customer Service.
+						</p>
+						<div class="divider--10 divider-md-30"></div>
+						<p class="progress-title text-uppercase">Customer Service</p>
+						<div class="progress">
+							<div class="progress-bar bg-maincolor" role="progressbar" data-transitiongoal="55"
+								aria-valuemin="0" aria-valuemax="100" aria-valuenow="55">
+								<span>55%</span>
+							</div>
+						</div>
+						<p class="progress-title text-uppercase">Sales / Lead Generation</p>
+						<div class="progress">
+							<div class="progress-bar bg-maincolor2" role="progressbar" data-transitiongoal="32"
+								aria-valuemin="0" aria-valuemax="100" aria-valuenow="32">
+								<span>32%</span>
+							</div>
+						</div>
+						<div class="divider-40 divider-lg-50"></div>
+						<a href="about" class="btn btn-big with-arrow btn-gradient">
+							<span>Learn More</span>
+							<i class="ico ico-arrow-right"></i>
+						</a>
+					</div><!-- .col -->
+
+					<div class="col-12 col-md-6 ml-auto order-1 order-lg-2">
+						<!-- .col -->
+						<div class="images-wrap-item img-right">
+							<img src="images/img_02.jpg" alt="">
+							<div class="pattern-square right-pattern">
+								<img class="image-back" src="images/img_01.jpg" alt="">
+							</div>
+						</div>
+					</div><!-- .col -->
+
+				</div><!-- .row -->
+			</div>
+		</section>
+
+
+		<!-- Section Steps -->
+		<section id="steps" class="ls ms s-pt-55 s-pb-50 s-pb-md-50 s-pt-lg-95 s-pb-lg-90 s-pt-xl-115 s-pb-xl-110">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12">
+						<p class="special-heading subheading">
+							Four easy steps
+						</p>
+						<h4 class="special-heading">
+							How To Get <br>Started
+						</h4>
+						<div class="divider-33"></div>
+
+						<div class="steps">
+
+							<div class="step">
+								<div class="step-top">
+									<div class="step-title mb-md-20">
+										<h6>Business Requirement </h6>
+									</div>
+									<span class="step-bullet"></span>
+								</div>
+								<div class="step-content mt-10 mt-lg-20">
+									<p>The process begins with an evaluation of operational tasks that can be
+										delegated to outsourcing specialists.</p>
 								</div>
 							</div>
-							<p class="progress-title text-uppercase">Sales / Lead Generation</p>
-							<div class="progress">
-								<div class="progress-bar bg-maincolor2" role="progressbar" data-transitiongoal="32"
-									aria-valuemin="0" aria-valuemax="100" aria-valuenow="32">
-									<span>32%</span>
+							<div class="step">
+								<div class="step-top">
+									<div class="step-title mb-md-20">
+										<h6>Service <br> Planning</h6>
+									</div>
+									<span class="step-bullet"></span>
+								</div>
+								<div class="step-content mt-10 mt-lg-20">
+									<p>Service requirements, operational workflows, and reporting structures are
+										clearly defined.</p>
 								</div>
 							</div>
-							<div class="divider-40 divider-lg-50"></div>
-							<a href="about" class="btn btn-big with-arrow btn-gradient">
-								<span>Learn More</span>
-								<i class="ico ico-arrow-right"></i>
-							</a>
-						</div><!-- .col -->
-
-						<div class="col-12 col-md-6 ml-auto order-1 order-lg-2">
-							<!-- .col -->
-							<div class="images-wrap-item img-right">
-								<img src="images/img_02.jpg" alt="">
-								<div class="pattern-square right-pattern">
-									<img class="image-back" src="images/img_01.jpg" alt="">
+							<div class="step">
+								<div class="step-top">
+									<div class="step-title mb-md-20">
+										<h6>Team <br> Allocation</h6>
+									</div>
+									<span class="step-bullet"></span>
+								</div>
+								<div class="step-content mt-10 mt-lg-20">
+									<p>Dedicated teams are assigned based on the type of service required, such as
+										IT support, payroll management, or customer communication.</p>
 								</div>
 							</div>
-						</div><!-- .col -->
-
-					</div><!-- .row -->
-				</div>
-			</section>
-
-			<!-- Section Steps -->
-			<section id="steps" class="ls ms s-pt-55 s-pb-50 s-pb-md-50 s-pt-lg-95 s-pb-lg-90 s-pt-xl-115 s-pb-xl-110">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-12">
-							<p class="special-heading subheading">
-								Four easy steps
-							</p>
-							<h4 class="special-heading">
-								How To Get <br>Started
-							</h4>
-							<div class="divider-33"></div>
-
-							<div class="steps">
-
-								<div class="step">
-									<div class="step-top">
-										<div class="step-title mb-md-20">
-											<h6>Business Requirement </h6>
-										</div>
-										<span class="step-bullet"></span>
+							<div class="step">
+								<div class="step-top">
+									<div class="step-title mb-md-20">
+										<h6>Process <br> Integration</h6>
 									</div>
-									<div class="step-content mt-10 mt-lg-20">
-										<p>The process begins with an evaluation of operational tasks that can be
-											delegated to outsourcing specialists.</p>
-									</div>
+									<span class="step-bullet"></span>
 								</div>
-								<div class="step">
-									<div class="step-top">
-										<div class="step-title mb-md-20">
-											<h6>Service <br> Planning</h6>
-										</div>
-										<span class="step-bullet"></span>
-									</div>
-									<div class="step-content mt-10 mt-lg-20">
-										<p>Service requirements, operational workflows, and reporting structures are
-											clearly defined.</p>
-									</div>
+								<div class="step-content mt-10 mt-lg-20">
+									<p>Outsourcing teams align their operations with the company’s internal systems
+										and communication channels.</p>
 								</div>
-								<div class="step">
-									<div class="step-top">
-										<div class="step-title mb-md-20">
-											<h6>Team <br> Allocation</h6>
-										</div>
-										<span class="step-bullet"></span>
-									</div>
-									<div class="step-content mt-10 mt-lg-20">
-										<p>Dedicated teams are assigned based on the type of service required, such as
-											IT support, payroll management, or customer communication.</p>
-									</div>
-								</div>
-								<div class="step">
-									<div class="step-top">
-										<div class="step-title mb-md-20">
-											<h6>Process <br> Integration</h6>
-										</div>
-										<span class="step-bullet"></span>
-									</div>
-									<div class="step-content mt-10 mt-lg-20">
-										<p>Outsourcing teams align their operations with the company’s internal systems
-											and communication channels.</p>
-									</div>
-								</div>
-								<div class="step">
-									<div class="step-top">
-										<div class="step-title mb-md-20">
-											<h6>Monitoring and <br> Reporting</h6>
-										</div>
-										<span class="step-bullet"></span>
-									</div>
-									<div class="step-content  mt-10 mt-lg-20">
-										<p>Regular performance reviews and reporting ensure service quality and
-											operational consistency.</p>
-									</div>
-								</div>
-
 							</div>
+							<div class="step">
+								<div class="step-top">
+									<div class="step-title mb-md-20">
+										<h6>Monitoring and <br> Reporting</h6>
+									</div>
+									<span class="step-bullet"></span>
+								</div>
+								<div class="step-content  mt-10 mt-lg-20">
+									<p>Regular performance reviews and reporting ensure service quality and
+										operational consistency.</p>
+								</div>
+							</div>
+
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<!-- Section Services -->
-			<section id="services" class="ls s-pt-55 s-pb-60 s-py-lg-100 s-py-xl-120">
-				<div class="container" style="
-				width: 78%;
+		<!-- Section Services -->
+		<section id="services" class="ls s-pt-55 s-pb-60 s-py-lg-100 s-py-xl-120">
+			<div class="container" style="
+
 				height: 60%;
 
 ">
-					<div class="row align-items-center ">
-						<div class="col-12 col-lg-4">
-							<p class="special-heading subheading">
-								Our Expertise
-							</p>
-							<h4 class="special-heading">
-								Some Of The<br> Services We Offer
-							</h4>
-							<div class="divider-20 divider-md-30"></div>
-							<p>
-								Call Center Services International's management team has over 35-years of expertise in
-								successfully
-								establishing U.S.
-							</p>
-							<div class="divider-md-40"></div>
-							<a href="services" class="btn btn-big with-arrow btn-gradient">
-								<span>View More</span>
-								<i class="ico ico-arrow-right"></i>
-							</a>
-							<div class="divider-md-30 divider-lg-0"></div>
-						</div>
-						<div class="col-12 col-lg-8 animate" data-animation="fadeInRight">
-							<div class="row">
-								<div class="col-12 col-md-6">
-									<div class="divider-50"></div>
-									<div class="icon-box service-box gradient-hover box-shadow">
-										<div class="icon-styled color-main fs-50">
-											<i class="ico-phone-call"></i>
-										</div>
-										<h5 class="service-title">
-											<a href="#">BPO</a>
-										</h5>
-										<p>
-											Reliable outsourcing solutions to improve efficiency and reduce operational
-											costs.
-										</p>
+				<div class="row align-items-center ">
+					<div class="col-12 col-lg-4">
+						<p class="special-heading subheading">
+							Our Expertise
+						</p>
+						<h4 class="special-heading">
+							Some Of The<br> Services We Offer
+						</h4>
+						<div class="divider-20 divider-md-30"></div>
+						<p>
+							Call Center Services International's management team has over 35-years of expertise in
+							successfully
+							establishing U.S.
+						</p>
+						<div class="divider-md-40"></div>
+						<a href="services" class="btn btn-big with-arrow btn-gradient">
+							<span>View More</span>
+							<i class="ico ico-arrow-right"></i>
+						</a>
+						<div class="divider-md-30 divider-lg-0"></div>
+					</div>
+					<div class="col-12 col-lg-8 animate" data-animation="fadeInRight">
+						<div class="row">
+							<div class="col-12 col-md-6">
+								<div class="divider-50"></div>
+								<div class="icon-box service-box gradient-hover box-shadow">
+									<div class="icon-styled color-main fs-50">
+										<i class="ico-phone-call"></i>
 									</div>
-									<div class="divider-30"></div>
-									<div class="icon-box service-box gradient-hover box-shadow">
-										<div class="icon-styled color-main fs-50">
-											<i class="ico-chat"></i>
-										</div>
-										<h5 class="service-title">
-											<a href="#">Customer Support </a>
-										</h5>
-										<p>
-											Delivering fast, friendly, and professional support to enhance customer
-											satisfaction.
-										</p>
-									</div>
-									<div class="divider-30 divider-md-0"></div>
+									<h5 class="service-title">
+										<a href="#">BPO</a>
+									</h5>
+									<p>
+										Reliable outsourcing solutions to improve efficiency and reduce operational
+										costs.
+									</p>
 								</div>
-								<div class="col-12 col-md-6">
-									<div class="icon-box service-box gradient-hover box-shadow">
-										<div class="icon-styled color-main fs-50">
-											<i class="ico-phone"></i>
-										</div>
-										<h5 class="service-title">
-											<a href="#">Call Center</a>
-										</h5>
-										<p>
-											Efficient inbound and outbound call handling for seamless communication.
-										</p>
+								<div class="divider-30"></div>
+								<div class="icon-box service-box gradient-hover box-shadow">
+									<div class="icon-styled color-main fs-50">
+										<i class="ico-chat"></i>
 									</div>
-									<div class="divider-30"></div>
-									<div class="icon-box service-box gradient-hover box-shadow">
-										<div class="icon-styled color-main fs-50">
-											<i class="ico-chat-alt"></i>
-										</div>
-										<h5 class="service-title">
-											<a href="#">Lead Generation</a>
-										</h5>
-										<p>
-											Helping businesses attract, qualify, and convert high-quality leads.
-										</p>
-									</div>
+									<h5 class="service-title">
+										<a href="#">Customer Support </a>
+									</h5>
+									<p>
+										Delivering fast, friendly, and professional support to enhance customer
+										satisfaction.
+									</p>
 								</div>
-								<!-- <div class="col-12 col-md-6 colome1">
+								<div class="divider-30 divider-md-0"></div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="icon-box service-box gradient-hover box-shadow">
+									<div class="icon-styled color-main fs-50">
+										<i class="ico-phone"></i>
+									</div>
+									<h5 class="service-title">
+										<a href="#">Call Center</a>
+									</h5>
+									<p>
+										Efficient inbound and outbound call handling for seamless communication.
+									</p>
+								</div>
+								<div class="divider-30"></div>
+								<div class="icon-box service-box gradient-hover box-shadow">
+									<div class="icon-styled color-main fs-50">
+										<i class="ico-chat-alt"></i>
+									</div>
+									<h5 class="service-title">
+										<a href="#">Lead Generation</a>
+									</h5>
+									<p>
+										Helping businesses attract, qualify, and convert high-quality leads.
+									</p>
+								</div>
+							</div>
+							<!-- <div class="col-12 col-md-6 colome1">
 									<div class="icon-box service-box gradient-hover box-shadow">
 										<div class="icon-styled color-main fs-50">
 											<i class="ico-phone"></i>
@@ -1004,160 +1010,166 @@
 
 								</div> -->
 
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Section  Testimonials -->
+	<section id="testimonials"
+		class="ds gradient-background s-pt-55 s-pb-55 s-pt-lg-95 s-pb-lg-100 s-pt-xl-115 s-pb-xl-120 with-particles"
+		style="display:none">
+		<div id="particles-js" class="particles-js"></div>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12 text-center">
+					<p class="special-heading subheading">
+						Testimonials
+					</p>
+					<h4 class="special-heading">
+						What People Say About Our <br>Services
+					</h4>
+					<div class="divider-30 divider-lg-40"></div>
+				</div>
+
+				<div class="col-md-12">
+					<div class="testimonials-slider owl-carousel" data-autoplay="false" data-loop="false"
+						data-responsive-lg="3" data-responsive-md="2" data-responsive-sm="2" data-nav="false"
+						data-dots="true" data-width="true">
+						<div class="quote-item quote-large ls">
+							<img src="images/team/testimonials01.jpg" alt="">
+							<div class="quote-content">
+								<p>The best way to give your testimonial a boost is by adding a compelling
+									summary
+									sub-headlineL</p>
+								<h5 class="author-name mt-35">Helen E. Henderson</h5>
+								<p class="author-position">Customer</p>
 							</div>
 						</div>
-					</div>
-				</div>
-			</section>
 
-			<!-- Section  Testimonials -->
-			<section id="testimonials"
-				class="ds gradient-background s-pt-55 s-pb-55 s-pt-lg-95 s-pb-lg-100 s-pt-xl-115 s-pb-xl-120 with-particles"
-				style="display:none">
-				<div id="particles-js" class="particles-js"></div>
-				<div class="container">
-					<div class="row">
-
-						<div class="col-12 text-center">
-							<p class="special-heading subheading">
-								Testimonials
-							</p>
-							<h4 class="special-heading">
-								What People Say About Our <br>Services
-							</h4>
-							<div class="divider-30 divider-lg-40"></div>
-						</div>
-
-						<div class="col-md-12">
-							<div class="testimonials-slider owl-carousel" data-autoplay="false" data-loop="false"
-								data-responsive-lg="3" data-responsive-md="2" data-responsive-sm="2" data-nav="false"
-								data-dots="true" data-width="true">
-								<div class="quote-item quote-large ls">
-									<img src="images/team/testimonials01.jpg" alt="">
-									<div class="quote-content">
-										<p>The best way to give your testimonial a boost is by adding a compelling
-											summary
-											sub-headlineL</p>
-										<h5 class="author-name mt-35">Helen E. Henderson</h5>
+						<div class="quote-item ls">
+							<div class="quote-content">
+								<p>I just wanted to share a quick note and let you know that you guys do a
+									really good job.</p>
+								<div class="quote-author">
+									<img src="images/author01.jpg" alt="">
+									<div class="author-meta">
+										<h6 class="author-name">Zola M. Powell</h6>
 										<p class="author-position">Customer</p>
 									</div>
 								</div>
+							</div>
+						</div>
 
-								<div class="quote-item ls">
-									<div class="quote-content">
-										<p>I just wanted to share a quick note and let you know that you guys do a
-											really good job.</p>
-										<div class="quote-author">
-											<img src="images/author01.jpg" alt="">
-											<div class="author-meta">
-												<h6 class="author-name">Zola M. Powell</h6>
-												<p class="author-position">Customer</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="quote-item ls">
-									<div class="quote-content">
-										<p>You made it so simple. My new site is so much faster and easier to work with
-											than my old </p>
-										<div class="quote-author">
-											<img src="images/author04.jpg" alt="">
-											<div class="author-meta">
-												<h6 class="author-name">Albert M. Doyle</h6>
-												<p class="author-position">Customer</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="quote-item quote-large ls">
-									<img src="images/team/testimonials02.jpg" alt="">
-									<div class="quote-content">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit maecenas vitae
-											sagittis sapien. </p>
-										<h5 class="author-name mt-35">Robert C. Wilson</h5>
+						<div class="quote-item ls">
+							<div class="quote-content">
+								<p>You made it so simple. My new site is so much faster and easier to work with
+									than my old </p>
+								<div class="quote-author">
+									<img src="images/author04.jpg" alt="">
+									<div class="author-meta">
+										<h6 class="author-name">Albert M. Doyle</h6>
 										<p class="author-position">Customer</p>
 									</div>
 								</div>
+							</div>
+						</div>
 
-								<div class="quote-item ls">
-									<div class="quote-content">
-										<p>Morbi et risus tortor. Suspendisse eu varius sem cras consequat commodo.</p>
-										<div class="quote-author">
-											<img src="images/author03.jpg" alt="">
-											<div class="author-meta">
-												<h6 class="author-name">Zola M. Powell</h6>
-												<p class="author-position">Customer</p>
-											</div>
-										</div>
+						<div class="quote-item quote-large ls">
+							<img src="images/team/testimonials02.jpg" alt="">
+							<div class="quote-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit maecenas vitae
+									sagittis sapien. </p>
+								<h5 class="author-name mt-35">Robert C. Wilson</h5>
+								<p class="author-position">Customer</p>
+							</div>
+						</div>
+
+						<div class="quote-item ls">
+							<div class="quote-content">
+								<p>Morbi et risus tortor. Suspendisse eu varius sem cras consequat commodo.</p>
+								<div class="quote-author">
+									<img src="images/author03.jpg" alt="">
+									<div class="author-meta">
+										<h6 class="author-name">Zola M. Powell</h6>
+										<p class="author-position">Customer</p>
 									</div>
 								</div>
-
-							</div><!-- .testimonials-slid er -->
+							</div>
 						</div>
-					</div>
+
+					</div><!-- .testimonials-slid er -->
 				</div>
-			</section>
-			<section class="about-section about-section__dark">
-				<div class="auto-container">
-					<div class="row clearfix">
-						<!--Image Column-->
-						<div class="image-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
-							<div class="inner">
-								<div class="image-block wow fadeInLeft" >
-									<img src="./img/Industries That Use Outsourcing Services image/featured-image-1.jpg"
-										alt="featured-image-1">
-								</div>
-								<!-- <div class="image-block wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+			</div>
+		</div>
+	</section>
+	<section class="about-section about-section__dark">
+		<div class="auto-container">
+			<div class="row clearfix">
+				<!--Image Column-->
+				<div class="image-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
+					<div class="inner">
+						<div class="image-block wow fadeInLeft">
+							<img src="./img/Industries That Use Outsourcing Services image/featured-image-1.jpg"
+								alt="featured-image-1">
+						</div>
+						<!-- <div class="image-block wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
 									<img src="./img/Industries That Use Outsourcing Services image/image.png"
 										alt="featured-image-2">
 								</div> -->
+					</div>
+				</div>
+				<!--Text Column-->
+				<div class="text-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
+					<div class="inner">
+						<div class="sec-title">
+							<h2 style="color:#f39900;">Industries That Use Outsourcing Services</h2>
+							<div class="lower-text" style="color:#fff;">We’re dedicated to delivering
+								outstanding
+								service to our
+								clients
+								while equipping our team with world-class training and growth opportunities.
 							</div>
 						</div>
-						<!--Text Column-->
-						<div class="text-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
-							<div class="inner">
-								<div class="sec-title">
-									<h2 style="color:#f39900;">Industries That Use Outsourcing Services</h2>
-									<div class="lower-text" style="color:#fff;">We’re dedicated to delivering outstanding service to our
-										clients
-										while equipping our team with world-class training and growth opportunities.
-									</div>
-								</div>
-								<div class="text" >
-									<p style="color:#fff;">Outsourcing services are widely used across industries because they support
-										efficient management of operational workloads. <br><br>
-										Common industries that use outsourcing include:
-									</p>
-								</div>
-								<div class="text clearfix">
-									<ul style="color:#fff;">
-										<li>E-commerce businesses</li>
-										<li>Financial service companies</li>
-										<li>Healthcare organizations</li>
-										<li>Technology companies</li>
-										<li>Logistics and transportation firms</li>
-										<li>Education and training institutions</li>
-										<li>Real estate businesses</li>
-									</ul>
+						<div class="text">
+							<p style="color:#fff;">Outsourcing services are widely used across industries
+								because they
+								support
+								efficient management of operational workloads. <br><br>
+								Common industries that use outsourcing include:
+							</p>
+						</div>
+						<div class="text clearfix">
+							<ul style="color:#fff;">
+								<li>E-commerce businesses</li>
+								<li>Financial service companies</li>
+								<li>Healthcare organizations</li>
+								<li>Technology companies</li>
+								<li>Logistics and transportation firms</li>
+								<li>Education and training institutions</li>
+								<li>Real estate businesses</li>
+							</ul>
 
-								</div>
-								<div class="link-box  content-btm3">
-									<a class="theme-btn btn-style-one" href="contact">
-										<i class="btn-curve"></i>
-										<span class="btn-title">Know More</span>
-									</a>
-								</div>
-							</div>
+						</div>
+						<div class="link-box  content-btm3">
+							<a class="theme-btn btn-style-one" href="contact">
+								<i class="btn-curve"></i>
+								<span class="btn-title">Know More</span>
+							</a>
 						</div>
 					</div>
 				</div>
-			</section>
-
+			</div>
 		</div>
+	</section>
 
-		<!-- <section class="outsourcing-section">
+
+
+	<!-- <section class="outsourcing-section">
 				<div class="container">
 
 					 <span class="tag1">CORE Outsourcing Services</span>
@@ -1286,7 +1298,7 @@
 				</div>
 			</section> -->
 
-		<!-- <section class="sk ds ls ms s-pt-55 s-pb-25 s-pt-lg-95 s-pb-lg-65 s-pt-xl-115 s-pb-xl-75 with-particles">
+	<!-- <section class="sk ds ls ms s-pt-55 s-pb-25 s-pt-lg-95 s-pb-lg-65 s-pt-xl-115 s-pb-xl-75 with-particles">
 				<div class="container" style="padding-bottom: 50px; padding-top:40px">
 					<div class="row">
 						<div class="offset-lg-2 col-lg-8 text-center">
@@ -1345,15 +1357,15 @@
 
 
 
-		<section class="partners-section">
+	<section class="partners-section">
 
-			<div class="container">
+		<div class="container">
 
-				<h2 class="partner-title">
-					Partners
-				</h2>
+			<h2 class="partner-title">
+				Partners
+			</h2>
 
-				<div class="partner-slider">
+				<div class="partner-slider" >
 
 					<div class="partner-track" id="partnerSlider">
 
@@ -1363,49 +1375,49 @@
 
 				</div>
 
-			</div>
+		</div>
 
-		</section>
-
-
+	</section>
 
 
 
 
 
-		<script>
 
-			async function getPartners() {
 
-				try {
+	<script>
 
-					const response = await fetch(
-						"https://aliceblue-swan-648054.hostingersite.com/partners/get-partners"
-					);
+		async function getPartners() {
 
-					const result = await response.json();
+			try {
 
-					const partners = result.data.partners;
+				const response = await fetch(
+					"https://aliceblue-swan-648054.hostingersite.com/partners/get-partners"
+				);
 
-					// Filter only home partners
-					const homePartners = partners.filter(
-						(item) => item.property === "home"
-					);
+				const result = await response.json();
 
-					const partnerSlider =
-						document.getElementById("partnerSlider");
+				const partners = result.data.partners;
 
-					partnerSlider.innerHTML = "";
+				// Filter only home partners
+				const homePartners = partners.filter(
+					(item) => item.property === "home"
+				);
 
-					// Duplicate data for smooth infinite effect
-					const allPartners = [
-						...homePartners,
-						...homePartners
-					];
+				const partnerSlider =
+					document.getElementById("partnerSlider");
 
-					allPartners.forEach((item) => {
+				partnerSlider.innerHTML = "";
 
-						partnerSlider.innerHTML += `
+				// Duplicate data for smooth infinite effect
+				const allPartners = [
+					...homePartners,
+					...homePartners
+				];
+
+				allPartners.forEach((item) => {
+
+					partnerSlider.innerHTML += `
 			<div class="photo" >
                 <img
                     src="${item.image}"
@@ -1416,115 +1428,47 @@
 
             `;
 
-					});
+				});
 
-				} catch (error) {
+			} catch (error) {
 
-					console.log(error);
-
-				}
+				console.log(error);
 
 			}
 
-			getPartners();
+		}
 
-		</script>
+		getPartners();
 
-
-
-<section class="team-section">
-
-  <div class="container">
-
-    <div class="section-title">
-      <p>Our Team</p>
-      <h2>Our Best Specialists <br> Work For You</h2>
-    </div>
-
-    <div class="team-slider-wrapper">
-
-      <div class="team-slider-track" id="teamSlider">
-        <!-- Dynamic Cards -->
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+	</script>
 
 
 
+	<section class="team-section">
 
+		<div class="container">
 
-<script>
+			<div class="section-title">
+				<p>Our Team</p>
+				<h2>Our Best Specialists <br> Work For You</h2>
+			</div>
 
-async function getTeam() {
+			<div class="team-slider-wrapper">
 
-    try {
+				<div class="team-slider-track" id="teamSlider">
+					<!-- Dynamic Cards -->
+				</div>
 
-        const response = await fetch(
-            "https://aliceblue-swan-648054.hostingersite.com/ourteam/get-team"
-        );
+			</div>
 
-        const result = await response.json();
+		</div>
 
-        const team = result.data.team;
-
-        const homeTeam = team.filter(
-            (item) => item.property === "home"
-        );
-
-        const teamSlider = document.getElementById("teamSlider");
-
-        teamSlider.innerHTML = "";
-
-        // Infinite smooth effect ke liye duplicate
-        const finalData = [...homeTeam, ...homeTeam];
-
-        finalData.forEach((item) => {
-
-            teamSlider.innerHTML += `
-
-                <div class="team-card">
-
-                    <div class="team-image">
-                        <img src="${item.image}" alt="${item.name}">
-                    </div>
-
-                    <div class="team-content">
-                        <h3>${item.name}</h3>
-                        <p>${item.status}</p>
-                    </div>
-
-                </div>
-
-            `;
-
-        });
-
-    } catch (error) {
-
-        console.log(error);
-
-    }
-
-}
-
-getTeam();
-
-</script>
+	</section>
 
 
 
 
-
-
-
-
-
-
-		<!-- <section class="outsourcing-content-section">
+	<!-- <section class="outsourcing-content-section">
 
 			<div class="container">
 
@@ -1684,302 +1628,301 @@ getTeam();
 
 
 
-		<section class="ls s-py-60 s-py-lg-100 s-py-xl-120 c-gutter-30">
-			<div class="container" style="padding-top:60px; padding-bottom:60px">
-				<div class="row">
+	<section class="ls s-py-60 s-py-lg-100 s-py-xl-120 c-gutter-30">
+		<div class="container" style="padding-top:5px; margin-left: 50px; padding-bottom:60px">
+			<div class="row">
 
-					<div class="col-12 text-center">
+				<div class="col-12 text-center">
 
-						<h4 class="special-heading">
-							Frequently Asked Questions
-						</h4>
-						<div class="divider-30 divider-lg-40"></div>
-					</div>
+					<h4 class="special-heading">
+						Frequently Asked Questions
+					</h4>
+					<div class="divider-30 divider-lg-40"></div>
+				</div>
 
-					<div class="col-lg-6 animate" data-animation="fadeInDown">
-						<div class="accordion" id="accordion01" role="tablist">
-							<div class="card">
-								<div class="card-header" role="tab" id="collapse01_header">
-									<p>
-										<a data-toggle="collapse" href="#collapse01" aria-expanded="true"
-											aria-controls="collapse01">
-											What is core outsourcing services?
+				<div class="col-lg-6 animate" data-animation="fadeInDown">
+					<div class="accordion" id="accordion01" role="tablist">
+						<div class="card">
+							<div class="card-header" role="tab" id="collapse01_header">
+								<p>
+									<a data-toggle="collapse" href="#collapse01" aria-expanded="true"
+										aria-controls="collapse01">
+										What is core outsourcing services?
 
-										</a>
-									</p>
-								</div>
-								<div id="collapse01" class="collapse show" role="tabpanel"
-									aria-labelledby="collapse01_header" data-parent="#accordion01">
-									<div class="card-body">
-										<p>
-											Core outsourcing is the practice of contracting out certain business
-											functions or processes to external third-party service providers, rather
-											than handling them in-house.
-										</p>
-									</div>
-								</div>
+									</a>
+								</p>
 							</div>
-
-							<div class="card">
-								<div class="card-header" role="tab" id="collapse02_header">
+							<div id="collapse01" class="collapse show" role="tabpanel"
+								aria-labelledby="collapse01_header" data-parent="#accordion01">
+								<div class="card-body">
 									<p>
-										<a class="collapsed" data-toggle="collapse" href="#collapse02"
-											aria-expanded="false" aria-controls="collapse02">
-											What are the benefits of core outsourcing services?
-										</a>
+										Core outsourcing is the practice of contracting out certain business
+										functions or processes to external third-party service providers, rather
+										than handling them in-house.
 									</p>
-								</div>
-								<div id="collapse02" class="collapse" role="tabpanel"
-									aria-labelledby="collapse02_header" data-parent="#accordion01">
-									<div class="card-body">
-										<p>
-											Benefits of core outsourcing include cost savings, access to specialized
-											expertise, increased efficiency, scalability, flexibility, and the ability
-											to focus on core competencies.
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="card">
-								<div class="card-header" role="tab" id="collapse03_header">
-									<p>
-										<a class="collapsed" data-toggle="collapse" href="#collapse03"
-											aria-expanded="false" aria-controls="collapse03">
-											How do I select the right outsourcing<br> partner?
-										</a>
-									</p>
-								</div>
-								<div id="collapse03" class="collapse" role="tabpanel"
-									aria-labelledby="collapse03_header" data-parent="#accordion01">
-									<div class="card-body">
-										<p>
-											Select an outsourcing partner based on their expertise, experience,
-											reputation, communication skills, cultural fit, security measures, and
-											financial stability.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" role="tab" id="collapse04_header">
-									<p>
-										<a class="collapsed" data-toggle="collapse" href="#collapse04"
-											aria-expanded="false" aria-controls="collapse04">
-											Can core outsourcing improve the quality <br>of my services/products?
-										</a>
-									</p>
-								</div>
-								<div id="collapse04" class="collapse" role="tabpanel"
-									aria-labelledby="collapse04_header" data-parent="#accordion01">
-									<div class="card-body">
-										<p>
-											Yes, core outsourcing to specialized providers can improve quality through
-											their expertise, advanced technology, streamlined processes, and focus on
-											delivering exceptional results.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div><!-- collapse -->
-						<div class="divider-15 divider-lg-0"></div>
-					</div>
-
-					<div class="col-lg-6 animate" data-animation="fadeInDown">
-						<div class="accordion" id="accordion02" role="tablist">
-							<div class="card">
-								<div class="card-header" role="tab" id="collapse05_header">
-									<p>
-										<a class="collapsed" data-toggle="collapse" href="#collapse05"
-											aria-expanded="false" aria-controls="collapse05">
-											What services does core outsourcing<br> services provide?
-										</a>
-									</p>
-								</div>
-								<div id="collapse05" class="collapse" role="tabpanel"
-									aria-labelledby="collapse05_header" data-parent="#accordion02">
-									<div class="card-body">
-										<p>
-											We offer a range of outsourcing services including but not limited to
-											software development, customer support, data entry, digital marketing,
-											graphic design, content writing, and administrative tasks.
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="card">
-								<div class="card-header" role="tab" id="collapse06_header">
-									<p>
-										<a class="collapsed" data-toggle="collapse" href="#collapse06"
-											aria-expanded="false" aria-controls="collapse06">
-											How can core outsourcing services help<br> my business save costs?
-										</a>
-									</p>
-								</div>
-								<div id="collapse06" class="collapse" role="tabpanel"
-									aria-labelledby="collapse06_header" data-parent="#accordion02">
-									<div class="card-body">
-										<p>
-											Outsourcing can save costs by reducing labor expenses, overhead costs,
-											infrastructure investments, and providing access to cost-effective offshore
-											labor markets.
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="card">
-								<div class="card-header" role="tab" id="collapse07_header">
-									<p>
-										<a class="collapsed" data-toggle="collapse" href="#collapse07"
-											aria-expanded="false" aria-controls="collapse07">
-											How do we handle communication and collaboration with clients?
-										</a>
-									</p>
-								</div>
-								<div id="collapse07" class="collapse" role="tabpanel"
-									aria-labelledby="collapse07_header" data-parent="#accordion02">
-									<div class="card-body">
-										<p>
-											We utilize a range of communication channels including email, phone calls,
-											video conferencing, and project management tools to ensure seamless
-											collaboration. Our dedicated project managers act as single points of
-											contact to address any queries or concerns promptly.
-
-
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" role="tab" id="collapse08_header">
-									<p>
-										<a class="collapsed" data-toggle="collapse" href="#collapse08"
-											aria-expanded="false" aria-controls="collapse08">
-											How can we generate more leads?
-										</a>
-									</p>
-								</div>
-								<div id="collapse08" class="collapse" role="tabpanel"
-									aria-labelledby="collapse08_header" data-parent="#accordion02">
-									<div class="card-body">
-										<p>
-											Unlock specialized lead generation techniques. Enhance communication
-											scripts, implement precise strategies, and leverage CRM systems for superior
-											conversion rates.
-										</p>
-									</div>
 								</div>
 							</div>
 						</div>
-						<!-- collapse -->
+
+						<div class="card">
+							<div class="card-header" role="tab" id="collapse02_header">
+								<p>
+									<a class="collapsed" data-toggle="collapse" href="#collapse02" aria-expanded="false"
+										aria-controls="collapse02">
+										What are the benefits of core outsourcing services?
+									</a>
+								</p>
+							</div>
+							<div id="collapse02" class="collapse" role="tabpanel" aria-labelledby="collapse02_header"
+								data-parent="#accordion01">
+								<div class="card-body">
+									<p>
+										Benefits of core outsourcing include cost savings, access to specialized
+										expertise, increased efficiency, scalability, flexibility, and the ability
+										to focus on core competencies.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" role="tab" id="collapse03_header">
+								<p>
+									<a class="collapsed" data-toggle="collapse" href="#collapse03" aria-expanded="false"
+										aria-controls="collapse03">
+										How do I select the right outsourcing<br> partner?
+									</a>
+								</p>
+							</div>
+							<div id="collapse03" class="collapse" role="tabpanel" aria-labelledby="collapse03_header"
+								data-parent="#accordion01">
+								<div class="card-body">
+									<p>
+										Select an outsourcing partner based on their expertise, experience,
+										reputation, communication skills, cultural fit, security measures, and
+										financial stability.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="collapse04_header">
+								<p>
+									<a class="collapsed" data-toggle="collapse" href="#collapse04" aria-expanded="false"
+										aria-controls="collapse04">
+										Can core outsourcing improve the quality <br>of my services/products?
+									</a>
+								</p>
+							</div>
+							<div id="collapse04" class="collapse" role="tabpanel" aria-labelledby="collapse04_header"
+								data-parent="#accordion01">
+								<div class="card-body">
+									<p>
+										Yes, core outsourcing to specialized providers can improve quality through
+										their expertise, advanced technology, streamlined processes, and focus on
+										delivering exceptional results.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div><!-- collapse -->
+					<div class="divider-15 divider-lg-0"></div>
+				</div>
+
+				<div class="col-lg-6 animate" data-animation="fadeInDown">
+					<div class="accordion" id="accordion02" role="tablist">
+						<div class="card">
+							<div class="card-header" role="tab" id="collapse05_header">
+								<p>
+									<a class="collapsed" data-toggle="collapse" href="#collapse05" aria-expanded="false"
+										aria-controls="collapse05">
+										What services does core outsourcing<br> services provide?
+									</a>
+								</p>
+							</div>
+							<div id="collapse05" class="collapse" role="tabpanel" aria-labelledby="collapse05_header"
+								data-parent="#accordion02">
+								<div class="card-body">
+									<p>
+										We offer a range of outsourcing services including but not limited to
+										software development, customer support, data entry, digital marketing,
+										graphic design, content writing, and administrative tasks.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" role="tab" id="collapse06_header">
+								<p>
+									<a class="collapsed" data-toggle="collapse" href="#collapse06" aria-expanded="false"
+										aria-controls="collapse06">
+										How can core outsourcing services help<br> my business save costs?
+									</a>
+								</p>
+							</div>
+							<div id="collapse06" class="collapse" role="tabpanel" aria-labelledby="collapse06_header"
+								data-parent="#accordion02">
+								<div class="card-body">
+									<p>
+										Outsourcing can save costs by reducing labor expenses, overhead costs,
+										infrastructure investments, and providing access to cost-effective offshore
+										labor markets.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" role="tab" id="collapse07_header">
+								<p>
+									<a class="collapsed" data-toggle="collapse" href="#collapse07" aria-expanded="false"
+										aria-controls="collapse07">
+										How do we handle communication and collaboration with clients?
+									</a>
+								</p>
+							</div>
+							<div id="collapse07" class="collapse" role="tabpanel" aria-labelledby="collapse07_header"
+								data-parent="#accordion02">
+								<div class="card-body">
+									<p>
+										We utilize a range of communication channels including email, phone calls,
+										video conferencing, and project management tools to ensure seamless
+										collaboration. Our dedicated project managers act as single points of
+										contact to address any queries or concerns promptly.
+
+
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="collapse08_header">
+								<p>
+									<a class="collapsed" data-toggle="collapse" href="#collapse08" aria-expanded="false"
+										aria-controls="collapse08">
+										How can we generate more leads?
+									</a>
+								</p>
+							</div>
+							<div id="collapse08" class="collapse" role="tabpanel" aria-labelledby="collapse08_header"
+								data-parent="#accordion02">
+								<div class="card-body">
+									<p>
+										Unlock specialized lead generation techniques. Enhance communication
+										scripts, implement precise strategies, and leverage CRM systems for superior
+										conversion rates.
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
+					<!-- collapse -->
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
 
 
 
-		<footer
-			class="page_footer page_footer s-borderbottom-container ds s-pt-60 s-pb-15 s-pt-lg-90 s-pb-lg-50 s-pt-xl-110 s-pb-xl-70 c-gutter-50">
-			<div class="container">
-				<div class="row">
+	<footer
+		class="page_footer page_footer s-borderbottom-container ds s-pt-60 s-pb-15 s-pt-lg-90 s-pb-lg-50 s-pt-xl-110 s-pb-xl-70 c-gutter-50">
+		<div class="container">
+			<div class="row">
 
-					<div class="col-md-6 col-lg-3 animate mr-auto" data-animation="fadeInUp">
+				<div class="col-md-6 col-lg-3 animate mr-auto" data-animation="fadeInUp">
 
-						<div class="widget widget_text mt-lg-10">
-							<a href="index" class="logo">
-								<img src="images/Logo1.png" alt="">
-							</a>
-						</div>
-					</div>
-
-					<div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
-
-						<div class="widget widget_nav_menu">
-							<h6>Explore</h6>
-							<ul class="menu">
-								<li>
-									<a href="index">Home</a>
-								</li>
-								<li>
-									<a href="about">About</a>
-								</li>
-								<li>
-									<a href="privacy">Privacy</a>
-								</li>
-								<li>
-
-									<a href="team">Management</a>
-								</li>
-								<li>
-									<a href="services">Services</a>
-								</li>
-								<li>
-									<a href="job.html">Careers</a>
-								</li>
-
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
-						<div class="widget widget_contact_list">
-							<div class="contact-item">
-								<p class="title">Give Us A Call</p>
-								<a class="content" href="tel:91-120-425-2949">+91-120-425-2949</a>
-							</div>
-							<div class="contact-item">
-								<p class="title">Email Us</p>
-								<a class="content"
-									href="https://html.modernwebtemplates.com/cdn-cgi/l/email-protection#620b0c040d220b1301030e0e4c010d0f"><span
-										class="__cf_email__"
-										data-cfemail="fa93949c95ba938b999b9696d4999597">info@coreoutsourcingservices.com</span></a>
-							</div>
-							<div class="contact-item">
-								<p class="title">Corporate Office</p>
-								<a class="content" href="https://maps.app.goo.gl/W3WxZW6oUkesBLrL7">E-2, Sector 63,
-									Noida - 201301</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
-						<div class="widget widget_social_buttons">
-							<div class="widget-title">
-								Join Us
-							</div>
-							<a href="https://www.facebook.com/profile.php?id=61559128649073&mibextid=ZbWKwL"
-								class="ml-0 fa fa-facebook border-icon rounded-icon" title="facebook"></a>
-							<a href="https://www.instagram.com/coreoutsourcingservices?utm_source=qr&igsh=MXJsaDZza2F3cHE3Nw=="
-								class="fa fa-instagram border-icon rounded-icon" title="instagram"></a>
-							<a href="https://www.linkedin.com/company/core-outsourcing-services"
-								class="fa fa-linkedin border-icon rounded-icon" title="youtube-play"></a>
-							<a href="#" class="fa fa-twitter border-icon rounded-icon" title="twitter"></a>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</footer>
-
-
-
-		<section class="page_copyright ds s-py-20">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center animate" data-animation="fadeInUp">
-						<p>&copy; <span class="copyright_year">2026</span> Copyright</p>
+					<div class="widget widget_text mt-lg-10">
+						<a href="index" class="logo">
+							<img src="images/Logo1.png" alt="">
+						</a>
 					</div>
 				</div>
+
+				<div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+
+					<div class="widget widget_nav_menu">
+						<h6>Explore</h6>
+						<ul class="menu">
+							<li>
+								<a href="index">Home</a>
+							</li>
+							<li>
+								<a href="about">About</a>
+							</li>
+							<li>
+								<a href="privacy">Privacy</a>
+							</li>
+							<li>
+
+								<a href="team">Management</a>
+							</li>
+							<li>
+								<a href="services">Services</a>
+							</li>
+							<li>
+								<a href="job.html">Careers</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+					<div class="widget widget_contact_list">
+						<div class="contact-item">
+							<p class="title">Give Us A Call</p>
+							<a class="content" href="tel:91-120-425-2949">+91-120-425-2949</a>
+						</div>
+						<div class="contact-item">
+							<p class="title">Email Us</p>
+							<a class="content"
+								href="https://html.modernwebtemplates.com/cdn-cgi/l/email-protection#620b0c040d220b1301030e0e4c010d0f"><span
+									class="__cf_email__"
+									data-cfemail="fa93949c95ba938b999b9696d4999597">info@coreoutsourcingservices.com</span></a>
+						</div>
+						<div class="contact-item">
+							<p class="title">Corporate Office</p>
+							<a class="content" href="https://maps.app.goo.gl/W3WxZW6oUkesBLrL7">E-2, Sector 63,
+								Noida - 201301</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+					<div class="widget widget_social_buttons">
+						<div class="widget-title">
+							Join Us
+						</div>
+						<a href="https://www.facebook.com/profile.php?id=61559128649073&mibextid=ZbWKwL"
+							class="ml-0 fa fa-facebook border-icon rounded-icon" title="facebook"></a>
+						<a href="https://www.instagram.com/coreoutsourcingservices?utm_source=qr&igsh=MXJsaDZza2F3cHE3Nw=="
+							class="fa fa-instagram border-icon rounded-icon" title="instagram"></a>
+						<a href="https://www.linkedin.com/company/core-outsourcing-services"
+							class="fa fa-linkedin border-icon rounded-icon" title="youtube-play"></a>
+						<a href="#" class="fa fa-twitter border-icon rounded-icon" title="twitter"></a>
+					</div>
+				</div>
+
 			</div>
-		</section>
+		</div>
+	</footer>
 
 
-	</div><!-- eof #box_wrapper -->
-	</div><!-- eof #canvas -->
+
+	<section class="page_copyright ds s-py-20">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center animate" data-animation="fadeInUp">
+					<p>&copy; <span class="copyright_year">2026</span> Copyright</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
 
 
 	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
@@ -2017,6 +1960,64 @@ getTeam();
 				readBtn.innerText = "Read More";
 			}
 		});
+	</script>
+
+	<script>
+
+		async function getTeam() {
+
+			try {
+
+				const response = await fetch(
+					"https://aliceblue-swan-648054.hostingersite.com/ourteam/get-team"
+				);
+
+				const result = await response.json();
+
+				const team = result.data.team;
+
+				const homeTeam = team.filter(
+					(item) => item.property === "home"
+				);
+
+				const teamSlider = document.getElementById("teamSlider");
+
+				teamSlider.innerHTML = "";
+
+				// Infinite smooth effect ke liye duplicate
+				const finalData = [...homeTeam, ...homeTeam];
+
+				finalData.forEach((item) => {
+
+					teamSlider.innerHTML += `
+
+                <div class="team-card">
+
+                    <div class="team-image">
+                        <img src="${item.image}" alt="${item.name}">
+                    </div>
+
+                    <div class="team-content">
+                        <h3>${item.name}</h3>
+                        <p>${item.status}</p>
+                    </div>
+
+                </div>
+
+            `;
+
+				});
+
+			} catch (error) {
+
+				console.log(error);
+
+			}
+
+		}
+
+		getTeam();
+
 	</script>
 
 	<script>
