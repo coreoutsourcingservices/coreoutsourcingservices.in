@@ -9,7 +9,8 @@
 
 <head>
 	<title>CORE - BPO, Call Center & Digital Marketing</title>
-	<meta mame="keywords" content="call center services, call center agencies, customer service and bpo, outsourcing call center, bpo solutions, outsourcing call center services, bpo service provider, bpo call center near me, Core Outsourcing Services, Core, customer services, call centers, bpo call center, bpo contact center, bpo and call center, IT support services, IT support and services, IT services and support, support & services, bpo call center in Noida, bpo call center in uttar Pradesh, bpo call center in india, customer service providers, best call centers, best call centers in Noida, best call centers in india, best call centers in delhi ncr, top bpo company in Noida, top bpo company in india, digital outsourcing services, bpo process outsourcing, bpo companies, bpo services, business process outsourcing services, bpo office near me, bpo office in Noida, top bpo companies in india, bpo companies list, bpo near me, inbound calls, outbound call, companies looking for call center services, call center in Noida, call center in india, call center in gurugram, call center in delhi">
+	<meta mame="keywords"
+		content="call center services, call center agencies, customer service and bpo, outsourcing call center, bpo solutions, outsourcing call center services, bpo service provider, bpo call center near me, Core Outsourcing Services, Core, customer services, call centers, bpo call center, bpo contact center, bpo and call center, IT support services, IT support and services, IT services and support, support & services, bpo call center in Noida, bpo call center in uttar Pradesh, bpo call center in india, customer service providers, best call centers, best call centers in Noida, best call centers in india, best call centers in delhi ncr, top bpo company in Noida, top bpo company in india, digital outsourcing services, bpo process outsourcing, bpo companies, bpo services, business process outsourcing services, bpo office near me, bpo office in Noida, top bpo companies in india, bpo companies list, bpo near me, inbound calls, outbound call, companies looking for call center services, call center in Noida, call center in india, call center in gurugram, call center in delhi">
 	<meta charset="utf-8">
 	<!--[if IE]>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,13 +25,447 @@
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <link rel="icon" href="images/favicon.png" id="fav-icon" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" id="fav-icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!--[if lt IE 9]>
 		<script src="js/vendor/html5shiv.min.js"></script>
 		<script src="js/vendor/respond.min.js"></script>
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>
 	<![endif]-->
+	<style>
+		iframe {
+			border-radius: 10px;
+			/* padding: 20px; */
+			/* border: 1px solid white; */
+
+
+		}
+
+		.map {
+			background-color: #3a3939aa;
+		}
+	</style>
+	<style>
+		/* ================= SECTION ================= */
+
+		.map-section {
+			background: #272727;
+			padding: 80px 0;
+			position: relative;
+			overflow: hidden;
+		}
+
+		/* background lines effect */
+
+		.container {
+			width: 100%;
+			margin: auto;
+			position: relative;
+			z-index: 0;
+		}
+
+		/* ================= FLEX ================= */
+
+		.map-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 50px;
+			/* border: 1px solid white; */
+			/* height: 80%; */
+		}
+
+		/* ================= MAP ================= */
+
+		.map-box {
+			width: 50%;
+			height: 65vh;
+			position: relative;
+			overflow: hidden;
+			border-radius: 10px;
+			background: #1b1b1b;
+			border: 1px solid rgba(255, 180, 0, 0.3);
+
+
+		}
+
+		/* glow hover */
+		/* .map-box:hover {
+			transform: translateY(-6px);
+			border-color: #ffb400;
+
+			box-shadow:
+				0 0 25px rgba(255, 180, 0, 0.18),
+				0 0 60px rgba(255, 180, 0, 0.08);
+		} */
+
+		/* iframe */
+		.map-box iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+			border-radius: 10px;
+			filter: contrast(1.05) brightness(0.96);
+		}
+
+		/* dark overlay premium effect */
+		.map-box::after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background: linear-gradient(to top,
+					rgba(0, 0, 0, 0.28),
+					rgba(0, 0, 0, 0.02));
+
+			pointer-events: none;
+			border-radius: 28px;
+		}
+
+		/* ================= INFO SIDE ================= */
+
+		.map-info {
+			margin-top: -20px;
+			width: 50%;
+			color: #fff;
+		}
+
+		/* top tag */
+		.map-info span {
+			color: #ff5c74;
+			font-size: 15px;
+			font-weight: 500;
+			letter-spacing: 2px;
+			/* margin-bottom: 500px; */
+			text-transform: uppercase;
+		}
+
+		/* heading */
+		.map-info h2 {
+			color: #ffb400;
+			margin-top: 0px;
+
+			font-size: 20px;
+			line-height: 1.2;
+			/* margin: 20px 0; */
+			font-weight: 700;
+		}
+
+		/* paragraph */
+		.map-info p {
+			color: #d2d2d2;
+			line-height: 1.2;
+			font-size: 13px;
+			margin-bottom: 5px;
+		}
+
+		/* ================= LIST ================= */
+
+		.info-list {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+			margin-top: 10px;
+			margin-right: 50px;
+		}
+
+		/* single item */
+		.info-item {
+			display: flex;
+			align-items: center;
+			gap: 18px;
+			padding: 2px 5px;
+
+			background: rgba(255, 255, 255, 0.03);
+			border: 1px solid rgba(255, 255, 255, 0.05);
+
+			border-radius: 14px;
+
+			transition: 0.3s ease;
+		}
+
+		/* hover effect */
+		.info-item:hover {
+			transform: translateX(3px);
+			border-color: rgba(255, 179, 0, 0.044);
+			background: rgba(255, 180, 0, 0.04);
+		}
+
+		/* icon */
+		.info-item i {
+			width: 20px;
+			height: 20px;
+
+			background: #ffb3005a;
+			color: #1d1d1dc4;
+			margin-left:6px ;
+
+			border-radius: 60%;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			font-size: 15px;
+			flex-shrink: 0;
+
+			/* box-shadow: 0 0 15px rgba(255, 180, 0, 0.3); */
+		}
+
+		/* text */
+		.info-item p {
+			margin: 0;
+			color: #fff;
+			font-size: 13px;
+			padding: 8px;
+			font-weight: 600;
+		}
+
+
+
+
+		/* ================= RESPONSIVE ================= */
+
+		@media(max-width:991px) {
+
+			.map-wrapper {
+				flex-direction: column;
+			}
+
+			.map-box,
+			.map-info {
+				width: 100%;
+			}
+
+			.map-box {
+				height: 50vh;
+			}
+
+			.map-info h2 {
+				font-size: 40px;
+			}
+
+		}
+
+		/* mobile */
+		@media(max-width:600px) {
+
+			.map-section {
+				padding: 60px 0;
+			}
+
+			.map-box {
+				height: 40vh;
+				border-radius: 22px;
+			}
+
+			.map-box iframe {
+				border-radius: 20px;
+			}
+
+			.map-info h2 {
+				font-size: 30px;
+			}
+
+			.map-info p {
+				font-size: 15px;
+			}
+
+			.info-item p {
+				font-size: 16px;
+			}
+
+			.map-btn {
+				width: 100%;
+				text-align: center;
+			}
+
+		}
+	</style>
+
+	<style>
+		/* ================= FOOTER ================= */
+
+		.custom-footer {
+			background: #1f1f1f;
+			position: relative;
+			padding: 80px 0 25px;
+			overflow: hidden;
+		}
+
+		/* background pattern */
+		.custom-footer::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+
+			pointer-events: none;
+		}
+
+		.custom-footer .container {
+			position: relative;
+			z-index: 2;
+		}
+
+		.footer-grid {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 60px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+			padding-bottom: 50px;
+		}
+
+		/* vertical line */
+		.footer-box {
+			position: relative;
+		}
+
+		.footer-box:not(:last-child)::after {
+			content: '';
+			position: absolute;
+			right: -25px;
+			top: 0;
+			width: 1px;
+			height: 100%;
+			background: rgba(255, 255, 255, 0.15);
+		}
+
+		/* logo */
+		.footer-logo img {
+			width: 130px;
+			margin-bottom: 15px;
+		}
+
+		.footer-logo p {
+			color: #ffb400;
+			font-size: 22px;
+			font-weight: 600;
+		}
+
+		/* headings */
+		.footer-box h3 {
+			color: #ffb400;
+			font-size: 25px;
+			margin-bottom: 30px;
+			font-weight: 700;
+		}
+
+		/* links */
+		.footer-box ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+
+		.footer-box ul li {
+			margin-bottom: 18px;
+
+		}
+
+		.footer-box ul li a {
+			color: #cfcfcf;
+			text-decoration: none;
+			font-size: 14px;
+			transition: 0.3s;
+		}
+
+		.footer-box ul li a:hover {
+			color: #ffb400;
+			padding-left: 5px;
+		}
+
+		/* contact */
+		.contact-item {
+			display: flex;
+			align-items: flex-start;
+			gap: 18px;
+			margin-bottom: 25px;
+		}
+
+		.contact-item i {
+			width: 40px;
+			height: 40px;
+			border: 1px solid rgba(255, 255, 255, 0.15);
+			border-radius: 12px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #ffb400;
+			font-size: 14px;
+		}
+
+		.contact-item a {
+			color: #d5d5d5;
+			text-decoration: none;
+			line-height: 1.7;
+			font-size: 14px;
+		}
+
+		/* social */
+		.social-icons {
+			display: flex;
+			gap: 15px;
+		}
+
+		.social-icons a {
+			width: 40px;
+			height: 40px;
+			border: 1px solid rgba(255, 255, 255, 0.3);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 22px;
+			text-decoration: none;
+			transition: 0.3s;
+		}
+
+		.social-icons a:hover {
+			background: #ffb400;
+			border-color: #ffb400;
+			transform: translateY(-5px);
+		}
+
+		/* bottom */
+
+
+
+
+
+
+		/* responsive */
+		@media(max-width:991px) {
+
+			.footer-grid {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			.footer-box::after {
+				display: none;
+			}
+
+		}
+
+		@media(max-width:600px) {
+
+			.footer-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.footer-bottom {
+				flex-direction: column;
+				text-align: center;
+			}
+
+			.footer-links {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+		}
+	</style>
+
 
 
 </head>
@@ -45,7 +480,8 @@
 	</div>
 
 	<!-- search modal -->
-	<div class="modal fade modal-search" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal" aria-hidden="true">
+	<div class="modal fade modal-search" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"
+		aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -54,7 +490,8 @@
 				<div class="widget widget_search">
 					<form method="get" class="searchform search-form" action="https://html.modernwebtemplates.com/">
 						<div class="form-group">
-							<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+							<input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
+								id="modal-search-input">
 						</div>
 						<button type="submit" class="btn">Search</button>
 					</form>
@@ -69,31 +506,36 @@
 			<div class="modal-content">
 				<div class="modal-body ls">
 					<h4 class="team-name mb-35">Contact Reginald S. Butler</h4>
-					<form class="contact-form c-mb-10 c-gutter-10" method="post" action="https://html.modernwebtemplates.com/">
+					<form class="contact-form c-mb-10 c-gutter-10" method="post"
+						action="https://html.modernwebtemplates.com/">
 						<div class="row">
 							<div class="col-12">
 								<div class="form-group has-placeholder">
 									<label for="nameTeam">Full Name <span class="required">*</span></label>
-									<input type="text" aria-required="true" size="30" value="" name="name" id="nameTeam" class="form-control" placeholder="Name">
+									<input type="text" aria-required="true" size="30" value="" name="name" id="nameTeam"
+										class="form-control" placeholder="Name">
 								</div>
 							</div>
 							<div class="col-12">
 								<div class="form-group has-placeholder">
 									<label for="emailTeam">Email address<span class="required">*</span></label>
-									<input type="email" aria-required="true" size="30" value="" name="email" id="emailTeam" class="form-control" placeholder="Email">
+									<input type="email" aria-required="true" size="30" value="" name="email"
+										id="emailTeam" class="form-control" placeholder="Email">
 								</div>
 							</div>
 							<div class="col-12">
 								<div class="form-group has-placeholder">
 									<label for="messageTeam">Message</label>
-									<textarea aria-required="true" rows="4" cols="45" name="message" id="messageTeam" class="form-control textarea" placeholder="Write a message"></textarea>
+									<textarea aria-required="true" rows="4" cols="45" name="message" id="messageTeam"
+										class="form-control textarea" placeholder="Write a message"></textarea>
 								</div>
 							</div>
 						</div>
 						<div class="row mt-20 mt-xl-50">
 							<div class="col-12">
 								<div class="form-group ">
-									<button type="submit" name="contact_submit" class="btn btn-gradient"><span>Send</span></button>
+									<button type="submit" name="contact_submit"
+										class="btn btn-gradient"><span>Send</span></button>
 								</div>
 							</div>
 
@@ -147,7 +589,7 @@
 
 											<li>
 												<a href="services">Services</a>
-																							</li>
+											</li>
 											<!-- eof service -->
 
 											<li>
@@ -159,8 +601,8 @@
 											<!-- blog -->
 											<li>
 												<!-- <a href="blog-grid">Blogs</a> -->
-												 <a href="blog.html">Blogs</a>
-												</li>
+												<a href="blog.html">Blogs</a>
+											</li>
 
 											<!-- eof blog -->
 
@@ -170,19 +612,19 @@
 
 
 											</li>
-												<li>
-											    <!-- <a href="https://coreoutsourcingservices.in/gallery/"> Gallery</a> -->
-												 <a href="gallery.html">Gallery</a>
+											<li>
+												<!-- <a href="https://coreoutsourcingservices.in/gallery/"> Gallery</a> -->
+												<a href="gallery.html">Gallery</a>
 											</li>
 											<li>
 												<!-- <a href="careers">Careers</a> -->
-												 <a href="job.html">Careers</a>
+												<a href="job.html">Careers</a>
 
 											</li>
 											<li>
-                                        <a href="./faq1.html">FAQ</a>
+												<a href="./faq1.html">FAQ</a>
 
-                                    </li>
+											</li>
 											<!-- eof contacts -->
 
 										</ul>
@@ -194,7 +636,8 @@
 							</div>
 							<div class="col-xl-2 col-6 order-2 order-lg-3 text-right d-none d-md-block">
 								<a href="contact" class="btn btn-outline-gradient">
-									<span><i class="color-darkgrey ico ico-comment" aria-hidden="true"></i>Reach Us</span>
+									<span><i class="color-darkgrey ico ico-comment" aria-hidden="true"></i>Reach
+										Us</span>
 								</a>
 							</div>
 						</div>
@@ -203,7 +646,8 @@
 					<span class="toggle_menu"><span></span></span>
 				</header>
 
-				<section class="page_title ds bs s-pt-80 s-pb-55 s-pb-lg-95 s-pt-lg-145 page_title s-parallax s-overlay">
+				<section
+					class="page_title ds bs s-pt-80 s-pb-55 s-pb-lg-95 s-pt-lg-145 page_title s-parallax s-overlay">
 					<div class="container">
 						<div class="row">
 
@@ -233,8 +677,8 @@
 				<div class="container">
 					<div class="row align-items-center">
 
-						<div class="col-md-6 col-lg-4 ">
-							<div class="icon-box text-center gradient-hover box-shadow">
+						<div class="col-md-6 col-lg-4 " >
+							<div class="icon-box text-center gradient-hover box-shadow" style="  width: 300px; height:300px;" >
 								<div class="icon-styled color-main fs-50">
 									<i class="ico ico-contact-alt"></i>
 								</div>
@@ -246,30 +690,107 @@
 						</div>
 
 						<div class="col-md-6 col-lg-4  ">
-							<div class="icon-box text-center gradient-hover box-shadow" >
+							<div class="icon-box text-center gradient-hover box-shadow" style="  width: 300px; height:300px;">
 								<div class="icon-styled color-main fs-50 " style="margin: 20px 0px;">
 									<i class="ico ico-email-alt"></i>
 								</div>
 								<h4>Email</h4>
-								<a href="https://html.modernwebtemplates.com/cdn-cgi/l/email-protection#137a7d757c537a6270727f7f3d707c7e" ><span class="__cf_email__"
-									data-cfemail="e1888f878ea1889082808d8dcf828e8c"  style="margin-left: -30px;">support@coreoutsourcingservices.com</span></a><br>
+								<a
+									href="https://mail.google.com/mail/?view=cm&fs=1&to=support@coreoutsourcingservices.com"  target="_blank"><span
+
+										style="margin-left: -35px; font-size: 15px;">support@coreoutsourcingservices.com</span></a><br>
 
 							</div>
 							<div class="divider-40 divider-lg-0"></div>
 						</div>
 
 						<div class="col-lg-4 col-lg-4 ">
-							<div class="icon-box text-center gradient-hover box-shadow">
+							<div class="icon-box text-center gradient-hover box-shadow" style="  width: 300px; height:300px;">
 								<div class="icon-styled color-main fs-50">
 									<i class="ico ico-location"></i>
 								</div>
 								<h4>Address</h4>
-								<a href="https://maps.app.goo.gl/W3WxZW6oUkesBLrL7">E 2, LR3, Basement<br> Sector 63, Noida, UP 201301</a>
+								<a href="https://maps.app.goo.gl/esRrN7tuXmhR3PXo6">E 2, LR3, Basement<br> Sector 63,
+									Noida, UP 201301</a>
 							</div>
 						</div>
 
 					</div>
 				</div>
+			</section>
+
+			<section class="map-section">
+
+				<div class="container">
+
+					<div class="map-wrapper">
+
+						<!-- LEFT SIDE MAP -->
+						<div class="map-box">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.182718613476!2d77.38325590957227!3d28.61830497557104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceff90b019281%3A0x25d2b98035204299!2sCore%20Outsourcing%20Services%20Pvt.%20LTD!5e1!3m2!1sen!2sin!4v1780920821150!5m2!1sen!2sin"
+								width="400" height="300" style="border:0; " allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
+
+
+						</div>
+
+						<!-- RIGHT SIDE INFO -->
+						<div class="map-info">
+
+							<span>WHY CHOOSE US</span>
+
+							<h2>
+								Trusted Outsourcing <br>
+								Partner In Noida
+							</h2>
+
+							<p>
+								CORE Outsourcing Services delivers reliable,
+								scalable and cost-effective outsourcing
+								solutions for businesses across India.
+								We focus on quality support, professional
+								staffing and long-term client success.
+							</p>
+
+							<div class="info-list">
+
+								<div class="info-item">
+									<i class="fa fa-check"></i>
+									<p>24/7 Client Support</p>
+								</div>
+
+								<div class="info-item">
+									<i class="fa fa-check"></i>
+									<p>Professional Team</p>
+								</div>
+
+								<div class="info-item">
+									<i class="fa fa-check"></i>
+									<p>Secure Operations</p>
+								</div>
+
+								<div class="info-item">
+									<i class="fa fa-check"></i>
+									<p>Quick Response Time</p>
+								</div>
+
+								<div class="info-item">
+									<i class="fa fa-check"></i>
+									<p>100+ Happy Clients</p>
+								</div>
+
+							</div>
+
+
+
+						</div>
+
+					</div>
+
+				</div>
+
 			</section>
 
 
@@ -285,34 +806,44 @@
 								Today!
 							</h4>
 							<div class="divider-30 divider-lg-40"></div>
-							<form class="contact-form floating-label c-mb-10 c-gutter-30" >
+							<form class="contact-form floating-label c-mb-10 c-gutter-30">
 								<div class="row">
 
 									<div class="col-md-6">
 
 										<div class="form-group">
-											<label for="name"><span>Your Name</span> <span class="required">*</span></label>
-											<input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control">
+											<label for="name"><span>Your Name</span> <span
+													class="required">*</span></label>
+											<input type="text" aria-required="true" size="30" value="" name="name"
+												id="name" class="form-control">
 										</div>
 
 										<div class="form-group">
-											<label for="name"><span>Phone Number</span> <span class="required">*</span></label>
-											<input type="number" aria-required="true" size="30" value="" name="phone" id="phone" class="form-control">
+											<label for="name"><span>Phone Number</span> <span
+													class="required">*</span></label>
+											<input type="number" aria-required="true" size="30" value="" name="phone"
+												id="phone" class="form-control">
 										</div>
 
 										<div class="form-group">
-											<label for="email"><span>Work E-mail</span> <span class="required">*</span></label>
-											<input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control">
+											<label for="email"><span>Work E-mail</span> <span
+													class="required">*</span></label>
+											<input type="email" aria-required="true" size="30" value="" name="email"
+												id="email" class="form-control">
 										</div>
 
 										<div class="form-group">
-											<label for="name"><span>Company Name</span> <span class="required">*</span></label>
-											<input type="text" aria-required="true" size="30" value="" name="company" id="company" class="form-control">
+											<label for="name"><span>Company Name</span> <span
+													class="required">*</span></label>
+											<input type="text" aria-required="true" size="30" value="" name="company"
+												id="company" class="form-control">
 										</div>
 
 										<div class="form-group">
-											<label for="name"><span>Job Title/Role</span> <span class="required">*</span></label>
-											<input type="text" aria-required="true" size="30" value="" name="job" id="job" class="form-control">
+											<label for="name"><span>Job Title/Role</span> <span
+													class="required">*</span></label>
+											<input type="text" aria-required="true" size="30" value="" name="job"
+												id="job" class="form-control">
 										</div>
 
 									</div>
@@ -321,22 +852,27 @@
 
 										<div class="form-group">
 											<label for="name"><span>What Industry do you work in?</span></label>
-											<input type="text" size="30" value="" name="industry" id="industry" class="form-control">
+											<input type="text" size="30" value="" name="industry" id="industry"
+												class="form-control">
 										</div>
 
 										<div class="form-group">
 											<label for="name"><span>Are you currently outsourcing?</span></label>
-											<input type="text" size="30" value="" name="outsourcing" id="outsourcing" class="form-control">
+											<input type="text" size="30" value="" name="outsourcing" id="outsourcing"
+												class="form-control">
 										</div>
 
 										<div class="form-group">
 											<label for="name"><span>Do you have contact center?</span></label>
-											<input type="text" size="30" value="" name="center" id="center" class="form-control">
+											<input type="text" size="30" value="" name="center" id="center"
+												class="form-control">
 										</div>
 
 										<div class="form-group">
-											<label for="message"><span>How can we help you?</span> <span class="required">*</span></label>
-											<textarea aria-required="true" rows="3" cols="45" name="message" id="message" class="form-control height-110"></textarea>
+											<label for="message"><span>How can we help you?</span> <span
+													class="required">*</span></label>
+											<textarea aria-required="true" rows="3" cols="45" name="message"
+												id="message" class="form-control height-110"></textarea>
 										</div>
 
 									</div>
@@ -346,7 +882,9 @@
 								<div class="row mt-20 mt-xl-40">
 									<div class="col-12">
 										<div class="form-group ">
-											<button onclick="submitForm()" id="contact_form_submit" name="contact_submit" class="btn btn-wide btn-big btn-gradient"><span>Send</span></button>
+											<button onclick="submitForm()" id="contact_form_submit"
+												name="contact_submit"
+												class="btn btn-wide btn-big btn-gradient"><span>Send</span></button>
 										</div>
 									</div>
 
@@ -360,48 +898,60 @@
 
 
 
-<script>
-async function submitForm() {
+			<script>
+				async function submitForm() {
 
-    const formData = {
-        name: document.getElementById("name").value,
-        number: document.getElementById("phone").value,
-        work: document.getElementById("email").value,
-        company_name: document.getElementById("company").value,
-        job_title: document.getElementById("job").value,
-        industry_work: document.getElementById("industry").value,
-        currenty_out: document.getElementById("outsourcing").value,
-        contect_center: document.getElementById("center").value,
-        how_work: document.getElementById("message").value,
-    };
-
-
-
-    try {
-
-        const response = await fetch("https://admin-panel-fawn-iota.vercel.app/contact/form", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(formData)
-        });
-
-        const data = await response.json();
+					const formData = {
+						name: document.getElementById("name").value,
+						number: document.getElementById("phone").value,
+						work: document.getElementById("email").value,
+						company_name: document.getElementById("company").value,
+						job_title: document.getElementById("job").value,
+						industry_work: document.getElementById("industry").value,
+						currenty_out: document.getElementById("outsourcing").value,
+						contect_center: document.getElementById("center").value,
+						how_work: document.getElementById("message").value,
+					};
 
 
 
-        alert("Form Submitted 😎");
+					try {
 
-    } catch (error) {
+						const response = await fetch("https://admin-panel-fawn-iota.vercel.app/contact/form", {
+							method: "POST",
+							headers: {
+								"Content-Type": "application/json"
+							},
+							body: JSON.stringify(formData)
+						});
 
-        console.log("Error:", error);
+						const data = await response.json();
 
-    }
-}
-</script>
 
-                <p><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3502.3825708349705!2d77.385999!3d28.618294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM3JzA1LjkiTiA3N8KwMjMnMDkuNiJF!5e0!3m2!1sen!2sin!4v1714625057916!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+
+						alert("Form Submitted 😎");
+
+					} catch (error) {
+
+						console.log("Error:", error);
+
+					}
+				}
+			</script>
+
+
+<!--
+			<div class="map-box">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.182718613476!2d77.38325590957227!3d28.61830497557104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceff90b019281%3A0x25d2b98035204299!2sCore%20Outsourcing%20Services%20Pvt.%20LTD!5e1!3m2!1sen!2sin!4v1780920821150!5m2!1sen!2sin"
+					width="400" height="300" style="border:0; " allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade">
+				</iframe>
+
+			</div> -->
+
+
+
 			<!-- <section class="ls s-py-60 s-py-lg-100 s-py-xl-120 c-gutter-30">
 				<div class="container" style="padding-top:60px; padding-bottom:60px">
 					<div class="row">
@@ -564,129 +1114,137 @@ async function submitForm() {
 				</div>
 			</section> -->
 
-			<footer class="page_footer page_footer s-borderbottom-container ds s-pt-60 s-pb-15 s-pt-lg-90 s-pb-lg-50 s-pt-xl-110 s-pb-xl-70 c-gutter-50">
-				<div class="container">
-					<div class="row">
 
-						<div class="col-md-6 col-lg-3 animate mr-auto" data-animation="fadeInUp">
+				<footer class="custom-footer">
+		<div class="container">
+			<div class="footer-grid">
 
-							<div class="widget widget_text mt-lg-10">
-								<a href="index" class="logo">
-									<img src="images/Logo1.png" alt="">
-								</a>
-							</div>
-						</div>
+				<!-- Logo Section -->
+				<div class="footer-box footer-logo">
+					<img src="images/Logo1.png" alt="logo">
+					<p>Let's Connect</p>
+				</div>
 
-						<div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+				<!-- Explore -->
+				<div class="footer-box">
+					<h3>Explore</h3>
+					<ul>
+						<li><a href="index">Home</a></li>
+						<li><a href="about">About</a></li>
+						<li><a href="privacy">Privacy</a></li>
+						<li><a href="team">Management</a></li>
+						<li><a href="services">Services</a></li>
+						<li><a href="job.html">Careers</a></li>
+					</ul>
+				</div>
 
-							<div class="widget widget_nav_menu">
-							    <h6>Explore</h6>
-								<ul class="menu">
-								    <li>
-									    <a href="index">Home</a>
-									</li>
-									<li>
-									    <a href="about">About</a>
-									</li>
-									<li>
-									    <a href="privacy">Privacy</a>
-									</li>
-									<li>
+				<!-- Contact -->
+				<div class="footer-box">
+					<h3>Give Us A Call</h3>
 
-										<a href="team">Management</a>
-									</li>
-									<li>
-										<a href="services">Services</a>
-									</li>
-									<li>
-									    <a href="careers">Careers</a>
-									</li>
-									<li>
-                                        <a href="./faq1.html">FAQ</a>
+					<div class="contact-item">
+						<i class="fa fa-phone"></i>
+						<a href="tel:+911204252949">+91-120-425-2949</a>
+					</div>
 
-                                    </li>
+					<div class="contact-item">
+						<i class="fa fa-envelope"></i>
+						<a href="mailto:info@coreoutsourcingservices.com">
+							info@coreoutsourcingservices.com
+						</a>
+					</div>
 
-								</ul>
-							</div>
-						</div>
+					<div class="contact-item">
+						<i class="fa fa-map-marker"></i>
+						<a href="https://maps.app.goo.gl/W3WxZW6oUkesBLrL7">
+							E-2, Sector 63, Noida - 201301
+						</a>
+					</div>
+				</div>
 
-						<div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
-							<div class="widget widget_contact_list">
-								<div class="contact-item">
-									<p class="title">Give Us A Call</p>
-									<a class="content" href="tel:91-120-425-2949">+91-120-425-2949</a>
-								</div>
-								<div class="contact-item">
-									<p class="title">Email Us</p>
-									<a class="content" href="https://html.modernwebtemplates.com/cdn-cgi/l/email-protection#620b0c040d220b1301030e0e4c010d0f"><span class="__cf_email__" data-cfemail="fa93949c95ba938b999b9696d4999597">info@coreoutsourcingservices.com</span></a>
-								</div>
-								<div class="contact-item">
-									<p class="title">Corporate Office</p>
-									<a class="content" href="https://maps.app.goo.gl/W3WxZW6oUkesBLrL7">E-2, Sector 63, Noida - 201301</a>
-								</div>
-							</div>
-						</div>
+				<!-- Social -->
+				<div class="footer-box">
+					<h3>Join Us</h3>
 
-						<div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
-							<div class="widget widget_social_buttons">
-								<div class="widget-title">
-									Join Us
-								</div>
-								<a href="https://www.facebook.com/profile.php?id=61559128649073&mibextid=ZbWKwL" class="ml-0 fa fa-facebook border-icon rounded-icon" title="facebook"></a>
-								<a href="https://www.instagram.com/coreoutsourcingservices?utm_source=qr&igsh=MXJsaDZza2F3cHE3Nw==" class="fa fa-instagram border-icon rounded-icon" title="instagram"></a>
-								<a href="https://www.linkedin.com/company/core-outsourcing-services" class="fa fa-linkedin border-icon rounded-icon" title="linkedin"></a>
-								<a href="#" class="fa fa-twitter border-icon rounded-icon" title="twitter"></a>
-							</div>
-						</div>
+					<div class="social-icons">
+
+						<a href="https://www.facebook.com/profile.php?id=61559128649073&mibextid=ZbWKwL">
+							<i class="fa fa-facebook"></i>
+						</a>
+
+						<a
+							href="https://www.instagram.com/coreoutsourcingservices?utm_source=qr&igsh=MXJsaDZza2F3cHE3Nw==">
+							<i class="fa fa-instagram"></i>
+						</a>
+
+						<a href="https://www.linkedin.com/company/core-outsourcing-services">
+							<i class="fa fa-linkedin"></i>
+						</a>
 
 					</div>
 				</div>
-			</footer>
 
-			<section class="page_copyright ds s-py-20">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 text-center animate" data-animation="fadeInUp">
-							<p>&copy; <span class="copyright_year">2024</span> Copyright</p>
-						</div>
-					</div>
+
+
+			</div>
+
+
+
+
+		</div>
+		<section class="page_copyright ds s-py-20">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center animate" data-animation="fadeInUp">
+					<p>
+						&copy; <span class="copyright_year"></span> Copyright
+					</p>
 				</div>
-			</section>
+			</div>
+		</div>
+	</section>
+	<script>
+		document.querySelector(".copyright_year").textContent =
+			new Date().getFullYear();
+	</script>
+	</footer>
 
 
 		</div><!-- eof #box_wrapper -->
 	</div><!-- eof #canvas -->
 
 
-	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/compressed.js"></script>
+	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<script src="js/compressed.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/switcher.js"></script>
 
 	<!-- Google Map Script -->
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0pr5xCHpaTGv12l73IExOHDJisBP2FK4&amp;callback=initGoogleMap"></script>
+	<script type="text/javascript"
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0pr5xCHpaTGv12l73IExOHDJisBP2FK4&amp;callback=initGoogleMap"></script>
 
-        <!--Start of Tawk.to Script-->
-        <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/660e53c21ec1082f04dec844/1hqjvecm2';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-        </script>
-        <!--End of Tawk.to Script-->
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+		(function () {
+			var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/660e53c21ec1082f04dec844/1hqjvecm2';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	</script>
+	<!--End of Tawk.to Script-->
 
-        <a href ="best-perfomer">
-            <button class="fixed-button">
-                <span style="font-size:50px;">
-                    <i class = "fa fa-trophy" ></i>
-                </span>
-                 <p>Champions</p>
-            </button>
-        </a>
+	<a href="best-perfomer">
+		<button class="fixed-button">
+			<span style="font-size:50px;">
+				<i class="fa fa-trophy"></i>
+			</span>
+			<p>Champions</p>
+		</button>
+	</a>
 </body>
 
 

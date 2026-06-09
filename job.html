@@ -32,6 +32,189 @@
 		<script src="js/vendor/respond.min.js"></script>
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>
 	<![endif]-->
+
+    <style>
+		/* ================= FOOTER ================= */
+
+		.custom-footer {
+			background: #1f1f1f;
+			position: relative;
+			padding: 80px 0 25px;
+			overflow: hidden;
+		}
+
+		/* background pattern */
+		.custom-footer::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+
+			pointer-events: none;
+		}
+
+		.custom-footer .container {
+			position: relative;
+			z-index: 2;
+		}
+
+		.footer-grid {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 60px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+			padding-bottom: 50px;
+		}
+
+		/* vertical line */
+		.footer-box {
+			position: relative;
+		}
+
+		.footer-box:not(:last-child)::after {
+			content: '';
+			position: absolute;
+			right: -25px;
+			top: 0;
+			width: 1px;
+			height: 100%;
+			background: rgba(255, 255, 255, 0.15);
+		}
+
+		/* logo */
+		.footer-logo img {
+			width: 130px;
+			margin-bottom: 15px;
+		}
+
+		.footer-logo p {
+			color: #ffb400;
+			font-size: 22px;
+			font-weight: 600;
+		}
+
+		/* headings */
+		.footer-box h3 {
+			color: #ffb400;
+			font-size: 25px;
+			margin-bottom: 30px;
+			font-weight: 700;
+		}
+
+		/* links */
+		.footer-box ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+
+		.footer-box ul li {
+			margin-bottom: 18px;
+
+		}
+
+		.footer-box ul li a {
+			color: #cfcfcf;
+			text-decoration: none;
+			font-size: 14px;
+			transition: 0.3s;
+		}
+
+		.footer-box ul li a:hover {
+			color: #ffb400;
+			padding-left: 5px;
+		}
+
+		/* contact */
+		.contact-item {
+			display: flex;
+			align-items: flex-start;
+			gap: 18px;
+			margin-bottom: 25px;
+		}
+
+		.contact-item i {
+			width: 40px;
+			height: 40px;
+			border: 1px solid rgba(255, 255, 255, 0.15);
+			border-radius: 12px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #ffb400;
+			font-size: 14px;
+		}
+
+		.contact-item a {
+			color: #d5d5d5;
+			text-decoration: none;
+			line-height: 1.7;
+			font-size: 14px;
+		}
+
+		/* social */
+		.social-icons {
+			display: flex;
+			gap: 15px;
+		}
+
+		.social-icons a {
+			width: 40px;
+			height: 40px;
+			border: 1px solid rgba(255, 255, 255, 0.3);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 22px;
+			text-decoration: none;
+			transition: 0.3s;
+		}
+
+		.social-icons a:hover {
+			background: #ffb400;
+			border-color: #ffb400;
+			transform: translateY(-5px);
+		}
+
+		/* bottom */
+
+
+
+
+
+
+		/* responsive */
+		@media(max-width:991px) {
+
+			.footer-grid {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			.footer-box::after {
+				display: none;
+			}
+
+		}
+
+		@media(max-width:600px) {
+
+			.footer-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.footer-bottom {
+				flex-direction: column;
+				text-align: center;
+			}
+
+			.footer-links {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+		}
+	</style>
     <style>
         * {
             margin: 0;
@@ -755,102 +938,99 @@ Apply Now
                 }
             </script>
 
-            <footer
-                class="page_footer page_footer s-borderbottom-container ds s-pt-60 s-pb-15 s-pt-lg-90 s-pb-lg-50 s-pt-xl-110 s-pb-xl-70 c-gutter-50">
-                <div class="container">
-                    <div class="row">
+            	<footer class="custom-footer">
+		<div class="container">
+			<div class="footer-grid">
 
-                        <div class="col-md-6 col-lg-3 animate mr-auto" data-animation="fadeInUp">
+				<!-- Logo Section -->
+				<div class="footer-box footer-logo">
+					<img src="images/Logo1.png" alt="logo">
+					<p>Let's Connect</p>
+				</div>
 
-                            <div class="widget widget_text mt-lg-10">
-                                <a href="index" class="logo">
-                                    <img src="images/Logo1.png" alt="">
-                                </a>
-                            </div>
-                        </div>
+				<!-- Explore -->
+				<div class="footer-box">
+					<h3>Explore</h3>
+					<ul>
+						<li><a href="index">Home</a></li>
+						<li><a href="about">About</a></li>
+						<li><a href="privacy">Privacy</a></li>
+						<li><a href="team">Management</a></li>
+						<li><a href="services">Services</a></li>
+						<li><a href="job.html">Careers</a></li>
+					</ul>
+				</div>
 
-                        <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+				<!-- Contact -->
+				<div class="footer-box">
+					<h3>Give Us A Call</h3>
 
-                            <div class="widget widget_nav_menu">
-                                <h6>Explore</h6>
-                                <ul class="menu">
-                                    <li>
-                                        <a href="index">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="about">About</a>
-                                    </li>
-                                    <li>
-                                        <a href="privacy">Privacy</a>
-                                    </li>
-                                    <li>
+					<div class="contact-item">
+						<i class="fa fa-phone"></i>
+						<a href="tel:+911204252949">+91-120-425-2949</a>
+					</div>
 
-                                        <a href="team">Management</a>
-                                    </li>
-                                    <li>
-                                        <a href="services">Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="careers">Careers</a>
-                                    </li>
-                                    <li>
-                                        <a href="./faq1.html">FAQ</a>
+					<div class="contact-item">
+						<i class="fa fa-envelope"></i>
+						<a href="mailto:info@coreoutsourcingservices.com">
+							info@coreoutsourcingservices.com
+						</a>
+					</div>
 
-                                    </li>
+					<div class="contact-item">
+						<i class="fa fa-map-marker"></i>
+						<a href="https://maps.app.goo.gl/W3WxZW6oUkesBLrL7">
+							E-2, Sector 63, Noida - 201301
+						</a>
+					</div>
+				</div>
 
-                                </ul>
-                            </div>
-                        </div>
+				<!-- Social -->
+				<div class="footer-box">
+					<h3>Join Us</h3>
 
-                        <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
-                            <div class="widget widget_contact_list">
-                                <div class="contact-item">
-                                    <p class="title">Give Us A Call</p>
-                                    <a class="content" href="tel:91-120-425-2949">+91-120-425-2949</a>
-                                </div>
-                                <div class="contact-item">
-                                    <p class="title">Email Us</p>
-                                    <a class="content"
-                                        href="https://html.modernwebtemplates.com/cdn-cgi/l/email-protection#620b0c040d220b1301030e0e4c010d0f"><span
-                                            class="__cf_email__"
-                                            data-cfemail="fa93949c95ba938b999b9696d4999597">info@coreoutsourcingservices.com</span></a>
-                                </div>
-                                <div class="contact-item">
-                                    <p class="title">Corporate Office</p>
-                                    <a class="content" href="https://maps.app.goo.gl/W3WxZW6oUkesBLrL7">E-2, Sector 63,
-                                        Noida - 201301</a>
-                                </div>
-                            </div>
-                        </div>
+					<div class="social-icons">
 
-                        <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
-                            <div class="widget widget_social_buttons">
-                                <div class="widget-title">
-                                    Join Us
-                                </div>
-                                <a href="https://www.facebook.com/profile.php?id=61559128649073&mibextid=ZbWKwL"
-                                    class="ml-0 fa fa-facebook border-icon rounded-icon" title="facebook"></a>
-                                <a href="https://www.instagram.com/coreoutsourcingservices?utm_source=qr&igsh=MXJsaDZza2F3cHE3Nw=="
-                                    class="fa fa-instagram border-icon rounded-icon" title="instagram"></a>
-                                <a href="https://www.linkedin.com/company/core-outsourcing-services"
-                                    class="fa fa-linkedin border-icon rounded-icon" title="linkedin"></a>
-                                <a href="#" class="fa fa-twitter border-icon rounded-icon" title="twitter"></a>
-                            </div>
-                        </div>
+						<a href="https://www.facebook.com/profile.php?id=61559128649073&mibextid=ZbWKwL">
+							<i class="fa fa-facebook"></i>
+						</a>
 
-                    </div>
-                </div>
-            </footer>
+						<a
+							href="https://www.instagram.com/coreoutsourcingservices?utm_source=qr&igsh=MXJsaDZza2F3cHE3Nw==">
+							<i class="fa fa-instagram"></i>
+						</a>
 
-            <section class="page_copyright ds s-py-20">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center animate" data-animation="fadeInUp">
-                            <p>&copy; <span class="copyright_year">2026</span> Copyright</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+						<a href="https://www.linkedin.com/company/core-outsourcing-services">
+							<i class="fa fa-linkedin"></i>
+						</a>
+
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+
+		</div>
+		<section class="page_copyright ds s-py-20">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center animate" data-animation="fadeInUp">
+					<p>
+						&copy; <span class="copyright_year"></span> Copyright
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+		document.querySelector(".copyright_year").textContent =
+			new Date().getFullYear();
+	</script>
+	</footer>
 
 
         </div><!-- eof #box_wrapper -->
