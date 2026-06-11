@@ -8,3 +8,39 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteEngine On
+RewriteBase /
+
+# Clean Blog URL
+RewriteRule ^blog/([^/]+)/?$ /blog/bloge_detail.html?slug=$1 [L,QSA]
+
+
+
+# =========================
+# Remove index.html
+# =========================
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
+RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]
+
+# =========================
+# Force WWW
+# =========================
+RewriteCond %{HTTP_HOST} ^coreoutsourcingservices\.in [NC]
+RewriteRule ^(.*)$ https://www.coreoutsourcingservices.in/$1 [L,R=301]
+
+# =========================
+# Clean Blog URL
+# Example:
+# /blog/my-post
+# =========================
+RewriteRule ^blog/([^/]+)/?$ /blog/bloge_detail.html?slug=$1 [L,QSA]
+
+# =========================
+# Remove .html Extension
+# Example:
+# /about -> about.html
+# =========================
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
