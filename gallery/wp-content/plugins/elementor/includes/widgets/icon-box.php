@@ -160,7 +160,7 @@ class Widget_Icon_Box extends Widget_Base {
 				'dynamic' => [
 					'active' => true,
 				],
-				'default' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'elementor' ),
+				'default' => esc_html__( ""),
 				'placeholder' => esc_html__( 'Enter your description', 'elementor' ),
 				'rows' => 10,
 			]

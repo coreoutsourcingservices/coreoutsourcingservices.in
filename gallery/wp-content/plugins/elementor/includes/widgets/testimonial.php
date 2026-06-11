@@ -119,7 +119,7 @@ class Widget_Testimonial extends Widget_Base {
 					'active' => true,
 				],
 				'rows' => '10',
-				'default' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'elementor' ),
+				'default' => esc_html__( ' ' ),
 			]
 		);
 

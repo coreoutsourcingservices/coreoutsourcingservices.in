@@ -146,11 +146,11 @@ class Widget_Accordion extends Widget_Base {
 				'default' => [
 					[
 						'tab_title' => esc_html__( 'Accordion #1', 'elementor' ),
-						'tab_content' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'elementor' ),
+						'tab_content' => esc_html__( ' ' ),
 					],
 					[
 						'tab_title' => esc_html__( 'Accordion #2', 'elementor' ),
-						'tab_content' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'elementor' ),
+						'tab_content' => esc_html__( '' ),
 					],
 				],
 				'title_field' => '{{{ tab_title }}}',
