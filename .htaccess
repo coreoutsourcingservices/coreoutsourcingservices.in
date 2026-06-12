@@ -45,3 +45,11 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 RewriteRule ^blog/([^/]+)/?$ blog-detaile.html [L,QSA]
+
+# BLOG SEO URL
+RewriteRule ^blog/([^/]+)/?$ /blog-detaile.html?slug=$1 [L,QSA]
+
+# REMOVE .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^\.]+)$ $1.html [L]
