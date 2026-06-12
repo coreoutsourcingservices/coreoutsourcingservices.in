@@ -18,7 +18,7 @@ RewriteRule ^([^\.]+)$ $1.html [L]
 
 # GALLERY SEO URL
 
-RewriteRule ^gallery/([a-zA-Z0-9-]+)/?$ /gallery-details.html [L,QSA]
+RewriteRule ^photos/([a-zA-Z0-9-]+)/?$ /gallery-details.html [L,QSA]
 
 # REMOVE .html
 
