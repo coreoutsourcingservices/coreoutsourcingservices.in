@@ -25,3 +25,18 @@ RewriteRule ^events/([a-zA-Z0-9-]+)/?$ /events-details.html [L,QSA]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^\.]+)$ $1.html [L]
+
+# EVENTS SEO URL
+
+RewriteRule ^events/([a-zA-Z0-9-]+)/?$ events-details.html [L]
+
+# REMOVE index.html
+
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
+RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]
+
+# REMOVE .html
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^\.]+)$ $1.html [L]
