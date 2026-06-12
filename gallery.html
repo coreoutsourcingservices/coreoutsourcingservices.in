@@ -600,7 +600,7 @@ LOADER
   SCRIPT
   ===================================== -->
 
-  <script>
+  <!-- <script>
 
     async function getGallery() {
       const loader =
@@ -829,7 +829,176 @@ loader.style.display = "flex";
 
     getGallery();
 
-  </script>
+  </script> -->
+
+  <script>
+
+async function getGallery() {
+
+  const loader =
+  document.getElementById(
+    "loader"
+  );
+
+  loader.style.display = "flex";
+
+  try {
+
+    const response =
+    await fetch(
+      "https://aliceblue-swan-648054.hostingersite.com/gallery/get-gallery"
+    );
+
+    const result =
+    await response.json();
+
+    const galleryData =
+    result.data;
+
+    const galleryWrapper =
+    document.getElementById(
+      "galleryWrapper"
+    );
+
+    galleryWrapper.innerHTML = "";
+
+    galleryData.forEach(
+      (item) => {
+
+        /* FIRST MEDIA */
+
+        const firstMedia =
+        item.gallery.find(
+          (media) =>
+          media.image ||
+          media.video
+        );
+
+        /* CARD */
+
+        const card =
+        document.createElement(
+          "div"
+        );
+
+        card.className =
+        "gallery-card";
+
+        /* MEDIA HTML */
+
+        let mediaHTML = "";
+
+        if(firstMedia?.image){
+
+          mediaHTML = `
+
+          <img
+          src="${firstMedia.image}"
+          alt="gallery"
+          />
+
+          `;
+
+        }
+
+        else if(firstMedia?.video){
+
+          mediaHTML = `
+
+          <video
+          src="${firstMedia.video}"
+          autoplay
+          muted
+          loop
+          controls
+          ></video>
+
+          `;
+
+        }
+
+        /* CARD HTML */
+
+        card.innerHTML = `
+
+        ${mediaHTML}
+
+        <div class="gallery-card-info">
+
+        <h3>
+        ${item.galleryName}
+        </h3>
+
+        <p>
+        Photos :
+        ${item.totalPhotos}
+        </p>
+
+        <p>
+        Videos :
+        ${item.totalVideos}
+        </p>
+
+        </div>
+
+        `;
+
+        /* CLICK */
+
+        card.addEventListener(
+          "click",
+          () => {
+
+            /* SAVE ID */
+
+            sessionStorage.setItem(
+              "galleryId",
+              item._id
+            );
+
+            /* SLUG */
+
+            const gallerySlug =
+            item.galleryName
+            .toLowerCase()
+            .replace(/\s+/g, "-")
+            .replace(/[^\w-]+/g, "");
+
+            /* SEO URL */
+
+            window.location.href =
+            "/gallery/" +
+            gallerySlug;
+
+          }
+        );
+
+        galleryWrapper.appendChild(
+          card
+        );
+
+      }
+    );
+
+    loader.style.display =
+    "none";
+
+  }
+  catch(error){
+
+    console.log(error);
+
+    loader.style.display =
+    "none";
+
+  }
+
+}
+
+getGallery();
+
+</script>
+
 
   	<footer class="custom-footer">
 		<div class="container">
