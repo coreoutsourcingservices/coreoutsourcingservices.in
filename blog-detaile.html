@@ -404,7 +404,7 @@ ${faqHTML}
     </script> -->
 
 
-<script>
+<!-- <script>
     const blogId =
 sessionStorage.getItem("blogId");
 
@@ -466,9 +466,241 @@ blog?.blag?.[0]?.image?.[0]?.photo || ''
 }
 
 getBlogs();
+</script> -->
+
+
+<script>
+
+const blogId =
+sessionStorage.getItem("blogId");
+
+async function getBlogs() {
+
+    try {
+
+        const response =
+        await fetch(
+            "https://aliceblue-swan-648054.hostingersite.com/bloge/get-blogs"
+        );
+
+        const result =
+        await response.json();
+
+        const blog =
+        result.data.find(
+            item => item._id === blogId
+        );
+
+        const hasFAQ =
+        blog?.blag?.[0]?.FAQ?.some(
+            faq => faq.Question || faq.answering
+        );
+
+        if (!blog) {
+
+            document.getElementById(
+                "blogDetails"
+            ).innerHTML =
+            `
+            <h1
+            style="
+            text-align:center;
+            margin-top:100px;
+            color:white;
+            "
+            >
+            Blog Not Found
+            </h1>
+            `;
+
+            return;
+
+        }
+
+        /* DESCRIPTION */
+
+        let descriptionHTML = "";
+
+        blog?.blag?.[0]?.description?.forEach(
+            (item) => {
+
+                const text =
+                (item.description_text || "")
+                .replace(/•/g, "<br>• ")
+                .replace(/(\d+\.)/g, "<br>$1 ");
+
+                descriptionHTML += `
+
+<div class="blog-section">
+
+${item.description_heading
+? `
+<h2>
+${item.description_heading}
+</h2>
+`
+: ""
+}
+
+<div class="blog-content-text">
+${text}
+</div>
+
+</div>
+
+`;
+
+            }
+        );
+
+        /* FAQ */
+
+        let faqHTML = "";
+
+        blog?.blag?.[0]?.FAQ?.forEach(
+            (faq) => {
+
+                if (
+                    !faq.Question &&
+                    !faq.answering
+                ) {
+                    return;
+                }
+
+                faqHTML += `
+
+<div class="blog-faq-card">
+
+<h4>
+${faq.Question}
+</h4>
+
+<p>
+${faq.answering}
+</p>
+
+</div>
+
+`;
+
+            }
+        );
+
+        /* MAIN HTML */
+
+        document.getElementById(
+            "blogDetails"
+        ).innerHTML = `
+
+<button
+class="blog-close-btn"
+onclick="closeBlog()"
+>
+✕
+</button>
+
+<div class="blog-container">
+
+<h1 class="blog-main-heading">
+${blog.heading}
+</h1>
+
+<div class="blog-image-grid">
+
+<img
+src="${
+blog?.blag?.[0]?.image?.[0]?.photo || ""
+}"
+alt="${blog.heading}"
+>
+
+</div>
+
+<div class="blog-writer">
+
+Written By :
+${blog?.blag?.[0]?.writer_name || "Admin"}
+
+<div class="blog-date">
+
+Published On :
+${new Date(
+blog.createdAt
+).toLocaleDateString(
+"en-GB",
+{
+day: "numeric",
+month: "long",
+year: "numeric"
+}
+)}
+
+</div>
+
+</div>
+
+<div class="blog-intro">
+
+${blog?.blag?.[0]?.description_imga || ""}
+
+</div>
+
+${descriptionHTML}
+
+${hasFAQ
+? `
+<h2 class="blog-faq-title">
+Frequently Asked Questions
+</h2>
+
+${faqHTML}
+`
+: ""
+}
+
+</div>
+
+`;
+
+    }
+    catch (error) {
+
+        console.log(error);
+
+        document.getElementById(
+            "blogDetails"
+        ).innerHTML =
+        `
+        <h1
+        style="
+        text-align:center;
+        margin-top:100px;
+        color:white;
+        "
+        >
+        Error Loading Blog
+        </h1>
+        `;
+
+    }
+
+}
+
+/* CLOSE BLOG */
+
+function closeBlog(){
+
+    sessionStorage.removeItem(
+        "blogId"
+    );
+
+    history.back();
+
+}
+
+getBlogs();
+
 </script>
-
-
 
 
 
