@@ -466,6 +466,188 @@
 		}
 	</style>
 
+<style>
+	/* FOOTER */
+
+.cos-footer{
+    background:#dcdcdc04;
+    padding-top:5px;
+    overflow:hidden;
+    font-family:Arial,sans-serif;
+}
+
+.cos-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.cos-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.cos-logo-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-width:180px;
+}
+
+.cos-logo-box img{
+    width:70px;
+    height:70px;
+    object-fit:cover;
+}
+
+.cos-logo-box p{
+    margin-top:10px;
+    font-size:18px;
+    font-weight:600;
+    color:#dd9315;
+}
+
+.cos-content{
+    flex:1;
+    display:flex;
+    justify-content:space-between;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.cos-box h3{
+    font-size:20px;
+    margin-bottom:3px;
+    color:#b58121;
+    font-weight:600;
+}
+
+/* LINKS */
+
+.cos-links{
+    list-style:none;
+    padding:0;
+    margin-top:3px;
+
+    display:grid;
+    grid-template-columns:repeat(2,auto);
+
+    gap:1px 40px;
+}
+
+.cos-links li a{
+    text-decoration:none;
+    color:#c7c3c3;
+    font-size:15px;
+    transition:.3s;
+}
+
+.cos-links li a:hover{
+    color:rgb(247,198,6);
+    text-decoration:underline;
+}
+
+/* CONTACT */
+
+.cos-contact{
+    display:flex;
+    align-items:flex-start;
+    gap:5px;
+    margin-bottom:3px;
+}
+
+.cos-contact i{
+    color:#d4a910;
+    font-size:18px;
+    margin-top:3px;
+    margin-right:8px;
+}
+
+.cos-contact a{
+    color:#b3b0b0;
+    text-decoration:none;
+    font-size:16px;
+    line-height:1.5;
+}
+
+/* SOCIAL */
+
+.cos-social{
+    display:flex;
+    gap:15px;
+    margin-top:10px;
+}
+
+.cos-social a{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:#9d8f8f0f;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+    transition:.3s;
+}
+
+.cos-social a i{
+    color:#cecccc;
+    font-size:10px;
+}
+
+.cos-social a:hover{
+    transform:translateY(-5px);
+    background:#a77b1d;
+}
+
+/* COPYRIGHT */
+
+.cos-copy{
+    margin-top:5px;
+    border-top:1px solid rgba(241,237,237,0.022);
+    text-align:center;
+    padding:5px 0;
+}
+
+.cos-copy p{
+    margin:0;
+    color:#cac5c5;
+    font-size:14px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .cos-row{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .cos-content{
+        width:100%;
+        justify-content:center;
+        text-align:center;
+        gap:35px;
+    }
+
+    .cos-contact{
+        justify-content:center;
+    }
+
+    .cos-social{
+        justify-content:center;
+    }
+
+}
+</style>
+
+
 
 
 </head>
@@ -940,274 +1122,130 @@
 			</script>
 
 
-<!--
-			<div class="map-box">
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.182718613476!2d77.38325590957227!3d28.61830497557104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceff90b019281%3A0x25d2b98035204299!2sCore%20Outsourcing%20Services%20Pvt.%20LTD!5e1!3m2!1sen!2sin!4v1780920821150!5m2!1sen!2sin"
-					width="400" height="300" style="border:0; " allowfullscreen="" loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade">
-				</iframe>
+<footer class="cos-footer">
 
-			</div> -->
+    <div class="cos-container">
 
+        <div class="cos-row">
 
+            <!-- Logo -->
+            <div class="cos-logo-box">
 
-			<!-- <section class="ls s-py-60 s-py-lg-100 s-py-xl-120 c-gutter-30">
-				<div class="container" style="padding-top:60px; padding-bottom:60px">
-					<div class="row">
+                <img src="images/Logo1.png" alt="logo">
 
-					    <div class="col-12 text-center">
+                <p>Let's Connect</p>
 
-							<h4 class="special-heading">
-							 Frequently Asked Questions
-							</h4>
-							<div class="divider-30 divider-lg-40"></div>
-						</div>
+            </div>
 
-						<div class="col-lg-6 animate" data-animation="fadeInDown">
-							<div class="accordion" id="accordion01" role="tablist">
-								<div class="card">
-									<div class="card-header" role="tab" id="collapse01_header">
-										<p>
-											<a data-toggle="collapse" href="#collapse01" aria-expanded="true" aria-controls="collapse01">
-												What is core outsourcing services?
+            <!-- Content -->
+            <div class="cos-content">
 
-											</a>
-										</p>
-									</div>
-									<div id="collapse01" class="collapse show" role="tabpanel" aria-labelledby="collapse01_header" data-parent="#accordion01">
-										<div class="card-body">
-											<p>
-												Core outsourcing is the practice of contracting out certain business functions or processes to external third-party service providers, rather than handling them in-house.
-											</p>
-										</div>
-									</div>
-								</div>
+                <!-- Explore -->
+                <div class="cos-box">
 
-								<div class="card">
-									<div class="card-header" role="tab" id="collapse02_header">
-										<p>
-											<a class="collapsed" data-toggle="collapse" href="#collapse02" aria-expanded="false" aria-controls="collapse02">
-												What are the benefits of core outsourcing services?
-											</a>
-										</p>
-									</div>
-									<div id="collapse02" class="collapse" role="tabpanel" aria-labelledby="collapse02_header" data-parent="#accordion01">
-										<div class="card-body">
-											<p>
-											    Benefits of core outsourcing include cost savings, access to specialized expertise, increased efficiency, scalability, flexibility, and the ability to focus on core competencies.
-											</p>
-										</div>
-									</div>
-								</div>
+                    <h3>Explore</h3>
 
-								<div class="card">
-									<div class="card-header" role="tab" id="collapse03_header">
-										<p>
-											<a class="collapsed" data-toggle="collapse" href="#collapse03" aria-expanded="false" aria-controls="collapse03">
-												How do I select the right outsourcing <br>partner?
-											</a>
-										</p>
-									</div>
-									<div id="collapse03" class="collapse" role="tabpanel" aria-labelledby="collapse03_header" data-parent="#accordion01">
-										<div class="card-body">
-											<p>
-										        Select an outsourcing partner based on their expertise, experience, reputation, communication skills, cultural fit, security measures, and financial stability.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-header" role="tab" id="collapse04_header">
-										<p>
-											<a class="collapsed" data-toggle="collapse" href="#collapse04" aria-expanded="false" aria-controls="collapse04">
-												Can core outsourcing improve the quality <br>of my services/products?
-											</a>
-										</p>
-									</div>
-									<div id="collapse04" class="collapse" role="tabpanel" aria-labelledby="collapse04_header" data-parent="#accordion01">
-										<div class="card-body">
-											<p>
-												Yes, core outsourcing to specialized providers can improve quality through their expertise, advanced technology, streamlined processes, and focus on delivering exceptional results.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="divider-15 divider-lg-0"></div>
-						</div>
+                    <ul class="cos-links">
 
-						<div class="col-lg-6 animate" data-animation="fadeInDown">
-							<div class="accordion" id="accordion02" role="tablist">
-								<div class="card">
-									<div class="card-header" role="tab" id="collapse05_header">
-										<p>
-											<a class="collapsed" data-toggle="collapse" href="#collapse05" aria-expanded="false" aria-controls="collapse05">
-												What services does core outsourcing <br>services provide?
-											</a>
-										</p>
-									</div>
-									<div id="collapse05" class="collapse" role="tabpanel" aria-labelledby="collapse05_header" data-parent="#accordion02">
-										<div class="card-body">
-											<p>
-												We offer a range of outsourcing services including but not limited to software development, customer support, data entry, digital marketing, graphic design, content writing, and administrative tasks.
-											</p>
-										</div>
-									</div>
-								</div>
+                        <li><a href="index">Home</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="privacy">Privacy</a></li>
+                        <li><a href="team">Management</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="job.html">Careers</a></li>
 
-								<div class="card">
-									<div class="card-header" role="tab" id="collapse06_header">
-										<p>
-											<a class="collapsed" data-toggle="collapse" href="#collapse06" aria-expanded="false" aria-controls="collapse06">
-												How can core outsourcing services help <br>my business save costs?
-											</a>
-										</p>
-									</div>
-									<div id="collapse06" class="collapse" role="tabpanel" aria-labelledby="collapse06_header" data-parent="#accordion02">
-										<div class="card-body">
-											<p>
-												Outsourcing can save costs by reducing labor expenses, overhead costs, infrastructure investments, and providing access to cost-effective offshore labor markets.
-											</p>
-										</div>
-									</div>
-								</div>
+                    </ul>
 
-								<div class="card">
-									<div class="card-header" role="tab" id="collapse07_header">
-										<p>
-											<a class="collapsed" data-toggle="collapse" href="#collapse07" aria-expanded="false" aria-controls="collapse07">
-												How do we handle communication and collaboration with clients?
-											</a>
-										</p>
-									</div>
-									<div id="collapse07" class="collapse" role="tabpanel" aria-labelledby="collapse07_header" data-parent="#accordion02">
-										<div class="card-body">
-											<p>
-												We utilize a range of communication channels including email, phone calls, video conferencing, and project management tools to ensure seamless collaboration. Our dedicated project managers act as single points of contact to address any queries or concerns promptly.
+                </div>
+
+                <!-- Contact -->
+                <div class="cos-box">
+
+                    <h3>Give Us A Call</h3>
+
+                    <div class="cos-contact">
+
+                        <i class="fa fa-phone"></i>
+
+                        <a href="tel:+911204252949">
+                            +91 98105 20250
+                        </a>
+
+                    </div>
+
+                    <div class="cos-contact">
+
+                        <i class="fa fa-envelope"></i>
+
+                        <a href="mailto:info@coreoutsourcingservices.com">
+                            info@coreoutsourcingservices.com
+                        </a>
+
+                    </div>
+
+                    <div class="cos-contact">
+
+                        <i class="fa fa-map-marker"></i>
+
+                        <a href="https://maps.app.goo.gl/W3WxZW6oUkesBLrL7">
+                            E-2, Sector 63, Noida - 201301
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Social -->
+                <div class="cos-box">
+
+                    <h3>Join Us</h3>
+
+                    <div class="cos-social">
+
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Copyright -->
+
+    <section class="cos-copy">
+
+        <p>
+            &copy;
+            <span id="cosYear"></span>
+            Copyright
+        </p>
+
+    </section>
+
+</footer>
+
+<script>
+
+document.getElementById("cosYear").textContent =
+new Date().getFullYear();
+
+</script>
 
 
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-header" role="tab" id="collapse08_header">
-										<p>
-											<a class="collapsed" data-toggle="collapse" href="#collapse08" aria-expanded="false" aria-controls="collapse08">
-												How can we generate more leads?
-											</a>
-										</p>
-									</div>
-									<div id="collapse08" class="collapse" role="tabpanel" aria-labelledby="collapse08_header" data-parent="#accordion02">
-										<div class="card-body">
-											<p>
-												Unlock specialized lead generation techniques. Enhance communication scripts, implement precise strategies, and leverage CRM systems for superior conversion rates.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</section> -->
-
-
-				<footer class="custom-footer">
-		<div class="container">
-			<div class="footer-grid">
-
-				<!-- Logo Section -->
-				<div class="footer-box footer-logo">
-					<img src="images/Logo1.png" alt="logo">
-					<p>Let's Connect</p>
-				</div>
-
-				<!-- Explore -->
-				<div class="footer-box">
-					<h3>Explore</h3>
-					<ul>
-						<li><a href="index">Home</a></li>
-						<li><a href="about">About</a></li>
-						<li><a href="privacy">Privacy</a></li>
-						<li><a href="team">Management</a></li>
-						<li><a href="services">Services</a></li>
-						<li><a href="job.html">Careers</a></li>
-					</ul>
-				</div>
-
-				<!-- Contact -->
-				<div class="footer-box">
-					<h3>Give Us A Call</h3>
-
-					<div class="contact-item">
-						<i class="fa fa-phone"></i>
-						<a href="tel:+911204252949">+91-120-425-2949</a>
-					</div>
-
-					<div class="contact-item">
-						<i class="fa fa-envelope"></i>
-						<a href="mailto:info@coreoutsourcingservices.com">
-							info@coreoutsourcingservices.com
-						</a>
-					</div>
-
-					<div class="contact-item">
-						<i class="fa fa-map-marker"></i>
-						<a href="https://maps.app.goo.gl/W3WxZW6oUkesBLrL7">
-							E-2, Sector 63, Noida - 201301
-						</a>
-					</div>
-				</div>
-
-				<!-- Social -->
-				<div class="footer-box">
-					<h3>Join Us</h3>
-
-					<div class="social-icons">
-
-						<a href="https://www.facebook.com/profile.php?id=61559128649073&mibextid=ZbWKwL">
-							<i class="fa fa-facebook"></i>
-						</a>
-
-						<a
-							href="https://www.instagram.com/coreoutsourcingservices?utm_source=qr&igsh=MXJsaDZza2F3cHE3Nw==">
-							<i class="fa fa-instagram"></i>
-						</a>
-
-						<a href="https://www.linkedin.com/company/core-outsourcing-services">
-							<i class="fa fa-linkedin"></i>
-						</a>
-
-					</div>
-				</div>
-
-
-
-			</div>
-
-
-
-
-		</div>
-		<section class="page_copyright ds s-py-20">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center animate" data-animation="fadeInUp">
-					<p>
-						&copy; <span class="copyright_year"></span> Copyright
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<script>
-		document.querySelector(".copyright_year").textContent =
-			new Date().getFullYear();
-	</script>
-	</footer>
 
 
 		</div><!-- eof #box_wrapper -->
@@ -1237,14 +1275,6 @@
 	</script>
 	<!--End of Tawk.to Script-->
 
-	<a href="best-perfomer">
-		<button class="fixed-button">
-			<span style="font-size:50px;">
-				<i class="fa fa-trophy"></i>
-			</span>
-			<p>Champions</p>
-		</button>
-	</a>
 </body>
 
 
