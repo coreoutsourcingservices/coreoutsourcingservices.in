@@ -404,25 +404,13 @@ ${faqHTML}
     </script> -->
 
 
-
-
 <script>
-
-/* GET URL SLUG */
-
-const slug =
-window.location.pathname
-.split("/")
-.pop();
-
-/* GET SESSION ID */
-
-const sessionBlogId =
+    const blogId =
 sessionStorage.getItem("blogId");
 
-async function getBlogs() {
+async function getBlogs(){
 
-    try {
+    try{
 
         const response =
         await fetch(
@@ -432,113 +420,37 @@ async function getBlogs() {
         const result =
         await response.json();
 
-        let blog = null;
-
-        /* FIRST TRY SESSION ID */
-
-        if(sessionBlogId){
-
-            blog = result.data.find(
-                item => item._id === sessionBlogId
-            );
-
-        }
-
-        /* IF NO BLOG */
-
-        if(!blog){
-
-            /* FIND USING headingUrl */
-
-            blog = result.data.find(
-                item =>
-                item.headingUrl === slug
-            );
-
-        }
-
-        /* NOT FOUND */
+        const blog =
+        result.data.find(
+            item => item._id === blogId
+        );
 
         if(!blog){
 
             document.getElementById(
                 "blogDetails"
-            ).innerHTML = `
-
-<h1
-style="
-text-align:center;
-margin-top:100px;
-color:white;
-"
->
-Blog Not Found
-</h1>
-
-`;
+            ).innerHTML =
+            "<h1>Blog Not Found</h1>";
 
             return;
 
         }
 
-        /* SAVE NEW SESSION */
-
-        sessionStorage.setItem(
-            "blogId",
-            blog._id
-        );
-
-        /* BLOG HTML */
-
         document.getElementById(
             "blogDetails"
         ).innerHTML = `
 
-<button
-class="blog-close-btn"
-onclick="closeBlog()"
->
-✕
-</button>
-
 <div class="blog-container">
 
-<h1 class="blog-main-heading">
+<h1>
 ${blog.heading}
 </h1>
-
-<div class="blog-image-grid">
 
 <img
 src="${
 blog?.blag?.[0]?.image?.[0]?.photo || ''
 }"
-alt="${blog.heading}"
 >
-
-</div>
-
-<div class="blog-writer">
-
-Written By :
-${blog?.blag?.[0]?.writer_name || "Admin"}
-
-<div class="blog-date">
-
-Published On :
-${new Date(blog.createdAt)
-.toLocaleDateString(
-"en-GB",
-{
-day:"numeric",
-month:"long",
-year:"numeric"
-}
-)}
-
-</div>
-
-</div>
 
 </div>
 
@@ -553,26 +465,8 @@ year:"numeric"
 
 }
 
-/* CLOSE BLOG */
-
-function closeBlog(){
-
-    // remove session
-
-    sessionStorage.removeItem(
-        "blogId"
-    );
-
-    // back
-
-    window.history.back();
-
-}
-
 getBlogs();
-
 </script>
-
 
 
 

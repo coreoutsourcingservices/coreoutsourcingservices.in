@@ -514,14 +514,14 @@ ${new Date(blog.createdAt)
 
 function openBlog(id, headingUrl){
 
-    // save id
+    // save blog id
 
     sessionStorage.setItem(
         "blogId",
         id
     );
 
-    // seo url
+    // open seo url
 
     window.location.href =
     "/blog/" + headingUrl;

@@ -11,8 +11,7 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 RewriteEngine On
 RewriteBase /
 
-# Clean Blog URL
-RewriteRule ^blog/([^/]+)/?$ /blog/bloge_detail.html?slug=$1 [L,QSA]
+
 
 
 
@@ -28,11 +27,7 @@ RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]
 RewriteCond %{HTTP_HOST} ^coreoutsourcingservices\.in [NC]
 RewriteRule ^(.*)$ https://www.coreoutsourcingservices.in/$1 [L,R=301]
 
-# =========================
-# Clean Blog URL
-# Example:
-# /blog/my-post
-# =========================
+
 RewriteRule ^blog/([^/]+)/?$ /blog/bloge_detail.html?slug=$1 [L,QSA]
 
 # =========================
@@ -46,10 +41,26 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 RewriteRule ^blog/([^/]+)/?$ blog-detaile.html [L,QSA]
 
-# BLOG SEO URL
-RewriteRule ^blog/([^/]+)/?$ /blog-detaile.html?slug=$1 [L,QSA]
 
 # REMOVE .html
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^\.]+)$ $1.html [L]
+
+RewriteEngine On
+
+# FORCE WWW
+RewriteCond %{HTTP_HOST} ^coreoutsourcingservices\.in [NC]
+RewriteRule ^(.*)$ https://www.coreoutsourcingservices.in/$1 [L,R=301]
+
+# REMOVE index.html
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
+RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]
+
+# BLOG DETAIL URL
+RewriteRule ^blog/([a-zA-Z0-9-]+)/?$ /blog-detaile.html [L,QSA]
+
+# REMOVE .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^\.]+)$ $1.html [L]
