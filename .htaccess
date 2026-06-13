@@ -16,7 +16,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^\.]+)$ $1.html [L]
 
-# GALLERY SEO URL
+
 
 RewriteRule ^events/([a-zA-Z0-9-]+)/?$ /events-details.html [L,QSA]
 
