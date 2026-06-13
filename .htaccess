@@ -40,3 +40,11 @@ RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^\.]+)$ $1.html [L]
+
+RewriteRule ^events/([^/]+)/?$ events-details.html [NC,L]
+
+# REMOVE .html
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
