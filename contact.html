@@ -329,205 +329,29 @@ gtag('config', 'G-J3M3W7YJ9Y');
 		}
 	</style>
 
-	<style>
+
+
+		<style>
 		/* ================= FOOTER ================= */
 
 		.custom-footer {
-			background: #1f1f1f;
-			position: relative;
-			padding: 80px 0 25px;
-			overflow: hidden;
-		}
-
-		/* background pattern */
-		.custom-footer::before {
-			content: '';
-			position: absolute;
-			inset: 0;
-
-			pointer-events: none;
-		}
-
-		.custom-footer .container {
-			position: relative;
-			z-index: 2;
-		}
-
-		.footer-grid {
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			gap: 60px;
-			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-			padding-bottom: 50px;
-		}
-
-		/* vertical line */
-		.footer-box {
-			position: relative;
-		}
-
-		.footer-box:not(:last-child)::after {
-			content: '';
-			position: absolute;
-			right: -25px;
-			top: 0;
-			width: 1px;
-			height: 100%;
-			background: rgba(255, 255, 255, 0.15);
-		}
-
-		/* logo */
-		.footer-logo img {
-			width: 130px;
-			margin-bottom: 15px;
-		}
-
-		.footer-logo p {
-			color: #ffb400;
-			font-size: 22px;
-			font-weight: 600;
-		}
-
-		/* headings */
-		.footer-box h3 {
-			color: #ffb400;
-			font-size: 25px;
-			margin-bottom: 30px;
-			font-weight: 700;
-		}
-
-		/* links */
-		.footer-box ul {
-			padding: 0;
-			margin: 0;
-			list-style: none;
-		}
-
-		.footer-box ul li {
-			margin-bottom: 18px;
-
-		}
-
-		.footer-box ul li a {
-			color: #cfcfcf;
-			text-decoration: none;
-			font-size: 14px;
-			transition: 0.3s;
-		}
-
-		.footer-box ul li a:hover {
-			color: #ffb400;
-			padding-left: 5px;
-		}
-
-		/* contact */
-		.contact-item {
-			display: flex;
-			align-items: flex-start;
-			gap: 18px;
-			margin-bottom: 25px;
-		}
-
-		.contact-item i {
-			width: 40px;
-			height: 40px;
-			border: 1px solid rgba(255, 255, 255, 0.15);
-			border-radius: 12px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			color: #ffb400;
-			font-size: 14px;
-		}
-
-		.contact-item a {
-			color: #d5d5d5;
-			text-decoration: none;
-			line-height: 1.7;
-			font-size: 14px;
-		}
-
-		/* social */
-		.social-icons {
-			display: flex;
-			gap: 15px;
-		}
-
-		.social-icons a {
-			width: 40px;
-			height: 40px;
-			border: 1px solid rgba(255, 255, 255, 0.3);
-			border-radius: 50%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			color: #fff;
-			font-size: 22px;
-			text-decoration: none;
-			transition: 0.3s;
-		}
-
-		.social-icons a:hover {
-			background: #ffb400;
-			border-color: #ffb400;
-			transform: translateY(-5px);
-		}
-
-		/* bottom */
-
-
-
-
-
-
-		/* responsive */
-		@media(max-width:991px) {
-
-			.footer-grid {
-				grid-template-columns: repeat(2, 1fr);
-			}
-
-			.footer-box::after {
-				display: none;
-			}
-
-		}
-
-		@media(max-width:600px) {
-
-			.footer-grid {
-				grid-template-columns: 1fr;
-			}
-
-			.footer-bottom {
-				flex-direction: column;
-				text-align: center;
-			}
-
-			.footer-links {
-				flex-wrap: wrap;
-				justify-content: center;
-			}
-
-		}
-	</style>
-
-	<style>
-		/* FOOTER */
-
-		.cos-footer {
 			background: #dcdcdc04;
 			padding-top: 5px;
+			/* border-top: 4px solid #1a1a1a; */
 			overflow: hidden;
 			font-family: Arial, sans-serif;
 		}
 
-		.cos-container {
+		/* main container */
+
+		.footer-container {
 			max-width: 1200px;
 			margin: auto;
 		}
 
-		.cos-row {
+		/* full row */
+
+		.divid-div {
 			display: flex;
 			justify-content: space-between;
 			align-items: flex-start;
@@ -535,27 +359,34 @@ gtag('config', 'G-J3M3W7YJ9Y');
 			flex-wrap: wrap;
 		}
 
-		.cos-logo-box {
+		/* logo section */
+
+		.footer-logo {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			min-width: 180px;
 		}
 
-		.cos-logo-box img {
+		.footer-logo img {
 			width: 70px;
+			margin-top: 10px !important;
 			height: 70px;
+			/* border-radius: 50%; */
 			object-fit: cover;
+			/* background: #d9534f; */
 		}
 
-		.cos-logo-box p {
+		.footer-logo p {
 			margin-top: 10px;
 			font-size: 18px;
 			font-weight: 600;
 			color: #dd9315;
 		}
 
-		.cos-content {
+		/* right side content */
+
+		.divide-by-content {
 			flex: 1;
 			display: flex;
 			justify-content: space-between;
@@ -563,16 +394,122 @@ gtag('config', 'G-J3M3W7YJ9Y');
 			flex-wrap: wrap;
 		}
 
-		.cos-box h3 {
+		/* common box */
+
+		.footer-box h3 {
 			font-size: 20px;
-			margin-bottom: 3px;
+			margin-bottom: 3px !important;
 			color: #b58121;
 			font-weight: 600;
 		}
 
-		/* LINKS */
+		/* explore links */
 
-		.cos-links {
+		.footer-box ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+
+
+
+
+		/* contact */
+
+		.contact-item {
+			display: flex;
+			align-items: flex-start;
+			gap: 5px;
+			margin-bottom: 3px;
+		}
+
+		.contact-item i {
+			color: #d4a910;
+			font-size: 18px;
+			margin-top: 3px;
+			margin-right: 8px;
+		}
+
+		.contact-item a {
+			color: #b3b0b0;
+			text-decoration: none;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		/* social */
+
+		.social-icons {
+			display: flex;
+			gap: 15px;
+			margin-top: 10px;
+		}
+
+		.social-icons a {
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background: #9d8f8f0f;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			transition: 0.3s;
+		}
+
+		.social-icons a i {
+			color: #cecccc;
+			font-size: 10px;
+		}
+
+		.social-icons a:hover {
+			transform: translateY(-5px);
+			background: #a77b1d;
+		}
+
+		/* copyright */
+
+		.page_copyright {
+			margin-top: 5px;
+			border-top: 1px solid rgba(241, 237, 237, 0.022) !important;
+			text-align: center;
+			padding: 5px 0;
+		}
+
+		.page_copyright p {
+			margin: 0;
+			color: #cac5c5;
+			font-size: 14px;
+		}
+
+		/* responsive */
+
+		@media(max-width:768px) {
+
+			.divid-div {
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+			}
+
+			.divide-by-content {
+				width: 100%;
+				justify-content: center;
+				text-align: center;
+				gap: 35px;
+			}
+
+			.contact-item {
+				justify-content: center;
+			}
+
+			.social-icons {
+				justify-content: center;
+			}
+		}
+
+		.footer-box ul {
 			list-style: none;
 			padding: 0;
 			margin-top: 3px;
@@ -580,116 +517,24 @@ gtag('config', 'G-J3M3W7YJ9Y');
 			display: grid;
 			grid-template-columns: repeat(2, auto);
 
-			gap: 1px 40px;
+			gap: 1px 40px !important;
 		}
 
-		.cos-links li a {
+		.footer-box ul li {
+			margin: -10;
+		}
+
+		.footer-box ul li a {
 			text-decoration: none;
 			color: #c7c3c3;
 			font-size: 15px;
-			transition: .3s;
+			font-weight: 200 !important;
+			transition: 0.3s;
 		}
 
-		.cos-links li a:hover {
+		.footer-box ul li a:hover {
 			color: rgb(247, 198, 6);
 			text-decoration: underline;
-		}
-
-		/* CONTACT */
-
-		.cos-contact {
-			display: flex;
-			align-items: flex-start;
-			gap: 5px;
-			margin-bottom: 3px;
-		}
-
-		.cos-contact i {
-			color: #d4a910;
-			font-size: 18px;
-			margin-top: 3px;
-			margin-right: 8px;
-		}
-
-		.cos-contact a {
-			color: #b3b0b0;
-			text-decoration: none;
-			font-size: 16px;
-			line-height: 1.5;
-		}
-
-		/* SOCIAL */
-
-		.cos-social {
-			display: flex;
-			gap: 15px;
-			margin-top: 10px;
-		}
-
-		.cos-social a {
-			width: 30px;
-			height: 30px;
-			border-radius: 50%;
-			background: #9d8f8f0f;
-
-			display: flex;
-			justify-content: center;
-			align-items: center;
-
-			text-decoration: none;
-			transition: .3s;
-		}
-
-		.cos-social a i {
-			color: #cecccc;
-			font-size: 10px;
-		}
-
-		.cos-social a:hover {
-			transform: translateY(-5px);
-			background: #a77b1d;
-		}
-
-		/* COPYRIGHT */
-
-		.cos-copy {
-			margin-top: 5px;
-			border-top: 1px solid rgba(241, 237, 237, 0.022);
-			text-align: center;
-			padding: 5px 0;
-		}
-
-		.cos-copy p {
-			margin: 0;
-			color: #cac5c5;
-			font-size: 14px;
-		}
-
-		/* MOBILE */
-
-		@media(max-width:768px) {
-
-			.cos-row {
-				flex-direction: column;
-				align-items: center;
-				text-align: center;
-			}
-
-			.cos-content {
-				width: 100%;
-				justify-content: center;
-				text-align: center;
-				gap: 35px;
-			}
-
-			.cos-contact {
-				justify-content: center;
-			}
-
-			.cos-social {
-				justify-content: center;
-			}
-
 		}
 	</style>
 
@@ -957,85 +802,9 @@ gtag('config', 'G-J3M3W7YJ9Y');
 		<div class="preloader_image pulse"></div>
 	</div>
 
-	<!-- search modal -->
-	<div class="modal fade modal-search" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"
-		aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-				<div class="widget widget_search">
-					<form method="get" class="searchform search-form" action="https://html.modernwebtemplates.com/">
-						<div class="form-group">
-							<input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
-								id="modal-search-input">
-						</div>
-						<button type="submit" class="btn">Search</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<!-- Team Contact Modal -->
-	<div class="modal fade" id="teamForm" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-body ls">
-					<h4 class="team-name mb-35">Contact Reginald S. Butler</h4>
-					<form class="contact-form c-mb-10 c-gutter-10" method="post"
-						action="https://html.modernwebtemplates.com/">
-						<div class="row">
-							<div class="col-12">
-								<div class="form-group has-placeholder">
-									<label for="nameTeam">Full Name <span class="required">*</span></label>
-									<input type="text" aria-required="true" size="30" value="" name="name" id="nameTeam"
-										class="form-control" placeholder="Name">
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="form-group has-placeholder">
-									<label for="emailTeam">Email address<span class="required">*</span></label>
-									<input type="email" aria-required="true" size="30" value="" name="email"
-										id="emailTeam" class="form-control" placeholder="Email">
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="form-group has-placeholder">
-									<label for="messageTeam">Message</label>
-									<textarea aria-required="true" rows="4" cols="45" name="message" id="messageTeam"
-										class="form-control textarea" placeholder="Write a message"></textarea>
-								</div>
-							</div>
-						</div>
-						<div class="row mt-20 mt-xl-50">
-							<div class="col-12">
-								<div class="form-group ">
-									<button type="submit" name="contact_submit"
-										class="btn btn-gradient"><span>Send</span></button>
-								</div>
-							</div>
 
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<!-- Unyson messages modal -->
-	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
-		<div class="fw-messages-wrap ls p-normal">
-			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
-			<!--
-		<ul class="list-unstyled">
-			<li>Message To User</li>
-		</ul>
-		-->
-
-		</div>
-	</div><!-- eof .modal -->
 
 
 	<!-- wrappers for visual page editor and boxed version of template -->
@@ -1052,7 +821,7 @@ gtag('config', 'G-J3M3W7YJ9Y');
 				<!-- header with three Bootstrap columns - with logo, navigation and includes -->
 				<header class="page_header sf-arrows ds justify-nav-center line-header">
 					<div class="container-fluid">
-						<div class="row align-items-center">
+					<div class="row align-items-center">
 							<div class="my-15 my-md-0 col-xl-2 col-md-4 col-11">
 								<a href="index" class="logo">
 									<img src="images/Logo1.png" alt="">
@@ -1064,7 +833,7 @@ gtag('config', 'G-J3M3W7YJ9Y');
 									<nav class="top-nav">
 										<ul class="nav sf-menu">
 											<li class="active">
-												<a href="index">Home</a>
+												<a href="/">Home</a>
 
 											</li>
 
@@ -1074,7 +843,7 @@ gtag('config', 'G-J3M3W7YJ9Y');
 											<!-- eof service -->
 
 											<li>
-												<a href="about">About Us</a>
+												<a href="about-us">About Us</a>
 
 											</li>
 											<!-- eof pages -->
@@ -1082,7 +851,7 @@ gtag('config', 'G-J3M3W7YJ9Y');
 											<!-- blog -->
 											<li>
 												<!-- <a href="blog-grid">Blogs</a> -->
-												<a href="blog.html">Blogs</a>
+												<a href="blog">Blogs</a>
 											</li>
 
 											<!-- eof blog -->
@@ -1093,20 +862,22 @@ gtag('config', 'G-J3M3W7YJ9Y');
 
 
 											</li>
+											<!-- eof contacts -->
 											<li>
 												<!-- <a href="https://coreoutsourcingservices.in/gallery/"> Gallery</a> -->
-												<a href="gallery.html">Gallery</a>
+												<a href="events">Events</a>
 											</li>
+
 											<li>
-												<!-- <a href="careers">Careers</a> -->
-												<a href="job.html">Careers</a>
+												<a href="job">Careers</a>
+
 
 											</li>
 											<li>
-												<a href="./faq1.html">FAQ</a>
+												<a href="faqs">FAQ</a>
+
 
 											</li>
-											<!-- eof contacts -->
 
 										</ul>
 
@@ -1115,12 +886,9 @@ gtag('config', 'G-J3M3W7YJ9Y');
 									<!-- eof main nav -->
 								</div>
 							</div>
-							<div class="col-xl-2 col-6 order-2 order-lg-3 text-right d-none d-md-block">
-								<a href="contact" class="btn btn-outline-gradient">
-									<span><i class="color-darkgrey ico ico-comment" aria-hidden="true"></i>Reach
-										Us</span>
-								</a>
-							</div>
+
+
+
 						</div>
 					</div>
 					<!-- header toggler -->
@@ -1587,7 +1355,8 @@ gtag('config', 'G-J3M3W7YJ9Y');
 				}
 			</script>
 
-<footer class="custom-footer">
+
+	<footer class="custom-footer">
 		<div class="footer-container">
 			<div class="footer-grid">
 				<div class="divid-div">
@@ -1604,10 +1373,10 @@ gtag('config', 'G-J3M3W7YJ9Y');
 						<div class="footer-box">
 							<h3>Explore</h3>
 							<ul>
-								<li><a href="index">Home</a></li>
-								<li><a href="about">About</a></li>
+								<li><a href="/">Home</a></li>
+								<li><a href="about-us">About</a></li>
 								<li><a href="privacy">Privacy</a></li>
-								<li><a href="team">Management</a></li>
+								<!-- <li><a href="team">Management</a></li> -->
 								<li><a href="services">Services</a></li>
 								<li><a href="job.html">Careers</a></li>
 							</ul>
@@ -1625,7 +1394,7 @@ gtag('config', 'G-J3M3W7YJ9Y');
 							<div class="contact-item">
 								<i class="fa fa-envelope"></i>
 								<a href="mailto:info@coreoutsourcingservices.com">
-									info@coreoutsourcingservices.com
+									info@coreoutsourcingservices.in
 								</a>
 							</div>
 
