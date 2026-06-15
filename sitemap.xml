@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
@@ -36,5 +36,122 @@
 <url>
 <loc>https://www.coreoutsourcingservices.in/contact</loc>
 </url>
+
+</urlset> -->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Homepage -->
+
+    <url>
+        <loc>
+            https://www.coreoutsourcingservices.in/
+        </loc>
+    </url>
+
+
+
+    <!-- Main Pages -->
+
+    <url>
+        <loc>
+            https://www.coreoutsourcingservices.in/about-us
+        </loc>
+    </url>
+
+    <url>
+        <loc>
+            https://www.coreoutsourcingservices.in/services
+        </loc>
+    </url>
+
+    <url>
+        <loc>
+            https://www.coreoutsourcingservices.in/contact
+        </loc>
+    </url>
+
+    <url>
+        <loc>
+            https://www.coreoutsourcingservices.in/blog
+        </loc>
+    </url>
+
+
+
+    <!-- Service Pages -->
+
+    <url>
+        <loc>
+            https://www.coreoutsourcingservices.in/bpo-service
+        </loc>
+    </url>
+
+    <url>
+        <loc>
+            https://www.coreoutsourcingservices.in/customer-service
+        </loc>
+    </url>
+
+    <url>
+        <loc>
+            https://www.coreoutsourcingservices.in/lead-generation
+        </loc>
+    </url>
+
+    <url>
+        <loc>
+            https://www.coreoutsourcingservices.in/qa-monitoring
+        </loc>
+    </url>
+
+    <url>
+        <loc>
+            https://www.coreoutsourcingservices.in/call-center-services
+        </loc>
+    </url>
+
+    <url>
+        <loc>
+            https://www.coreoutsourcingservices.in/it-support
+        </loc>
+    </url>
+
+
+
+    <!-- Optional Future Pages -->
+
+    <url>
+        <loc>
+            https://www.coreoutsourcingservices.in/privacy-policy
+        </loc>
+    </url>
+
+    <url>
+        <loc>
+            https://www.coreoutsourcingservices.in/terms-and-conditions
+        </loc>
+    </url>
+
+
+
+
+
+    <!-- BLOG POSTS -->
+    <!-- Dynamic blog URLs yahan add karna -->
+
+    <!-- Example -->
+
+    <!--
+
+    <url>
+        <loc>
+            https://www.coreoutsourcingservices.in/blog/how-bpo-services-help-business-growth
+        </loc>
+    </url>
+
+    -->
 
 </urlset>
