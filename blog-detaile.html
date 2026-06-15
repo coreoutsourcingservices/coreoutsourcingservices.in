@@ -272,7 +272,9 @@ ${item.description_heading}
                             }
 
 <div class="blog-content-text">
-${text}
+    <h6>
+        ${text}
+        </h6>
 </div>
 
 </div>
@@ -300,13 +302,13 @@ ${text}
 
 <div class="blog-faq-card">
 
-<h4>
+<h3>
 ${faq.Question}
-</h4>
+</h3>
 
-<p>
+<p6>
 ${faq.answering}
-</p>
+</p6>
 
 </div>
 
@@ -379,8 +381,9 @@ ${new Date(
 ${blog?.blag?.[0]?.description_imga || ""}
 
 </div>
-
-${descriptionHTML}
+<h3>
+    ${descriptionHTML}
+    </h3>
 
 ${hasFAQ
                         ? `
