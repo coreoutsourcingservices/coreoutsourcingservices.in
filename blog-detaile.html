@@ -3,7 +3,7 @@
 
 <head>
 
-   <title>CORE - BPO, Call Center & Digital Marketing</title>
+    <title>CORE - BPO, Call Center & Digital Marketing</title>
     <meta mame="keywords"
         content="Core Outsourcing Services, Core, customer services, call centers, bpo call center, bpo contact center, bpo and call center, IT support services, IT support and services, IT services and support, support & services, call center services, call center agencies, bpo companies, bpo services, business process outsourcing services, customer service and bpo, outsourcing call center, bpo solutions, outsourcing call center services, bpo service provider, bpo call center near me, bpo call center in Noida, bpo call center in uttar Pradesh, bpo call center in india, customer service providers, best call centers, best call centers in Noida, best call centers in india, best call centers in delhi ncr, top bpo company in Noida, top bpo company in india, digital outsourcing services, bpo process outsourcing, bpo office near me, bpo office in Noida, top bpo companies in india, bpo companies list, bpo near me, inbound calls, outbound call, companies looking for call center services, call center in Noida, call center in india, call center in gurugram, call center in delhi,">
     <meta charset="utf-8">
@@ -198,39 +198,39 @@
 
     <div id="blogDetails"></div>
 
-<script>
+    <script>
 
-const blogId =
-sessionStorage.getItem("blogId");
+        const blogId =
+            sessionStorage.getItem("blogId");
 
-async function getBlogs() {
+        async function getBlogs() {
 
-    try {
+            try {
 
-        const response =
-        await fetch(
-            "https://aliceblue-swan-648054.hostingersite.com/bloge/get-blogs"
-        );
+                const response =
+                    await fetch(
+                        "https://aliceblue-swan-648054.hostingersite.com/bloge/get-blogs"
+                    );
 
-        const result =
-        await response.json();
+                const result =
+                    await response.json();
 
-        const blog =
-        result.data.find(
-            item => item._id === blogId
-        );
+                const blog =
+                    result.data.find(
+                        item => item._id === blogId
+                    );
 
-        const hasFAQ =
-        blog?.blag?.[0]?.FAQ?.some(
-            faq => faq.Question || faq.answering
-        );
+                const hasFAQ =
+                    blog?.blag?.[0]?.FAQ?.some(
+                        faq => faq.Question || faq.answering
+                    );
 
-        if (!blog) {
+                if (!blog) {
 
-            document.getElementById(
-                "blogDetails"
-            ).innerHTML =
-            `
+                    document.getElementById(
+                        "blogDetails"
+                    ).innerHTML =
+                        `
             <h1
             style="
             text-align:center;
@@ -242,34 +242,34 @@ async function getBlogs() {
             </h1>
             `;
 
-            return;
+                    return;
 
-        }
+                }
 
-        /* DESCRIPTION */
+                /* DESCRIPTION */
 
-        let descriptionHTML = "";
+                let descriptionHTML = "";
 
-        blog?.blag?.[0]?.description?.forEach(
-            (item) => {
+                blog?.blag?.[0]?.description?.forEach(
+                    (item) => {
 
-                const text =
-                (item.description_text || "")
-                .replace(/•/g, "<br>• ")
-                .replace(/(\d+\.)/g, "<br>$1 ");
+                        const text =
+                            (item.description_text || "")
+                                .replace(/•/g, "<br>• ")
+                                .replace(/(\d+\.)/g, "<br>$1 ");
 
-                descriptionHTML += `
+                        descriptionHTML += `
 
 <div class="blog-section">
 
 ${item.description_heading
-? `
+                                ? `
 <h2>
 ${item.description_heading}
 </h2>
 `
-: ""
-}
+                                : ""
+                            }
 
 <div class="blog-content-text">
 ${text}
@@ -279,24 +279,24 @@ ${text}
 
 `;
 
-            }
-        );
+                    }
+                );
 
-        /* FAQ */
+                /* FAQ */
 
-        let faqHTML = "";
+                let faqHTML = "";
 
-        blog?.blag?.[0]?.FAQ?.forEach(
-            (faq) => {
+                blog?.blag?.[0]?.FAQ?.forEach(
+                    (faq) => {
 
-                if (
-                    !faq.Question &&
-                    !faq.answering
-                ) {
-                    return;
-                }
+                        if (
+                            !faq.Question &&
+                            !faq.answering
+                        ) {
+                            return;
+                        }
 
-                faqHTML += `
+                        faqHTML += `
 
 <div class="blog-faq-card">
 
@@ -312,14 +312,14 @@ ${faq.answering}
 
 `;
 
-            }
-        );
+                    }
+                );
 
-        /* MAIN HTML */
+                /* MAIN HTML */
 
-        document.getElementById(
-            "blogDetails"
-        ).innerHTML = `
+                document.getElementById(
+                    "blogDetails"
+                ).innerHTML = `
 
 <button
 class="blog-close-btn"
@@ -337,32 +337,38 @@ ${blog.heading}
 <div class="blog-image-grid">
 
 <img
-src="${
-blog?.blag?.[0]?.image?.[0]?.photo || ""
-}"
+src="${blog?.blag?.[0]?.image?.[0]?.photo || ""
+                    }"
 alt="${blog.heading}"
 >
 
 </div>
 
 <div class="blog-writer">
-
-Written By :
+<h4>
+    Written By :
 ${blog?.blag?.[0]?.writer_name || "Admin"}
 
+</h4>
+
+
 <div class="blog-date">
+    <h5>
 
 Published On :
 ${new Date(
-blog.createdAt
-).toLocaleDateString(
-"en-GB",
-{
-day: "numeric",
-month: "long",
-year: "numeric"
-}
-)}
+                        blog.createdAt
+                    ).toLocaleDateString(
+                        "en-GB",
+                        {
+                            day: "numeric",
+                            month: "long",
+                            year: "numeric"
+                        }
+                    )}
+
+
+        </h5>
 
 </div>
 
@@ -377,29 +383,29 @@ ${blog?.blag?.[0]?.description_imga || ""}
 ${descriptionHTML}
 
 ${hasFAQ
-? `
+                        ? `
 <h2 class="blog-faq-title">
 Frequently Asked Questions
 </h2>
 
 ${faqHTML}
 `
-: ""
-}
+                        : ""
+                    }
 
 </div>
 
 `;
 
-    }
-    catch (error) {
+            }
+            catch (error) {
 
-        console.log(error);
+                console.log(error);
 
-        document.getElementById(
-            "blogDetails"
-        ).innerHTML =
-        `
+                document.getElementById(
+                    "blogDetails"
+                ).innerHTML =
+                    `
         <h1
         style="
         text-align:center;
@@ -411,25 +417,25 @@ ${faqHTML}
         </h1>
         `;
 
-    }
+            }
 
-}
+        }
 
-/* CLOSE BLOG */
+        /* CLOSE BLOG */
 
-function closeBlog(){
+        function closeBlog() {
 
-    sessionStorage.removeItem(
-        "blogId"
-    );
+            sessionStorage.removeItem(
+                "blogId"
+            );
 
-    history.back();
+            history.back();
 
-}
+        }
 
-getBlogs();
+        getBlogs();
 
-</script>
+    </script>
 
 
 
