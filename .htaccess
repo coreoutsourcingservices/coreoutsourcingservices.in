@@ -4,6 +4,14 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^coreoutsourcingservices\.in [NC]
 RewriteRule ^(.*)$ https://www.coreoutsourcingservices.in/$1 [L,R=301]
 
+# LEGACY CLEAN URL REDIRECTS
+RewriteRule ^about/?$ /about-us [R=301,L]
+RewriteRule ^about\.html/?$ /about-us [R=301,L]
+RewriteRule ^blog-grid/?$ /blog [R=301,L]
+RewriteRule ^faq1/?$ /faqs [R=301,L]
+RewriteRule ^gallery/?$ /events [R=301,L]
+RewriteRule ^careers/?$ /job [R=301,L]
+
 # REMOVE index.html
 RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
 RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]
