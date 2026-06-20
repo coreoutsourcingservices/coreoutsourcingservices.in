@@ -860,13 +860,28 @@ document
 );
 
 document
-.getElementById(
-  "prevBtn"
-)
-.addEventListener(
-  "click",
-  prevMedia
-);
+  .getElementById("closeBtn")
+  .addEventListener("click", closePopup);
+
+function closePopup() {
+
+  const popup = document.getElementById("popupOverlay");
+
+  const video = document.querySelector("#popupMain video");
+
+  if (video) {
+    video.pause();
+    video.currentTime = 0;
+    video.muted = true;
+    video.removeAttribute("src");
+    video.load();
+  }
+
+  document.getElementById("popupMain").innerHTML = "";
+
+  popup.style.display = "none";
+
+}
 
 /* CLOSE */
 
@@ -880,13 +895,7 @@ document
 
 
 
-      if (video) {
-    video.pause();
-    video.currentTime = 0;
-    video.muted = true;
-    video.removeAttribute("src");
-    video.load();
-  }
+
     document.getElementById(
       "popupOverlay"
     ).style.display =
