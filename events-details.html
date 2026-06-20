@@ -877,6 +877,11 @@ document
 .addEventListener(
   "click",
   () => {
+   if (video) {
+      video.pause();
+      video.currentTime = 0; // Optional: start se chalega dubara
+      video.muted = true;
+    }
 
     document.getElementById(
       "popupOverlay"
