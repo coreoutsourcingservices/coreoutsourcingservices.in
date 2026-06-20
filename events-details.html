@@ -879,15 +879,18 @@ document
   () => {
 
 
+
+      if (video) {
+    video.pause();
+    video.currentTime = 0;
+    video.muted = true;
+    video.removeAttribute("src");
+    video.load();
+  }
     document.getElementById(
       "popupOverlay"
     ).style.display =
     "none";
-    if (video) {
-      video.pause();
-      video.currentTime = 0; // Optional: start se chalega dubara
-      video.muted = true;
-    }
 
   }
 );
