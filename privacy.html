@@ -33,6 +33,213 @@
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>
 	<![endif]-->
 
+	<style>
+		/* ================= FOOTER ================= */
+
+		.custom-footer {
+			background: #dcdcdc04;
+			padding-top: 5px;
+			/* border-top: 4px solid #1a1a1a; */
+			overflow: hidden;
+			font-family: Arial, sans-serif;
+		}
+
+		/* main container */
+
+		.footer-container {
+			max-width: 1200px;
+			margin: auto;
+		}
+
+		/* full row */
+
+		.divid-div {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			gap: 50px;
+			flex-wrap: wrap;
+		}
+
+		/* logo section */
+
+		.footer-logo {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			min-width: 180px;
+		}
+
+		.footer-logo img {
+			width: 70px;
+			margin-top: 10px !important;
+			height: 70px;
+			/* border-radius: 50%; */
+			object-fit: cover;
+			/* background: #d9534f; */
+		}
+
+		.footer-logo p {
+			margin-top: 10px;
+			font-size: 18px;
+			font-weight: 600;
+			color: #dd9315;
+		}
+
+		/* right side content */
+
+		.divide-by-content {
+			flex: 1;
+			display: flex;
+			justify-content: space-between;
+			gap: 60px;
+			flex-wrap: wrap;
+		}
+
+		/* common box */
+
+		.footer-box h3 {
+			font-size: 20px;
+			margin-bottom: 3px !important;
+			color: #b58121;
+			font-weight: 600;
+		}
+
+		/* explore links */
+
+		.footer-box ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+
+
+
+
+		/* contact */
+
+		.contact-item {
+			display: flex;
+			align-items: flex-start;
+			gap: 5px;
+			margin-bottom: 3px;
+		}
+
+		.contact-item i {
+			color: #d4a910;
+			font-size: 18px;
+			margin-top: 3px;
+			margin-right: 8px;
+		}
+
+		.contact-item a {
+			color: #b3b0b0;
+			text-decoration: none;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		/* social */
+
+		.social-icons {
+			display: flex;
+			gap: 15px;
+			margin-top: 10px;
+		}
+
+		.social-icons a {
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background: #9d8f8f0f;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			transition: 0.3s;
+		}
+
+		.social-icons a i {
+			color: #cecccc;
+			font-size: 10px;
+		}
+
+		.social-icons a:hover {
+			transform: translateY(-5px);
+			background: #a77b1d;
+		}
+
+		/* copyright */
+
+		.page_copyright {
+			margin-top: 5px;
+			border-top: 1px solid rgba(241, 237, 237, 0.022) !important;
+			text-align: center;
+			padding: 5px 0;
+		}
+
+		.page_copyright p {
+			margin: 0;
+			color: #cac5c5;
+			font-size: 14px;
+		}
+
+		/* responsive */
+
+		@media(max-width:768px) {
+
+			.divid-div {
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+			}
+
+			.divide-by-content {
+				width: 100%;
+				justify-content: center;
+				text-align: center;
+				gap: 35px;
+			}
+
+			.contact-item {
+				justify-content: center;
+			}
+
+			.social-icons {
+				justify-content: center;
+			}
+		}
+
+		.footer-box ul {
+			list-style: none;
+			padding: 0;
+			margin-top: 3px;
+
+			display: grid;
+			grid-template-columns: repeat(2, auto);
+
+			gap: 1px 40px !important;
+		}
+
+		.footer-box ul li {
+			margin: -10;
+		}
+
+		.footer-box ul li a {
+			text-decoration: none;
+			color: #c7c3c3;
+			font-size: 15px;
+			font-weight: 200 !important;
+			transition: 0.3s;
+		}
+
+		.footer-box ul li a:hover {
+			color: rgb(247, 198, 6);
+			text-decoration: underline;
+		}
+	</style>
+
 </head>
 
 <body class="">
@@ -54,7 +261,7 @@
 
 			<div class="header_absolute ds bs cover-background s-overlay">
 				<!-- header with three Bootstrap columns - with logo, navigation and includes -->
-				<header class="page_header sf-arrows ds justify-nav-center line-header">
+				<header class="page_header sf-arrows ds justify-nav-center line-header" >
 					<div class="container-fluid">
 						<div class="row align-items-center">
 							<div class="my-15 my-md-0 col-xl-2 col-md-4 col-11">
@@ -68,7 +275,7 @@
 									<nav class="top-nav">
 										<ul class="nav sf-menu">
 											<li class="active">
-												<a href="index">Home</a>
+												<a href="/">Home</a>
 
 											</li>
 
@@ -85,7 +292,8 @@
 
 											<!-- blog -->
 											<li>
-												<a href="blog-grid">Blogs</a>
+												<!-- <a href="blog-grid">Blogs</a> -->
+												<a href="blog">Blogs</a>
 											</li>
 
 											<!-- eof blog -->
@@ -96,14 +304,22 @@
 
 
 											</li>
+											<!-- eof contacts -->
 											<li>
+												<!-- <a href="https://coreoutsourcingservices.in/gallery/"> Gallery</a> -->
 												<a href="events">Events</a>
 											</li>
+
 											<li>
 												<a href="job">Careers</a>
 
+
 											</li>
-											<!-- eof contacts -->
+											<li>
+												<a href="faqs">FAQ</a>
+
+
+											</li>
 
 										</ul>
 
@@ -112,12 +328,7 @@
 									<!-- eof main nav -->
 								</div>
 							</div>
-							<div class="col-xl-2 col-6 order-2 order-lg-3 text-right d-none d-md-block">
-								<a href="contact" class="btn btn-outline-gradient">
-									<span><i class="color-darkgrey ico ico-comment" aria-hidden="true"></i> Reach
-										Us</span>
-								</a>
-							</div>
+
 						</div>
 					</div>
 					<!-- header toggler -->
@@ -125,7 +336,7 @@
 				</header>
 
 				<section
-					class="page_title ds bs s-pt-80 s-pb-55 s-pb-lg-95 s-pt-lg-145 page_title s-parallax s-overlay">
+					class="page_title ds bs s-pt-80 s-pb-55 s-pb-lg-95 s-pt-lg-145 page_title s-parallax s-overlay"  style=" background-image: url(./images/background-image/privacy-policy.png)">
 					<div class="container">
 						<div class="row">
 
@@ -134,7 +345,7 @@
 								<h1>About</h1>
 								<ol class="breadcrumb links-light">
 									<li class="breadcrumb-item">
-										<a href="index">Home</a>
+										<a href="/">Home</a>
 									</li>
 									<li class="breadcrumb-item active">
 										<span class="color-main fw-500">Privacy</span>
@@ -469,6 +680,106 @@
 
 		</div><!-- eof #box_wrapper -->
 	</div><!-- eof #canvas -->
+
+		<footer class="custom-footer">
+		<div class="footer-container">
+			<div class="footer-grid">
+				<div class="divid-div">
+
+					<!-- Logo Section -->
+					<div class="footer-logo">
+						<img src="images/Logo1.png" alt="logo">
+						<p>Let's Connect</p>
+					</div>
+
+					<div class="divide-by-content">
+
+						<!-- Explore -->
+						<div class="footer-box">
+							<h3>Explore</h3>
+							<ul>
+								<li><a href="/">Home</a></li>
+								<li><a href="about-us">About</a></li>
+								<li><a href="privacy">Privacy</a></li>
+								<!-- <li><a href="team">Management</a></li> -->
+								<li><a href="services">Services</a></li>
+								<li><a href="job">Careers</a></li>
+							</ul>
+						</div>
+
+						<!-- Contact -->
+						<div class="footer-box">
+							<h3>Give Us A Call</h3>
+
+							<div class="contact-item">
+								<i class="fa fa-phone"></i>
+								<a href="tel:+919810520250">+919810520250</a>
+							</div>
+
+							<div class="contact-item">
+								<i class="fa fa-envelope"></i>
+								<a href="mailto:info@coreoutsourcingservices.in">
+									info@coreoutsourcingservices.in
+								</a>
+							</div>
+
+							<div class="contact-item">
+								<i class="fa fa-map-marker"></i>
+								<a href="https://maps.app.goo.gl/W3WxZW6oUkesBLrL7">
+									E-2, Sector 63, Noida - 201301
+								</a>
+							</div>
+						</div>
+
+						<!-- Social -->
+						<div class="footer-box">
+							<h3>Join Us</h3>
+
+							<div class="social-icons">
+
+								<a href="https://www.facebook.com/profile.php?id=61559128649073&mibextid=ZbWKwL">
+									<i class="fa fa-facebook"></i>
+								</a>
+
+								<a
+									href="https://www.instagram.com/coreoutsourcingservices?utm_source=qr&igsh=MXJsaDZza2F3cHE3Nw==">
+									<i class="fa fa-instagram"></i>
+								</a>
+
+								<a href="https://www.linkedin.com/company/core-outsourcing-services">
+									<i class="fa fa-linkedin"></i>
+								</a>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+
+		</div>
+		<section class="page_copyright ds s-py-20">
+
+
+			<div class="col-md-12 text-center animate" data-animation="fadeInUp">
+				<p style="font-size: 15px;">
+					&copy; <span class="copyright_year"></span> Copyright
+				</p>
+			</div>
+
+
+		</section>
+		<script>
+			document.querySelector(".copyright_year").textContent =
+				new Date().getFullYear();
+		</script>
+	</footer>
+
 
 
 	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
