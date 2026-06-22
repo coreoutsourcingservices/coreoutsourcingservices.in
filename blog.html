@@ -58,10 +58,10 @@
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animations.css">
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<link rel="stylesheet" href="css/main.css?v-6" class="color-switcher-link">
+	<link rel="stylesheet" href="./css/bpo_sevrvis.css?v-15">
+	<link rel="stylesheet" href="css/font-awesome.css?v-11">
+	<link rel="stylesheet" href="css/main.css?v-20" class="color-switcher-link">
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-	<link rel="stylesheet" href="./css/bpo_sevrvis.css">
 	<link rel="icon" href="images/favicon.png" id="fav-icon" type="image/x-icon">
 
 	<style>
@@ -328,10 +328,22 @@
 		}
 	</style>
 
+	<style>
+		.page_header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+    background:transparent;
+    transition:all .3s ease;
+}
+	</style>
+
 </head>
 
 <body>
-	<div class="header_absolute ds bs cover-background s-overlay">
+	<div class="header_absolute ds bs cover-background s-overlay" style="margin-top: -10px; padding: 0;">
 		<!-- header with three Bootstrap columns - with logo, navigation and includes -->
 		<header class="page_header sf-arrows ds justify-nav-center line-header">
 			<div class="container-fluid">
@@ -409,9 +421,9 @@
 			<span class="toggle_menu"><span></span></span>
 		</header>
 
-		<section class="page_title ds bs s-pt-80 s-pb-55 s-pb-lg-95 s-pt-lg-145 page_title s-parallax s-overlay">
+		<section class="page_title ds bs s-pt-80 s-pb-55 s-pb-lg-95 s-pt-lg-145 page_title s-parallax s-overlay" style=" background-image: url(./images/background-image/bloge.png);">
 			<div class="container">
-				<div class="row">
+				<div class="row" >
 
 					<div class="col-md-12 text-center text-lg-left">
 						<div class="divider-30"></div>
@@ -623,6 +635,59 @@ ${new Date(blog.createdAt)
 		</script>
 	</footer>
 
+
+	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/switcher.js"></script>
+
+	<!-- Google Map Script -->
+	<script type="text/javascript"
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0pr5xCHpaTGv12l73IExOHDJisBP2FK4&amp;callback=initGoogleMap"></script>
+
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+		(function () {
+			var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/660e53c21ec1082f04dec844/1hqjvecm2';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	</script>
+
+	<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const header = document.querySelector(".page_header");
+
+    function toggleHeader() {
+        if (window.scrollY > 50) {
+            header.style.position = "fixed";
+            header.style.top = "0";
+            header.style.left = "0";
+            header.style.width = "100%";
+            header.style.background = "#1b1b1b";
+            header.style.transition = "all .3s ease";
+            header.style.zIndex = "9999";
+        } else {
+            header.style.position = "absolute";
+            header.style.top = "0";
+            header.style.left = "0";
+            header.style.width = "100%";
+            header.style.background = "transparent";
+            header.style.transition = "all .3s ease";
+            header.style.zIndex = "9999";
+        }
+    }
+
+    toggleHeader();
+    window.addEventListener("scroll", toggleHeader);
+
+});
+</script>
 
 
 
