@@ -289,6 +289,17 @@
             text-decoration: underline;
         }
     </style>
+      	<style>
+		.page_header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+    background:transparent;
+    transition:all .3s ease;
+}
+	</style>
 
 </head>
 
@@ -298,9 +309,9 @@
     <div class="preloader">
         <div class="preloader_image pulse"></div>
     </div>
-    <div class="header_absolute ds bs cover-background s-overlay">
+    <div class="header_absolute ds bs cover-background s-overlay"  style="margin-top: -10px;" >
         <!-- header with three Bootstrap columns - with logo, navigation and includes -->
-        <header class="page_header sf-arrows ds justify-nav-center line-header">
+        <header class="page_header sf-arrows ds justify-nav-center line-header" >
             <div class="container-fluid">
                 <div class="container-fluid">
                     <div class="row align-items-center">
@@ -378,7 +389,7 @@
             <span class="toggle_menu"><span></span></span>
         </header>
 
-        <section class="page_title ds bs s-pt-80 s-pb-55 s-pb-lg-95 s-pt-lg-145 page_title s-parallax s-overlay">
+        <section class="page_title ds bs s-pt-80 s-pb-55 s-pb-lg-95 s-pt-lg-145 page_title s-parallax s-overlay" style=" background-image: url(./images/background-image/it-support.png);">
             <div class="container">
                 <div class="row">
 
@@ -457,7 +468,7 @@
                                 class="align-section service-item vertical-item content-padding padding-small box-shadow">
 
                                 <div class="item-media" style="flex:0 0 40%;max-width:100%;">
-                                    <img src="images/seo.jpg" alt="SEO Services" style="height:100%;">
+                                    <img src="./images/background-image/seo-s.png" alt="SEO Services" style="height:100%;">
                                 </div>
 
                                 <div class="item-content">
@@ -523,7 +534,7 @@
                                 </div>
 
                                 <div class="item-media" style="flex:0 0 50%;max-width:100%;">
-                                    <img src="images/website.jpg" alt="Website Development" style="height:100%;">
+                                    <img src="./images/background-image/web.png" alt="Website Development" style="height:100%;">
                                 </div>
 
                             </div>
@@ -549,7 +560,7 @@
                                 class="align-section service-item vertical-item content-padding padding-small box-shadow">
 
                                 <div class="item-media" style="flex:0 0 50%;max-width:100%;">
-                                    <img src="images/social.jpg" alt="Social Media Marketing" style="height:100%;">
+                                    <img src="./images/background-image/smm.png" alt="Social Media Marketing" style="height:100%;">
                                 </div>
 
                                 <div class="item-content">
@@ -615,7 +626,7 @@
                                 </div>
 
                                 <div class="item-media" style="flex:0 0 50%;max-width:100%;">
-                                    <img src="images/app.jpg" alt="App Development" style="height:100%;">
+                                    <img src="./images/background-image/app.png" alt="App Development" style="height:100%;">
                                 </div>
 
                             </div>
@@ -641,7 +652,7 @@
                                 class="align-section service-item vertical-item content-padding padding-small box-shadow">
 
                                 <div class="item-media" style="flex:0 0 50%;max-width:100%;">
-                                    <img src="images/crm.jpg" alt="CRM Software Development" style="height:100%;">
+                                    <img src="./images/background-image/crm.png" alt="CRM Software Development" style="height:100%;">
                                 </div>
 
                                 <div class="item-content">
@@ -814,6 +825,37 @@
                 new Date().getFullYear();
         </script>
     </footer>
+
+      	<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const header = document.querySelector(".page_header");
+
+    function toggleHeader() {
+        if (window.scrollY > 50) {
+            header.style.position = "fixed";
+            header.style.top = "0";
+            header.style.left = "0";
+            header.style.width = "100%";
+            header.style.background = "#1b1b1b";
+            header.style.transition = "all .3s ease";
+            header.style.zIndex = "9999";
+        } else {
+            header.style.position = "absolute";
+            header.style.top = "0";
+            header.style.left = "0";
+            header.style.width = "100%";
+            header.style.background = "transparent";
+            header.style.transition = "all .3s ease";
+            header.style.zIndex = "9999";
+        }
+    }
+
+    toggleHeader();
+    window.addEventListener("scroll", toggleHeader);
+
+});
+</script>
 
 
 
