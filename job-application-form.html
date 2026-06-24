@@ -63,6 +63,29 @@
 		<script src="js/vendor/respond.min.js"></script>
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>
 	<![endif]-->
+		<style>
+		.spinner {
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+			border: 3px solid rgba(255, 255, 255, .4);
+			border-top: 3px solid #fff;
+			border-radius: 50%;
+			animation: spin .8s linear infinite;
+			vertical-align: middle;
+		}
+
+		@keyframes spin {
+			to {
+				transform: rotate(360deg);
+			}
+		}
+
+		button:disabled {
+			opacity: .7;
+			cursor: not-allowed;
+		}
+	</style>
 
 </head>
 
@@ -253,9 +276,9 @@
 									<div class="row mt-20 mt-xl-40">
 										<div class="col-12">
 											<div class="form-group ">
-												<button onclick="submitForm()" id="contact_form_submit"
+												<button type="button" onclick="submitForm()" id="contact_form_submit"
 													name="contact_submit"
-													class="btn btn-wide btn-big btn-gradient"><span>Apply</span></button>
+													class="btn btn-wide btn-big btn-gradient"><span id="btnText">Apply</span></button>
 											</div>
 										</div>
 
@@ -272,6 +295,17 @@
 			<script>
 
 				async function submitForm() {
+									const btn = document.getElementById("contact_form_submit");
+					const btnText = document.getElementById("btnText");
+
+					// Double click stop
+					btn.disabled = true;
+
+					btnText.innerHTML = `
+        <span class="spinner"></span>
+        Sending...
+    `;
+
 
 
 					const formData = new FormData();
@@ -314,20 +348,31 @@
 
 						const data = await response.json();
 
-						console.log(data);
+						// console.log(data);
 
 						if (data.success) {
 
 							alert("Form Submitted 😎");
+							btnText.innerHTML = "Send";
 
 							// redirect page
 
 
 						}
+						else{
+							alert(`${data.message}`)
+							btnText.innerHTML = "Send";
+						}
 
 					} catch (error) {
 
 						console.log(error);
+
+					}finally {
+
+						btn.disabled = false;
+
+						btnText.innerHTML = "Send";
 
 					}
 
