@@ -786,6 +786,31 @@
 	</style>
 
 
+	<style>
+		.spinner {
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+			border: 3px solid rgba(255, 255, 255, .4);
+			border-top: 3px solid #fff;
+			border-radius: 50%;
+			animation: spin .8s linear infinite;
+			vertical-align: middle;
+		}
+
+		@keyframes spin {
+			to {
+				transform: rotate(360deg);
+			}
+		}
+
+		button:disabled {
+			opacity: .7;
+			cursor: not-allowed;
+		}
+	</style>
+
+
 
 
 
@@ -895,8 +920,8 @@
 					<span class="toggle_menu"><span></span></span>
 				</header>
 
-				<section
-					class="page_title ds bs s-pt-80 s-pb-55 s-pb-lg-95 s-pt-lg-145 page_title s-parallax s-overlay" style=" background-image: url(./images/background-image/contect.png);">
+				<section class="page_title ds bs s-pt-80 s-pb-55 s-pb-lg-95 s-pt-lg-145 page_title s-parallax s-overlay"
+					style=" background-image: url(./images/background-image/contect.png);">
 					<div class="container">
 						<div class="row">
 
@@ -907,7 +932,7 @@
 									<li class="breadcrumb-item">
 										<a href="index">Home</a>
 									</li>
-									
+
 									<li class="breadcrumb-item active">
 										<span class="color-main fw-500">Contacts</span>
 									</li>
@@ -1125,7 +1150,7 @@
 								</div>
 								<h4>Address</h4>
 								<a href="https://maps.app.goo.gl/esRrN7tuXmhR3PXo6">E-2, Sector 63, Noida - 201301,
-								Uttar Pradesh, India</a>
+									Uttar Pradesh, India</a>
 							</div>
 						</div>
 
@@ -1220,7 +1245,7 @@
 								Today!
 							</h4>
 							<div class="divider-30 divider-lg-40"></div>
-							<form class="contact-form floating-label c-mb-10 c-gutter-30">
+							<form class=" floating-label c-mb-10 c-gutter-30">
 								<div class="row">
 
 									<div class="col-md-6">
@@ -1296,9 +1321,9 @@
 								<div class="row mt-20 mt-xl-40">
 									<div class="col-12">
 										<div class="form-group ">
-											<button onclick="submitForm()" id="contact_form_submit"
-												name="contact_submit"
-												class="btn btn-wide btn-big btn-gradient"><span>Send</span></button>
+											<button type="button" onclick="submitForm(event)" id="contact_form_submit"
+												name="contact_submit" class="btn btn-wide btn-big btn-gradient"><span
+													id="btnText">Send</span></button>
 										</div>
 									</div>
 
@@ -1313,7 +1338,19 @@
 
 
 			<script>
-				async function submitForm() {
+				async function submitForm(event) {
+					event.preventDefault();
+					const btn = document.getElementById("contact_form_submit");
+					const btnText = document.getElementById("btnText");
+
+					// Double click stop
+					btn.disabled = true;
+
+					btnText.innerHTML = `
+        <span class="spinner"></span>
+        Sending...
+    `;
+
 
 					const formData = {
 						name: document.getElementById("name").value,
@@ -1329,6 +1366,7 @@
 
 
 
+
 					try {
 
 						const response = await fetch("https://admin-panel-fawn-iota.vercel.app/contact/form", {
@@ -1341,15 +1379,26 @@
 
 						const data = await response.json();
 
+						alert("✅ Form Submitted Successfully!");
 
 
-						alert("Form Submitted 😎");
+						btnText.innerHTML = "Send";
+
 
 					} catch (error) {
 
-						console.log("Error:", error);
+						
+
+						console.log(error);
+
+					} finally {
+
+						btn.disabled = false;
+
+						btnText.innerHTML = "Send";
 
 					}
+
 				}
 			</script>
 
