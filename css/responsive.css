@@ -14,6 +14,69 @@
     margin-left: 0 !important;
     margin-right: 0 !important;
     max-width: 100%;
+    margin-top: 0 !important;
+}
+
+/* Reserve the header's space instead of covering the banner underneath it. */
+.header_absolute .page_header_wrapper,
+.header_absolute .page_header:not(.affix):not(.affix-bottom) {
+    position: relative;
+}
+
+.page_header .container-fluid {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.page_header .container-fluid .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.page_header .row.align-items-center {
+    min-height: 104px;
+}
+
+.page_header .logo img {
+    width: 88px;
+    max-width: 100%;
+    height: auto;
+}
+
+.page_header .row.align-items-center > [class*="col-"] {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page_title {
+    height: auto !important;
+    min-height: 280px;
+}
+
+.page_title > .container {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+@media (min-width: 1200px) {
+    .page_header .sf-menu > li > a {
+        margin-left: clamp(10px, 1.2vw, 22px);
+        margin-right: clamp(10px, 1.2vw, 22px);
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .page_header.line-header .sf-menu > li > a::before {
+        bottom: 22px;
+    }
 }
 
 .outsourcing-wrapper > *,
@@ -36,6 +99,29 @@
 }
 
 @media (max-width: 1199px) {
+    .page_header .row.align-items-center {
+        min-height: 80px;
+    }
+
+    .page_header .logo img {
+        width: 64px;
+    }
+
+    .page_header .toggle_menu {
+        top: 10px;
+        right: 10px;
+        margin-top: 0;
+    }
+
+    .page_title {
+        min-height: 240px;
+    }
+
+    .page_title > .container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
     .container {
         max-width: calc(100% - 30px);
         margin-left: auto;
@@ -90,7 +176,7 @@
     }
 
     .page_slider .intro_layers {
-        padding-top: 100px;
+        padding-top: 30px;
         padding-bottom: 40px;
     }
 
