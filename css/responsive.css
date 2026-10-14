@@ -1,0 +1,157 @@
+/* Layout-only fixes shared by every page. Browser zoom uses these same breakpoints. */
+#canvas,
+#box_wrapper {
+    width: 100%;
+    max-width: 100%;
+}
+
+.about-section .auto-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header_absolute {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100%;
+}
+
+.outsourcing-wrapper > *,
+.service-grid > *,
+.team-grid > *,
+#teamSlider1 > *,
+.faq-column,
+.faq-left,
+.faq-right,
+.divide-by-content,
+.footer-box,
+.align-section > * {
+    min-width: 0;
+}
+
+.contact-item a,
+.footer-box,
+.item-content {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: calc(100% - 30px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .top-nav .sf-menu {
+        max-width: calc(100% - 60px);
+        overflow-y: auto;
+    }
+
+    .icon-box[style*="width:"] {
+        max-width: 100%;
+        height: auto !important;
+        min-height: 300px;
+    }
+
+    .team-slider-wrapper {
+        overflow-x: auto;
+    }
+
+    .team-slider-track .team-card {
+        height: auto;
+        min-height: 450px;
+    }
+}
+
+@media (max-width: 991px) {
+    .align-section.service-item.vertical-item > .item-media {
+        flex-basis: auto !important;
+        width: 100%;
+    }
+
+    .align-section.service-item.vertical-item > .item-media img {
+        height: auto !important;
+    }
+
+    .fed-section {
+        flex-direction: column;
+    }
+
+    .fed-section > *,
+    .services,
+    .box-in-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .page_slider .cover-image {
+        min-height: 540px;
+    }
+
+    .page_slider .intro_layers {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    .page_slider .intro_layers .intro_layer h3 {
+        font-size: clamp(22px, 5vw, 30px);
+    }
+
+    .page_slider .intro_layer p,
+    p {
+        line-height: 1.6;
+    }
+
+    .about-section .image-column .image-block:nth-child(1),
+    .about-section .image-column .image-block:nth-child(2) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about-section .image-column .image-block:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .custom-footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-container,
+    .divide-by-content,
+    .footer-box {
+        max-width: 100%;
+    }
+
+    .footer-box ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 20px !important;
+    }
+
+    .horizontal-line,
+    .slider-image {
+        max-width: 100%;
+    }
+
+    .slider-image {
+        height: auto;
+    }
+
+    .uppur-button {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .btn,
+    .read-more-btn {
+        max-width: 100%;
+        min-width: 0;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .content-text.active {
+        max-height: none;
+    }
+}
