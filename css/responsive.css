@@ -15,6 +15,7 @@
     margin-right: 0 !important;
     max-width: 100%;
     margin-top: 0 !important;
+    background-image: none !important;
 }
 
 /* Reserve the header's space instead of covering the banner underneath it. */
@@ -22,6 +23,9 @@
 .header_absolute .page_header {
     position: relative !important;
     top: auto !important;
+    background-color: #1d1d1d !important;
+    background-image: none !important;
+    opacity: 1;
 }
 
 .page_header .container-fluid {
