@@ -19,8 +19,9 @@
 
 /* Reserve the header's space instead of covering the banner underneath it. */
 .header_absolute .page_header_wrapper,
-.header_absolute .page_header:not(.affix):not(.affix-bottom) {
-    position: relative;
+.header_absolute .page_header {
+    position: relative !important;
+    top: auto !important;
 }
 
 .page_header .container-fluid {
@@ -54,6 +55,58 @@
 .container {
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Team members wrap into complete cards rather than a clipped fixed-height strip. */
+.team-slider-wrapper {
+    overflow: visible;
+}
+
+.team-slider-track,
+#teamSlider,
+#teamSlider2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+    animation: none;
+}
+
+.team-slider-track .team-card,
+#teamSlider2 .team-card,
+.team-grid .team-card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+}
+
+.team-slider-track .team-image {
+    height: auto;
+    aspect-ratio: 3 / 4;
+}
+
+.team-slider-track .team-image img {
+    object-position: center top;
+}
+
+#teamSlider2 .team-image-box {
+    height: 260px;
+}
+
+.team-slider-track .team-content h3 {
+    margin-top: 0;
+}
+
+.team-slider-track .team-content,
+#teamSlider2 .team-content {
+    overflow-wrap: anywhere;
+}
+
+.steps .step {
+    min-width: 0;
 }
 
 .page_title {
@@ -139,14 +192,6 @@
         min-height: 300px;
     }
 
-    .team-slider-wrapper {
-        overflow-x: auto;
-    }
-
-    .team-slider-track .team-card {
-        height: auto;
-        min-height: 450px;
-    }
 }
 
 @media (max-width: 991px) {
@@ -171,6 +216,45 @@
 }
 
 @media (max-width: 767px) {
+    .steps .step .step-top {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .steps .step .step-title {
+        min-width: 0;
+    }
+
+    .steps .step .step-title h6 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .steps .step .step-bullet {
+        flex-shrink: 0;
+    }
+
+    .steps .step:last-child .step-bullet::after {
+        display: none;
+    }
+
+    .team-slider-track,
+    #teamSlider,
+    #teamSlider2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    #teamSlider2 .team-image-box {
+        height: 180px;
+    }
+
+    .team-slider-track .team-content,
+    #teamSlider2 .team-content {
+        padding: 14px 8px;
+    }
+
     .page_slider .cover-image {
         min-height: 540px;
     }
@@ -239,5 +323,19 @@
 
     .content-text.active {
         max-height: none;
+    }
+}
+
+@media (max-width: 359px) {
+    .team-slider-track,
+    #teamSlider,
+    #teamSlider2,
+    #teamSlider1,
+    .team-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    #teamSlider2 .team-image-box {
+        height: 260px;
     }
 }

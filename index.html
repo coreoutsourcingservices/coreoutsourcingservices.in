@@ -817,7 +817,7 @@
 
 
 
-	<link rel="stylesheet" href="css/responsive.css?v=20261014-2">
+	<link rel="stylesheet" href="css/responsive.css?v=20261014-3">
 </head>
 
 <body class="">
@@ -1648,8 +1648,8 @@
 
 				teamSlider.innerHTML = "";
 
-				// Infinite smooth effect ke liye duplicate
-				const finalData = [...homeTeam, ...homeTeam];
+				// Render each team member once in the responsive grid.
+				const finalData = homeTeam;
 
 				finalData.forEach((item) => {
 
