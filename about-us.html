@@ -787,7 +787,7 @@
 	</style>
 
 
-	<link rel="stylesheet" href="css/responsive.css?v=20261014-4">
+	<link rel="stylesheet" href="css/responsive.css?v=20261015-2">
 </head>
 
 <body class="">
@@ -974,7 +974,7 @@ width: 100%; ">
 				<h3 class="main-title">
 					Reliable <span>Outsourcing Company</span> Services
 				</h3>
-				<div class="content-wrapper">
+				<div class="content-wrapper about-services-accordion">
 					<div class="box-in-content">
 
 
@@ -1795,24 +1795,21 @@ width: 100%; ">
 	</a> -->
 
 	<script>
-		const accordion = document.querySelectorAll(".accordion");
-
-		accordion.forEach((button) => {
-
-			button.addEventListener("click", () => {
-
-				const content = button.nextElementSibling;
-
-				if (content.style.display === "block") {
-					content.style.display = "none";
-				} else {
-					content.style.display = "block";
-				}
-
-			});
-
-		});
-	</script>
+		const accordion = document.querySelectorAll('.about-services-accordion .accordion');
+        accordion.forEach((button, index) => {
+            const content = button.nextElementSibling;
+            content.id = 'about-service-panel-' + (index + 1);
+            content.style.display = 'none';
+            button.type = 'button';
+            button.setAttribute('aria-expanded', 'false');
+            button.setAttribute('aria-controls', content.id);
+            button.addEventListener('click', () => {
+                const open = button.getAttribute('aria-expanded') !== 'true';
+                button.setAttribute('aria-expanded', String(open));
+                content.style.display = open ? 'block' : 'none';
+            });
+        });
+    </script>
 
 	<script>
 		const faqItems = document.querySelectorAll(".faq-item");
