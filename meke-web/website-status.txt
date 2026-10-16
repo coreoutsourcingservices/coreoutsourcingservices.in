@@ -1,0 +1,23 @@
+UNAVAILABLE | Art Gallery | https://artgallery.wishlan.com/ | page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://artgallery.wishlan.com/ | 
+OPEN | Library | https://library.wishlan.com/ | HTTP 200 | Original image downloaded from website
+OPEN | Natural Herbal Products | https://naturalherbalproducts.wishlan.in/ | HTTP 200 | Original image downloaded from website
+OPEN | Golait Dragon Farm | https://golaitdragonfarm.wishlan.in/ | HTTP 200 | Website brand mark captured after full load
+OPEN | Sai Control System | https://saicontrolsystem.wishlan.in/ | HTTP 200 | Website brand mark captured after full load
+OPEN | Harshu Fashion | https://harshufashion.wishlan.in/ | HTTP 200 | Original image downloaded from website
+OPEN | ABP Enterprises | https://abpenterprises.wishlan.in/ | HTTP 200 | Website brand mark captured after full load
+OPEN | Pathshala Library | https://pathshalalibrary.wishlan.in/ | HTTP 200 | Original image downloaded from website
+OPEN | Mom and Son | https://momandson.wishlan.in/ | HTTP 200 | Website brand mark captured after full load
+OPEN | Ayan General Store | https://aryangeneralstore.wishlan.in/ | HTTP 200 | Website brand mark captured after full load
+OPEN | Shree Krishna Industries | https://shreekrishnaindustries.wishlan.in/ | HTTP 200 | Website brand mark captured after full load
+OPEN | Fairdeal Enterprises | https://fairdealenterprises.wishlan.in/ | HTTP 200 | Original image downloaded from website
+OPEN | Itsy Bitsy | https://itsybitsy.wishlan.in/ | HTTP 200 | Original image downloaded from website
+OPEN | Maruti Electronics | https://marutielectronics.wishlan.in/ | HTTP 200 | Original image downloaded from website
+OPEN | BSSIT | https://bssit.wishlan.in/ | HTTP 200 | Original image downloaded from website
+OPEN | Mohana DS Fashion | https://mohanadsfashion.wishlan.in/ | HTTP 200 | Website brand mark captured after full load
+OPEN | Jaiswal Electronic | https://jaiswalelectronic.wishlan.in/ | HTTP 200 | Original image downloaded from website
+OPEN | Raj Brush Factory | https://rajbrushfactory.wishlan.in/ | HTTP 200 | Original image downloaded from website
+OPEN | Mahak Furniture | https://mahakfurniture.wishlan.in/ | HTTP 200 | Website brand mark captured after full load
+UNAVAILABLE | Balind Solar Synergy | https://balindsolarsynergy.wishlan.in/ | page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://balindsolarsynergy.wishlan.in/ | 
+OPEN | SVS Exim | https://svsexim.wishlan.in/ | HTTP 200 | Original image downloaded from website
+OPEN | Madhuve Boutique | https://madhuveboutique.wishlan.in/ | HTTP 200 | Original image downloaded from website
+OPEN | Techwin | https://techwin.wishlan.com/ | HTTP 200 | Original image downloaded from website

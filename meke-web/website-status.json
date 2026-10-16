@@ -1,0 +1,1768 @@
+[
+  {
+    "slug": "artgallery",
+    "name": "Art Gallery",
+    "url": "https://artgallery.wishlan.com/",
+    "checkedAt": "2026-10-16",
+    "status": "unavailable",
+    "reason": "page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://artgallery.wishlan.com/"
+  },
+  {
+    "slug": "library",
+    "name": "Library",
+    "url": "https://library.wishlan.com/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "Online Library Management System |",
+    "finalUrl": "https://library.wishlan.com/",
+    "excerpt": "HOME\nUSER LOGIN\nUSER SIGNUP\nADMIN LOGIN\nLibrary\n  \nUSER LOGIN FORM\nLOGIN FORM\nEnter Email id\nPassword\n\nForgot Password\n\nLOGIN | Not Register Yet\nOnline Library Management System",
+    "screenshot": "meke-web/webphoto/library.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://library.wishlan.com/assets/img/logo.jpg",
+        "alt": "",
+        "cls": "",
+        "w": 3209,
+        "h": 1159,
+        "y": 16,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://library.wishlan.com/assets/img/1.jpg",
+        "alt": "",
+        "cls": "full-screen-img",
+        "w": 1000,
+        "h": 400,
+        "y": 162,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://library.wishlan.com/assets/img/2.jpg",
+        "alt": "",
+        "cls": "full-screen-img",
+        "w": 900,
+        "h": 380,
+        "y": 162,
+        "visible": true
+      }
+    ],
+    "logoSource": "https://library.wishlan.com/assets/img/logo.jpg",
+    "logo": "meke-web/logo/library-original.jpg",
+    "logoNote": "Original image downloaded from website"
+  },
+  {
+    "slug": "naturalherbalproducts",
+    "name": "Natural Herbal Products",
+    "url": "https://naturalherbalproducts.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "Natural Herbal Products - Premium Herbal Cleaning Solutions",
+    "finalUrl": "https://naturalherbalproducts.wishlan.in/",
+    "excerpt": "Natural Herbal Products\nHome\nAbout\nProducts\nContact\nHerbal Cleaning Products, Trusted Wholesale & Retail Solutions.\n\nLeading manufacturer of high-quality herbal cleaning products. From households to commercial spaces, we deliver eco-friendly solutions that keep your surroundings fresh and safe.\n\nLEARN MORE\nGET STARTED\nAbout Natural Herbal Products\n\nYour trusted partner in herbal cleaning solutions.\n\nWho We Are\n\nEstablished in 2025, Natural Herbal Products is a growing manufacturer of premium herbal cleaning solutions. We serve households, offices, and commercial spaces with eco-friendly products that ensure cleanliness, safety, and sustainability. Our mission is to deliver natural solutions that keep your surroundings fresh and healthy.\n\nOur Mission\n\nTo provide superior quality herbal clea",
+    "screenshot": "meke-web/webphoto/naturalherbalproducts.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://naturalherbalproducts.wishlan.in/images/nhp-logo.png",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 1024,
+        "h": 1024,
+        "y": 16,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://naturalherbalproducts.wishlan.in/images/Expert%20Power%20Plus.jpeg",
+        "alt": "Toilet Cleaner",
+        "cls": "product-img",
+        "w": 366,
+        "h": 387,
+        "y": 2351.4921875,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://naturalherbalproducts.wishlan.in/images/Glass%20Cleaner.jpeg",
+        "alt": "Glass Cleaner",
+        "cls": "product-img",
+        "w": 368,
+        "h": 371,
+        "y": 2360.796875,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://naturalherbalproducts.wishlan.in/images/Hand%20Rub.jpeg",
+        "alt": "Hand Rub",
+        "cls": "product-img",
+        "w": 272,
+        "h": 500,
+        "y": 2360.796875,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://naturalherbalproducts.wishlan.in/images/Liquid%20Loundry%20Detergent.jpeg",
+        "alt": "Liquid Laundary Detergent",
+        "cls": "product-img",
+        "w": 350,
+        "h": 383,
+        "y": 2801,
+        "visible": true
+      },
+      {
+        "i": 5,
+        "src": "https://naturalherbalproducts.wishlan.in/images/nhp-logo.png",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 1024,
+        "h": 1024,
+        "y": 4404.671875,
+        "visible": true
+      }
+    ],
+    "logoSource": "https://naturalherbalproducts.wishlan.in/images/nhp-logo.png",
+    "logo": "meke-web/logo/naturalherbalproducts-original.png",
+    "logoNote": "Original image downloaded from website"
+  },
+  {
+    "slug": "golaitdragonfarm",
+    "name": "Golait Dragon Farm",
+    "url": "https://golaitdragonfarm.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "Golait Dragon Farm - Premium Dragon Fruit",
+    "finalUrl": "https://golaitdragonfarm.wishlan.in/",
+    "excerpt": "Golait Dragon Farm\nHome\nAbout Us\nOur Products\nContact\nFresh & Organic Dragon Fruit\n\nGrown with care in our sustainable farms\n\nEXPLORE OUR PRODUCTS\n100% Organic\n\nOur dragon fruits are grown using organic farming practices without harmful chemicals.\n\nFarm Fresh Delivery\n\nWe deliver fresh dragon fruits directly from our farm to your doorstep.\n\nPremium Quality\n\nWe take pride in growing the finest quality dragon fruits with exceptional taste.\n\nAbout Our Farm\n\nGolait Dragon Farm is a family-owned business dedicated to growing premium quality dragon fruits using sustainable farming practices. Our farm spans over 20 acres of fertile land where we cultivate different varieties of dragon fruit.\n\nWith over 2 years of experience in dragon fruit farming, we have perfected our growing techniques to prod",
+    "screenshot": "meke-web/webphoto/golaitdragonfarm.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://golaitdragonfarm.wishlan.in/images/about-farm.jpg",
+        "alt": "Dragon Fruit Farm",
+        "cls": "",
+        "w": 960,
+        "h": 904,
+        "y": 1657.171875,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://golaitdragonfarm.wishlan.in/images/red-dragon-fruit.jpg",
+        "alt": "Red Dragon Fruit",
+        "cls": "",
+        "w": 5376,
+        "h": 3584,
+        "y": 2586.6875,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://golaitdragonfarm.wishlan.in/images/white-dragon-fruit.jpg",
+        "alt": "White Dragon Fruit",
+        "cls": "",
+        "w": 5376,
+        "h": 3584,
+        "y": 2586.6875,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://golaitdragonfarm.wishlan.in/images/yellow-dragon-fruit.jpg",
+        "alt": "Yellow Dragon Fruit",
+        "cls": "",
+        "w": 5472,
+        "h": 3648,
+        "y": 2586.6875,
+        "visible": true
+      }
+    ],
+    "logoNote": "Website brand mark captured after full load",
+    "logo": "meke-web/logo/golaitdragonfarm.png"
+  },
+  {
+    "slug": "saicontrolsystem",
+    "name": "Sai Control System",
+    "url": "https://saicontrolsystem.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "Sai Control System - Premium Control System & Solutions",
+    "finalUrl": "https://saicontrolsystem.wishlan.in/",
+    "excerpt": " SAI CONTROL SYSTEM\nHome\nAbout\nProducts\nContact\nSAI CONTROL SYSTEM - Premium Control System & Solutions\n\nLeading manufacturer and supplier of advanced control systems for diverse industrial applications. From vibration control to temperature monitoring, we deliver reliable solutions including Vibrator Controllers, Proximity Sensors, Temperature Sensors, and Float Level Switches – ensuring precision, safety, and efficiency in every operation.\n\nLEARN MORE\nGET STARTED\nAbout Sai Control System\n\nYour trusted partner in Control Systems solutions\n\nWho We Are\n\nWe Sai Control System would like to introduced ourselves as one of the leading manufacturer of all type of Vibrator Controllers, Proximity Sensors, Temperature Sensors, Float Level Switches, since two decades, We at Sai control system believ",
+    "screenshot": "meke-web/webphoto/saicontrolsystem.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://saicontrolsystem.wishlan.in/images/vibrator-controller.jpg",
+        "alt": "Vibrator Controller",
+        "cls": "product-img",
+        "w": 1291,
+        "h": 1317,
+        "y": 2538.3515625,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://saicontrolsystem.wishlan.in/images/belt-sway-switch.jpg",
+        "alt": "Belt Sway Switch",
+        "cls": "product-img",
+        "w": 1599,
+        "h": 1200,
+        "y": 2547.65625,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://saicontrolsystem.wishlan.in/images/capacitive-proximity-sensor.jpg",
+        "alt": "Capacitive Proximity Sensor",
+        "cls": "product-img",
+        "w": 1600,
+        "h": 1019,
+        "y": 2547.65625,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://saicontrolsystem.wishlan.in/images/cuh-vibrator-controller.jpg",
+        "alt": "Cuh vibrator controller",
+        "cls": "product-img",
+        "w": 416,
+        "h": 1000,
+        "y": 2987.859375,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://saicontrolsystem.wishlan.in/images/inductive-proximity-switch.jpg",
+        "alt": "Inductive Proximity Switch",
+        "cls": "product-img",
+        "w": 847,
+        "h": 1000,
+        "y": 2987.84375,
+        "visible": true
+      },
+      {
+        "i": 5,
+        "src": "https://saicontrolsystem.wishlan.in/images/pull-cord-switch.jpg",
+        "alt": "Safety Switches for Belt Conveyor System",
+        "cls": "product-img",
+        "w": 562,
+        "h": 1000,
+        "y": 2987.84375,
+        "visible": true
+      }
+    ],
+    "logoNote": "Website brand mark captured after full load",
+    "logo": "meke-web/logo/saicontrolsystem.png"
+  },
+  {
+    "slug": "harshufashion",
+    "name": "Harshu Fashion",
+    "url": "https://harshufashion.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "Harshu Fashion - Premium Swimwear, Menswear & Fashion Accessories",
+    "finalUrl": "https://harshufashion.wishlan.in/",
+    "excerpt": "Harshu Fashion\nHome\nAbout\nProducts\nContact\nPremium Swimwear, Menswear & Fashion Accessories\n\nLeading manufacturer and supplier of high-quality swimwear, menswear, kidswear, and fashion accessories. From daily essentials to stylish apparel, we deliver premium collections that keep you comfortable and fashionable.\n\nLEARN MORE\nGET STARTED\nAbout Harshu Fashion\n\nYour trusted partner in premium fashion & lifestyle essentials\n\nWho We Are\n\nWith over 10 years of experience in the fashion industry, Harshu Fashion has been a trusted trader and retailer of premium swimwear, menswear, kidswear, and fashion accessories. Established in 2015, we deliver high-quality products including swimming accessories, men’s trunks, thermal wear, innerwear, kids kurta pajama, ladies nightwear, and more. With a strong ",
+    "screenshot": "meke-web/webphoto/harshufashion.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://harshufashion.wishlan.in/images/harshu-logo.png",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 500,
+        "h": 500,
+        "y": 16,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://harshufashion.wishlan.in/images/boys%20scin%20wear.jpeg",
+        "alt": "Boys scin wear",
+        "cls": "product-img",
+        "w": 419,
+        "h": 323,
+        "y": 2546.729736328125,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://harshufashion.wishlan.in/images/Black%20Jockey.jpeg",
+        "alt": "Black Jockey",
+        "cls": "product-img",
+        "w": 345,
+        "h": 447,
+        "y": 2556,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://harshufashion.wishlan.in/images/Grey%20Blazer.jpeg",
+        "alt": "Grey Blazer",
+        "cls": "product-img",
+        "w": 463,
+        "h": 452,
+        "y": 2555.984375,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://harshufashion.wishlan.in/images/Long%20Night%20Dress.jpeg",
+        "alt": "Long Night Dress",
+        "cls": "product-img",
+        "w": 275,
+        "h": 443,
+        "y": 2994.171875,
+        "visible": true
+      },
+      {
+        "i": 5,
+        "src": "https://harshufashion.wishlan.in/images/medical%20nursing%20sleep%20bra.jpeg",
+        "alt": "Medical nursing sleep bra",
+        "cls": "product-img",
+        "w": 508,
+        "h": 471,
+        "y": 2994.171875,
+        "visible": true
+      },
+      {
+        "i": 6,
+        "src": "https://harshufashion.wishlan.in/images/T-Shirt%20BraWiring.jpeg",
+        "alt": "T-Shirt BraWiring",
+        "cls": "product-img",
+        "w": 494,
+        "h": 312,
+        "y": 2994.171875,
+        "visible": true
+      },
+      {
+        "i": 7,
+        "src": "https://harshufashion.wishlan.in/images/twining%20top.jpeg",
+        "alt": "Twining Top",
+        "cls": "product-img",
+        "w": 389,
+        "h": 446,
+        "y": 3432.375,
+        "visible": true
+      }
+    ],
+    "logoSource": "https://harshufashion.wishlan.in/images/harshu-logo.png",
+    "logo": "meke-web/logo/harshufashion-original.png",
+    "logoNote": "Original image downloaded from website"
+  },
+  {
+    "slug": "abpenterprises",
+    "name": "ABP Enterprises",
+    "url": "https://abpenterprises.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "ABP Enterprise - Premium Conveyor Belt Solutions",
+    "finalUrl": "https://abpenterprises.wishlan.in/",
+    "excerpt": " ABP Enterprise\nHome\nAbout\nProducts\nContact\nPremium Conveyor Belt Systems & Solutions\n\nLeading manufacturer and supplier of high-quality conveyor belts for industrial applications. From mining to food processing, we deliver reliable solutions that keep your operations moving smoothly.\n\nLEARN MORE\nGET STARTED\nAbout ABP Enterprise\n\nYour trusted partner in conveyor belt solutions\n\nWho We Are\n\nWith over 25 years of experience in the conveyor belt industry, ABP Enterprise has been a leading manufacturer and supplier of premium conveyor belts and related systems. We serve diverse industries including mining, manufacturing, food processing, logistics, and more, delivering reliable solutions that keep operations running smoothly.\n\nOur Mission\n\nTo provide superior quality conveyor belt systems and ",
+    "screenshot": "meke-web/webphoto/abpenterprises.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://abpenterprises.wishlan.in/images/rubber-conveyar-belt.jpeg",
+        "alt": "Rubber Conveyor Belt",
+        "cls": "product-img",
+        "w": 225,
+        "h": 225,
+        "y": 2348.9453125,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://abpenterprises.wishlan.in/images/coveyor-belt.jpg",
+        "alt": "Conveyor Belt",
+        "cls": "product-img",
+        "w": 1200,
+        "h": 900,
+        "y": 2358.25,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://abpenterprises.wishlan.in/images/conveyor-roller.jpg",
+        "alt": "Conveyor Roller",
+        "cls": "product-img",
+        "w": 1000,
+        "h": 1000,
+        "y": 2358.25,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://abpenterprises.wishlan.in/images/conveyor-system.jpg",
+        "alt": "Conveyor System",
+        "cls": "product-img",
+        "w": 640,
+        "h": 480,
+        "y": 2798.4375,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://abpenterprises.wishlan.in/images/food-grade-belt.jpg",
+        "alt": "Food Grade Conveyor Belts",
+        "cls": "product-img",
+        "w": 2000,
+        "h": 1333,
+        "y": 2798.4375,
+        "visible": true
+      },
+      {
+        "i": 5,
+        "src": "https://abpenterprises.wishlan.in/images/portable-conveyors.jpg",
+        "alt": "Portable Conveyors",
+        "cls": "product-img",
+        "w": 500,
+        "h": 438,
+        "y": 2798.4375,
+        "visible": true
+      },
+      {
+        "i": 6,
+        "src": "https://abpenterprises.wishlan.in/images/pu-conveyor-belt.jpg",
+        "alt": "PU Conveyor Belt",
+        "cls": "product-img",
+        "w": 688,
+        "h": 485,
+        "y": 3236.625,
+        "visible": true
+      },
+      {
+        "i": 7,
+        "src": "https://abpenterprises.wishlan.in/images/pvc-conveyor-belt.jpg",
+        "alt": "PVC Conveyor Belt",
+        "cls": "product-img",
+        "w": 500,
+        "h": 500,
+        "y": 3236.625,
+        "visible": true
+      }
+    ],
+    "logoNote": "Website brand mark captured after full load",
+    "logo": "meke-web/logo/abpenterprises.png"
+  },
+  {
+    "slug": "pathshalalibrary",
+    "name": "Pathshala Library",
+    "url": "https://pathshalalibrary.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "Community Library - Your Gateway to Knowledge",
+    "finalUrl": "https://pathshalalibrary.wishlan.in/",
+    "excerpt": "Home\nAbout\nServices\nGallery\nContact\nYour Gateway to Knowledge & Learning\n\nDiscover a world of books, digital resources, and educational programs at our community library. Join us in fostering a love for reading and lifelong learning.\n\nExplore Services\nVisit Us\n50,000+\n\nBooks Available\n\n5,000+\n\nActive Members\n\n25+\n\nYears Serving\n\nAbout Community Library\n\nYour trusted partner in education and lifelong learning\n\nWho We Are\n\nCommunity Library is a vibrant educational hub serving our local community for over 25 years. We provide access to thousands of books, digital resources, educational programs, and learning opportunities for all ages. Our mission is to foster literacy, creativity, and lifelong learning in a welcoming and inclusive environment.\n\n50,000+\n\nBooks Available\n\n5,000+\n\nActive Membe",
+    "screenshot": "meke-web/webphoto/pathshalalibrary.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://pathshalalibrary.wishlan.in/logo/paushala-logo.png",
+        "alt": "Wishlan Left Logo",
+        "cls": "logo-img",
+        "w": 840,
+        "h": 297,
+        "y": 9.203125,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://pathshalalibrary.wishlan.in/logo/wishlan.png",
+        "alt": "Wishlan Logo",
+        "cls": "logo-img",
+        "w": 3024,
+        "h": 1152,
+        "y": 12.5,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://pathshalalibrary.wishlan.in/logo/paushala-logo.png",
+        "alt": "Paushala Logo",
+        "cls": "hero-logo",
+        "w": 840,
+        "h": 297,
+        "y": 342.203125,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://pathshalalibrary.wishlan.in/gallery/031.jpeg",
+        "alt": "Library Reading Area",
+        "cls": "gallery-img",
+        "w": 1020,
+        "h": 1020,
+        "y": 3512.359375,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://pathshalalibrary.wishlan.in/gallery/004.jpeg",
+        "alt": "Prime Location",
+        "cls": "gallery-img",
+        "w": 1360,
+        "h": 907,
+        "y": 3512.359375,
+        "visible": true
+      },
+      {
+        "i": 5,
+        "src": "https://pathshalalibrary.wishlan.in/gallery/008.jpeg",
+        "alt": "Study Rooms",
+        "cls": "gallery-img",
+        "w": 765,
+        "h": 1020,
+        "y": 3512.359375,
+        "visible": true
+      },
+      {
+        "i": 6,
+        "src": "https://pathshalalibrary.wishlan.in/gallery/012.jpeg",
+        "alt": "Computer Lab",
+        "cls": "gallery-img",
+        "w": 1360,
+        "h": 372,
+        "y": 3794.359375,
+        "visible": true
+      },
+      {
+        "i": 7,
+        "src": "https://pathshalalibrary.wishlan.in/gallery/009.jpeg",
+        "alt": "Book Collection",
+        "cls": "gallery-img",
+        "w": 1360,
+        "h": 1020,
+        "y": 3794.359375,
+        "visible": true
+      }
+    ],
+    "logoSource": "https://pathshalalibrary.wishlan.in/logo/paushala-logo.png",
+    "logo": "meke-web/logo/pathshalalibrary-original.png",
+    "logoNote": "Original image downloaded from website"
+  },
+  {
+    "slug": "momandson",
+    "name": "Mom and Son",
+    "url": "https://momandson.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "MOM & SON - Premium Baby Care & Household Solutions",
+    "finalUrl": "https://momandson.wishlan.in/",
+    "excerpt": " MOM & SON\nHome\nAbout\nProducts\nContact\nBaby Care Products, Trusted Wholesale & Retail Solutions.\n\nLeading manufacturer of high-quality baby care and household products. From comfort to safety, we deliver reliable solutions that support both babies and families with care and trust.\n\nLEARN MORE\nGET STARTED\nAbout MOM & SON\n\nYour trusted partner in baby care and household solutions.\n\nWho We Are\n\nEstablished in 2017, MOM & SON is a dedicated manufacturer of premium baby care and household products. We provide a wide range of solutions including baby seed pillows, mosquito nets, sleeping bags, and storage covers, designed to offer comfort, safety, and convenience. Our mission is to deliver trusted, high-quality products that support families in creating a safe and caring environment.\n\nOur Missio",
+    "screenshot": "meke-web/webphoto/momandson.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://momandson.wishlan.in/images/Baby%20Seed%20Pillow.jpeg",
+        "alt": "Baby Seed Pillow",
+        "cls": "product-img",
+        "w": 408,
+        "h": 355,
+        "y": 2405.2265625,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://momandson.wishlan.in/images/Baby%20Mosquito%20Net.jpeg",
+        "alt": "Baby Mosquito Net",
+        "cls": "product-img",
+        "w": 518,
+        "h": 470,
+        "y": 2414.53125,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://momandson.wishlan.in/images/Baby%20Sleeping%20Bag.jpeg",
+        "alt": "Baby Sleeping Bag",
+        "cls": "product-img",
+        "w": 411,
+        "h": 399,
+        "y": 2414.53125,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://momandson.wishlan.in/images/Little%20Boo.jpeg",
+        "alt": "Little Boo",
+        "cls": "product-img",
+        "w": 476,
+        "h": 479,
+        "y": 2854.71875,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://momandson.wishlan.in/images/Saree%20Cover.jpeg",
+        "alt": "Saree Cover",
+        "cls": "product-img",
+        "w": 524,
+        "h": 512,
+        "y": 2854.71875,
+        "visible": true
+      }
+    ],
+    "logoNote": "Website brand mark captured after full load",
+    "logo": "meke-web/logo/momandson.png"
+  },
+  {
+    "slug": "aryangeneralstore",
+    "name": "Aryan General Store",
+    "url": "https://aryangeneralstore.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "Ayan General Store – Everyday Essentials & Beauty Products",
+    "finalUrl": "https://aryangeneralstore.wishlan.in/",
+    "excerpt": "Ayan General Store\nHome\nAbout\nProducts\nContact\nAyan General Store – Trusted Retailer of Daily Essentials & Personal Care Products\n\nLeading retailer of everyday essentials and beauty products. From households to individuals, we provide quality solutions that make daily living healthier, simpler, and more convenient.\n\nLEARN MORE\nGET STARTED\nAbout Ayan General Store\n\nYour reliable source for daily essentials and personal care products.\n\nWho We Are\n\nEstablished in 2021, Ayan General Store is a trusted retailer of everyday essentials, food products, and beauty care items. We serve households and individuals with high-quality products ranging from groceries and beverages to cosmetics and personal care. Our mission is to provide reliable daily solutions that make modern living healthier, simpler,",
+    "screenshot": "meke-web/webphoto/aryangeneralstore.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://aryangeneralstore.wishlan.in/images/rice.jpg",
+        "alt": "All Types Rice",
+        "cls": "product-img",
+        "w": 1200,
+        "h": 738,
+        "y": 2456.125,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://aryangeneralstore.wishlan.in/images/barley.jpg",
+        "alt": "Barley",
+        "cls": "product-img",
+        "w": 500,
+        "h": 334,
+        "y": 2456.125,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://aryangeneralstore.wishlan.in/images/breakfast-careals.jpg",
+        "alt": "Breakfast Cereals",
+        "cls": "product-img",
+        "w": 1200,
+        "h": 675,
+        "y": 2456.125,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://aryangeneralstore.wishlan.in/images/confectionary-products.jpg",
+        "alt": "Confectionery Products",
+        "cls": "product-img",
+        "w": 3840,
+        "h": 2160,
+        "y": 2894.3125,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://aryangeneralstore.wishlan.in/images/olive-oil.jpg",
+        "alt": "Olive Oil",
+        "cls": "product-img",
+        "w": 600,
+        "h": 600,
+        "y": 2894.3125,
+        "visible": true
+      },
+      {
+        "i": 5,
+        "src": "https://aryangeneralstore.wishlan.in/images/soft-drinks.jpg",
+        "alt": "Soft Drinks",
+        "cls": "product-img",
+        "w": 736,
+        "h": 482,
+        "y": 2894.3125,
+        "visible": true
+      }
+    ],
+    "logoNote": "Website brand mark captured after full load",
+    "logo": "meke-web/logo/aryangeneralstore.png"
+  },
+  {
+    "slug": "shreekrishnaindustries",
+    "name": "Shree Krishna Industries",
+    "url": "https://shreekrishnaindustries.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "Shree Krishna Industries - Premium Guar Gum & Tamarind Kernel Powder Solutions",
+    "finalUrl": "https://shreekrishnaindustries.wishlan.in/",
+    "excerpt": "Shree Krishna Industries\nHome\nAbout\nProducts\nContact\nGuar Gum & Tamarind Kernel Products, Trusted Manufacturing Solutions.\n\nLeading manufacturer of high-quality guar gum powder and tamarind kernel powder. From food to industrial applications, we deliver reliable solutions that ensure quality and performance.\n\nLEARN MORE\nGET STARTED\nAbout Shree Krishna Industries\n\nYour trusted partner in guar gum and tamarind kernel solutions.\n\nWho We Are\n\nEstablished in 1987, Shree Krishna Industries is a trusted manufacturer of premium guar gum powder and tamarind kernel powder. We serve food, textile, paper, and other industrial sectors with high-quality products that ensure performance, consistency, and reliability. Our mission is to deliver natural, effective, and sustainable solutions to meet diverse ",
+    "screenshot": "meke-web/webphoto/shreekrishnaindustries.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://shreekrishnaindustries.wishlan.in/images/Logo.jpeg",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 369,
+        "h": 237,
+        "y": 16,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://shreekrishnaindustries.wishlan.in/images/Guar%20Gum%20Powder.jpeg",
+        "alt": "Guar Gum Powder",
+        "cls": "product-img",
+        "w": 1600,
+        "h": 1200,
+        "y": 2456.125,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://shreekrishnaindustries.wishlan.in/images/Tamarind%20Kernal%20Powder.jpeg",
+        "alt": "Tamarind Kernal Powder",
+        "cls": "product-img",
+        "w": 382,
+        "h": 328,
+        "y": 2456.125,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://shreekrishnaindustries.wishlan.in/images/Logo.jpeg",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 369,
+        "h": 237,
+        "y": 4107.140625,
+        "visible": true
+      }
+    ],
+    "logo": "meke-web/logo/shreekrishnaindustries.png",
+    "logoNote": "Website brand mark captured after full load"
+  },
+  {
+    "slug": "fairdealenterprises",
+    "name": "Fairdeal Enterprises",
+    "url": "https://fairdealenterprises.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "FAIR DEAL ENTERPRISES - Premium Leather Bags & Corporate Gifting Solutions",
+    "finalUrl": "https://fairdealenterprises.wishlan.in/",
+    "excerpt": "Home\nAbout\nProducts\nContact\nLeather Bags & Corporate Gift Products, Trusted Manufacturing Solutions\n\nLeading manufacturer of high-quality leather bags, travel gear, and corporate gifting items. From daily use to professional and promotional needs, we deliver reliable products that ensure durability, style, and performance.\n\nLEARN MORE\nGET STARTED\nAbout FAIR DEAL ENTERPRISES\n\nYour trusted partner in leather bags and corporate gifting solutions.\n\nWho We Are\n\nEstablished in 1998, Fair Deal Enterprises is a trusted manufacturer of premium leather bags, travel gear, and corporate gifting products. We serve retail, corporate, and wholesale markets with high-quality items that ensure durability, style, and functionality. Our mission is to deliver innovative and long-lasting solutions that meet di",
+    "screenshot": "meke-web/webphoto/fairdealenterprises.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://fairdealenterprises.wishlan.in/images/Logo.jpeg",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 206,
+        "h": 100,
+        "y": 16,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://fairdealenterprises.wishlan.in/images/Duffle%20Bag.jpeg",
+        "alt": "Duffle Bag",
+        "cls": "product-img",
+        "w": 275,
+        "h": 183,
+        "y": 2458.671875,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://fairdealenterprises.wishlan.in/images/Gift.jpeg",
+        "alt": "Gifts",
+        "cls": "product-img",
+        "w": 172,
+        "h": 188,
+        "y": 2458.671875,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://fairdealenterprises.wishlan.in/images/Jute%20Bags.jpeg",
+        "alt": "Jute Bags",
+        "cls": "product-img",
+        "w": 223,
+        "h": 226,
+        "y": 2458.671875,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://fairdealenterprises.wishlan.in/images/Kids%20Shower.jpeg",
+        "alt": "Kids Shower",
+        "cls": "product-img",
+        "w": 960,
+        "h": 689,
+        "y": 2918.609375,
+        "visible": true
+      },
+      {
+        "i": 5,
+        "src": "https://fairdealenterprises.wishlan.in/images/Leather%20Laptop%20Bag.jpeg",
+        "alt": "Leather Laptop Bag",
+        "cls": "product-img",
+        "w": 251,
+        "h": 201,
+        "y": 2918.609375,
+        "visible": true
+      },
+      {
+        "i": 6,
+        "src": "https://fairdealenterprises.wishlan.in/images/Logo.jpeg",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 206,
+        "h": 100,
+        "y": 4547.046875,
+        "visible": true
+      }
+    ],
+    "logoSource": "https://fairdealenterprises.wishlan.in/images/Logo.jpeg",
+    "logo": "meke-web/logo/fairdealenterprises-original.jpg",
+    "logoNote": "Original image downloaded from website"
+  },
+  {
+    "slug": "itsybitsy",
+    "name": "Itsy Bitsy",
+    "url": "https://itsybitsy.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "Itsy Bitsy - Premium Art & Craft Supply Solutions",
+    "finalUrl": "https://itsybitsy.wishlan.in/",
+    "excerpt": "Home\nAbout\nProducts\nContact\nArt & Craft Supplies, Trusted Retail Solutions\n\nLeading retailer of high-quality art and craft products. From hobbyists to professional artists, we deliver creative solutions that ensure quality, variety, and inspiration.\n\nLEARN MORE\nGET STARTED\nAbout Itsy Bitsy\n\nYour trusted partner in art and craft supplies.\n\nWho We Are\n\nEstablished in 2021, Itsy Bitsy is India’s premier retailer of art and craft products. We serve hobbyists, students, and professional artists with high-quality supplies including dies, stamps & inks, handmade flowers & stickers, chalk paints, sculpture paste, toys, and games. Our mission is to deliver creative, inspiring, and sustainable solutions that nurture imagination and artistic expression.\n\nOur Mission\n\nTo provide superior quality art a",
+    "screenshot": "meke-web/webphoto/itsybitsy.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://itsybitsy.wishlan.in/images/Logo.jpeg",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 1673,
+        "h": 336,
+        "y": 16,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://itsybitsy.wishlan.in/images/Chalk%20Paint.jpeg",
+        "alt": "Chalk Paint",
+        "cls": "product-img",
+        "w": 2678,
+        "h": 2678,
+        "y": 2291.03125,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://itsybitsy.wishlan.in/images/Dice.jpeg",
+        "alt": "Dice",
+        "cls": "product-img",
+        "w": 1280,
+        "h": 856,
+        "y": 2291.03125,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://itsybitsy.wishlan.in/images/handmade%20flowers.jpeg",
+        "alt": "Handmade Flowers",
+        "cls": "product-img",
+        "w": 570,
+        "h": 532,
+        "y": 2291.03125,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://itsybitsy.wishlan.in/images/sculpture%20paste.jpeg",
+        "alt": "Sculpture Paste",
+        "cls": "product-img",
+        "w": 350,
+        "h": 350,
+        "y": 2729.21875,
+        "visible": true
+      },
+      {
+        "i": 5,
+        "src": "https://itsybitsy.wishlan.in/images/stickers.jpeg",
+        "alt": "Stickers",
+        "cls": "product-img",
+        "w": 740,
+        "h": 676,
+        "y": 2729.21875,
+        "visible": true
+      },
+      {
+        "i": 6,
+        "src": "https://itsybitsy.wishlan.in/images/Toy.jpeg",
+        "alt": "Toy",
+        "cls": "product-img",
+        "w": 2560,
+        "h": 1463,
+        "y": 2729.21875,
+        "visible": true
+      },
+      {
+        "i": 7,
+        "src": "https://itsybitsy.wishlan.in/images/Logo.jpeg",
+        "alt": "Logo",
+        "cls": "",
+        "w": 1673,
+        "h": 336,
+        "y": 4357.65625,
+        "visible": true
+      }
+    ],
+    "logoSource": "https://itsybitsy.wishlan.in/images/Logo.jpeg",
+    "logo": "meke-web/logo/itsybitsy-original.jpg",
+    "logoNote": "Original image downloaded from website"
+  },
+  {
+    "slug": "marutielectronics",
+    "name": "Maruti Electronics",
+    "url": "https://marutielectronics.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "Maruti Electronics - Premium Home Appliances & Furniture Solutions",
+    "finalUrl": "https://marutielectronics.wishlan.in/",
+    "excerpt": "Maruti Electronics\nHome\nAbout\nProducts\nContact\nHome Appliances & Furniture Products, Trusted Wholesale & Retail Solutions.\n\nLeading retailer and wholesaler of high-quality home appliances and furniture. From refrigerators to air coolers and living essentials, we deliver reliable solutions that ensure comfort and performance.\n\nLEARN MORE\nGET STARTED\nAbout Maruti Electronics\n\nYour trusted partner in home appliances and furniture solutions.\n\nWho We Are\n\nEstablished in 2019, Maruti Electronics is a trusted retailer and wholesaler of premium appliances and furniture, including refrigerators, air coolers, beds, sofa sets, and almirahs. We serve households and businesses with products that ensure durability, comfort, and convenience. Our mission is to deliver modern, reliable, and affordable solu",
+    "screenshot": "meke-web/webphoto/marutielectronics.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://marutielectronics.wishlan.in/images/logo.png",
+        "alt": "maruti-logo",
+        "cls": "",
+        "w": 541,
+        "h": 461,
+        "y": 16,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://marutielectronics.wishlan.in/images/Almirah.jpeg",
+        "alt": "Almirah",
+        "cls": "product-img",
+        "w": 281,
+        "h": 500,
+        "y": 2430.53125,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://marutielectronics.wishlan.in/images/Desert%20Air%20Cooler.jpeg",
+        "alt": "Desert Air Cooler",
+        "cls": "product-img",
+        "w": 281,
+        "h": 500,
+        "y": 2430.53125,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://marutielectronics.wishlan.in/images/Electric%20Air%20Cooler.jpeg",
+        "alt": "Electric Air Cooler",
+        "cls": "product-img",
+        "w": 281,
+        "h": 500,
+        "y": 2430.53125,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://marutielectronics.wishlan.in/images/Mini%20Fridge.jpeg",
+        "alt": "Mini Fridge",
+        "cls": "product-img",
+        "w": 281,
+        "h": 500,
+        "y": 2868.71875,
+        "visible": true
+      },
+      {
+        "i": 5,
+        "src": "https://marutielectronics.wishlan.in/images/Single%20Door%20Fridge.jpeg",
+        "alt": "Single Door Fridge",
+        "cls": "product-img",
+        "w": 281,
+        "h": 500,
+        "y": 2868.71875,
+        "visible": true
+      },
+      {
+        "i": 6,
+        "src": "https://marutielectronics.wishlan.in/images/Sofa%20Sets.jpeg",
+        "alt": "Sofa Set",
+        "cls": "product-img",
+        "w": 281,
+        "h": 500,
+        "y": 2868.71875,
+        "visible": true
+      },
+      {
+        "i": 7,
+        "src": "https://marutielectronics.wishlan.in/images/logo.png",
+        "alt": "maruti-logo",
+        "cls": "",
+        "w": 541,
+        "h": 461,
+        "y": 4500.546875,
+        "visible": true
+      }
+    ],
+    "logoSource": "https://marutielectronics.wishlan.in/images/logo.png",
+    "logo": "meke-web/logo/marutielectronics-original.png",
+    "logoNote": "Original image downloaded from website"
+  },
+  {
+    "slug": "bssit",
+    "name": "BSSIT",
+    "url": "https://bssit.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "BUSINESS SOFTWARES & SOLUTIONS - Premium IT & Software Hardware Solutions",
+    "finalUrl": "https://bssit.wishlan.in/",
+    "excerpt": "BUSINESS SOFTWARES & SOLUTIONS\nHome\nAbout\nProducts\nContact\nIT & Software Products, Trusted Technology Solutions\n\nLeading provider of high-quality IT hardware and software solutions. From Windows PCs to Mac systems and mobile devices, we deliver reliable technology that ensures performance and productivity.\n\nLEARN MORE\nGET STARTED\nAbout BUSINESS SOFTWARES & SOLUTIONS\n\nYour trusted partner in IT and software solutions.\n\nWho We Are\n\nEstablished in 1999, Business Softwares & Solutions is a trusted technology provider with over 26 years of experience. We serve businesses, professionals, and individual clients with cutting-edge IT products and software services that ensure efficiency, reliability, and long-term value. Our mission is to deliver innovative, effective, and sustainable solutions to ",
+    "screenshot": "meke-web/webphoto/bssit.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://bssit.wishlan.in/images/logo.png",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 473,
+        "h": 527,
+        "y": 16,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://bssit.wishlan.in/images/Fujitsu%20document%20scanner.jpeg",
+        "alt": "Fujitsu document scanner",
+        "cls": "product-img",
+        "w": 500,
+        "h": 351,
+        "y": 2335.203125,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://bssit.wishlan.in/images/ID%20card%20printer.jpeg",
+        "alt": "ID card printer",
+        "cls": "product-img",
+        "w": 1080,
+        "h": 1080,
+        "y": 2335.203125,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://bssit.wishlan.in/images/Mini%20projector.jpeg",
+        "alt": "Mini projector",
+        "cls": "product-img",
+        "w": 1080,
+        "h": 1080,
+        "y": 2335.203125,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://bssit.wishlan.in/images/Panasonic%20batteries.jpeg",
+        "alt": "Panasonic batteries",
+        "cls": "product-img",
+        "w": 1200,
+        "h": 500,
+        "y": 2786.09375,
+        "visible": true
+      },
+      {
+        "i": 5,
+        "src": "https://bssit.wishlan.in/images/Touchscreen%20kiosk%20display.jpeg",
+        "alt": "Touchscreen kiosk display",
+        "cls": "product-img",
+        "w": 1117,
+        "h": 580,
+        "y": 2773.390625,
+        "visible": true
+      },
+      {
+        "i": 6,
+        "src": "https://bssit.wishlan.in/images/Ultrasonic%20pest%20repeller.jpeg",
+        "alt": "Ultrasonic pest repeller",
+        "cls": "product-img",
+        "w": 1025,
+        "h": 1280,
+        "y": 2773.390625,
+        "visible": true
+      },
+      {
+        "i": 7,
+        "src": "https://bssit.wishlan.in/images/logo.png",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 473,
+        "h": 527,
+        "y": 4424.40625,
+        "visible": true
+      }
+    ],
+    "logoSource": "https://bssit.wishlan.in/images/logo.png",
+    "logo": "meke-web/logo/bssit-original.png",
+    "logoNote": "Original image downloaded from website"
+  },
+  {
+    "slug": "mohanadsfashion",
+    "name": "Mohanads Fashion",
+    "url": "https://mohanadsfashion.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "Mohana DS Fashion - Premium Handmade Jewellery & Fashion Accessories",
+    "finalUrl": "https://mohanadsfashion.wishlan.in/",
+    "excerpt": "Mohana DS Fashion\nHome\nAbout\nProducts\nContact\nHandcrafted Jewellery Products, Trusted Fashion Solutions.\n\nLeading creator of elegant handmade jewellery and trendy accessories. From daily wear to special occasions, we deliver stylish, affordable, and durable designs that ensure beauty and comfort.\n\nLEARN MORE\nGET STARTED\nAbout Mohana DS Fashion\n\nYour trusted partner in handmade jewellery and fashion accessories.\n\nWho We Are\n\nEstablished in 2025, Mohana DS Fashion is a growing brand specializing in premium handcrafted jewellery and accessories. We offer thread bangles, scrunchies, rings, jhumkas, studs, bracelets, hairbands, and kids’ accessories – all designed with love, creativity, and care. Our mission is to deliver unique, fashionable, and affordable handmade products that bring elegance",
+    "screenshot": "meke-web/webphoto/mohanadsfashion.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://mohanadsfashion.wishlan.in/images/Baby%20bracelet.jpeg",
+        "alt": "Baby bracelet",
+        "cls": "product-img",
+        "w": 1031,
+        "h": 1279,
+        "y": 2442.671875,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://mohanadsfashion.wishlan.in/images/Bangles.jpeg",
+        "alt": "Bangle",
+        "cls": "product-img",
+        "w": 1075,
+        "h": 976,
+        "y": 2442.671875,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://mohanadsfashion.wishlan.in/images/Bangles%20Set.jpeg",
+        "alt": "Bangles Set",
+        "cls": "product-img",
+        "w": 1050,
+        "h": 1019,
+        "y": 2442.671875,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://mohanadsfashion.wishlan.in/images/Earrings.jpeg",
+        "alt": "Earrings",
+        "cls": "product-img",
+        "w": 1065,
+        "h": 958,
+        "y": 2902.609375,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://mohanadsfashion.wishlan.in/images/Hair%20Clip.jpeg",
+        "alt": "Hair Clip",
+        "cls": "product-img",
+        "w": 1070,
+        "h": 873,
+        "y": 2902.609375,
+        "visible": true
+      },
+      {
+        "i": 5,
+        "src": "https://mohanadsfashion.wishlan.in/images/Hair%20Ribbon.jpeg",
+        "alt": "Hair Ribbon",
+        "cls": "product-img",
+        "w": 1071,
+        "h": 1054,
+        "y": 2902.609375,
+        "visible": true
+      }
+    ],
+    "logoNote": "Website brand mark captured after full load",
+    "logo": "meke-web/logo/mohanadsfashion.png"
+  },
+  {
+    "slug": "jaiswalelectronic",
+    "name": "Jaiswal Electronic",
+    "url": "https://jaiswalelectronic.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "Jaiswal Electronic Shop - Premium Home & Kitchen Electronic Solutions",
+    "finalUrl": "https://jaiswalelectronic.wishlan.in/",
+    "excerpt": "Jaiswal Electronic Shop\nHome\nAbout\nProducts\nContact\nElectronics & Appliances, Trusted Retail & Wholesale Solutions.\n\nLeading retailer and wholesaler of fans, coolers, grinders, stoves, and essential home appliances. From daily household needs to advanced kitchen solutions, we deliver reliable products that ensure comfort and performance.\n\nLEARN MORE\nGET STARTED\nAbout Jaiswal Electronic Shop\n\nYour trusted partner in home appliances and electronic solutions.\n\nWho We Are\n\nEstablished in 2025, Jaiswal Electronic Shop is a trusted retailer and wholesaler of table fans, ceiling fans, kitchen grinders, induction stoves, irons, coolers, bulbs, wires, and switch boards. We serve households and businesses with high-quality products that ensure durability, affordability, and reliability. Our mission ",
+    "screenshot": "meke-web/webphoto/jaiswalelectronic.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://jaiswalelectronic.wishlan.in/images/Logo.jpeg",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 421,
+        "h": 429,
+        "y": 16,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://jaiswalelectronic.wishlan.in/images/Ceiling%20Fan.jpeg",
+        "alt": "Ceiling Fan",
+        "cls": "product-img",
+        "w": 780,
+        "h": 1040,
+        "y": 2486.84375,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://jaiswalelectronic.wishlan.in/images/Exhaust%20Fan.jpeg",
+        "alt": "Exhaust Fan",
+        "cls": "product-img",
+        "w": 780,
+        "h": 1040,
+        "y": 2486.84375,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://jaiswalelectronic.wishlan.in/images/Havells_Grinder.jpeg",
+        "alt": "Havells_Grinder",
+        "cls": "product-img",
+        "w": 780,
+        "h": 1040,
+        "y": 2486.84375,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://jaiswalelectronic.wishlan.in/images/Induction.jpeg",
+        "alt": "Induction",
+        "cls": "product-img",
+        "w": 3024,
+        "h": 4032,
+        "y": 2968.53125,
+        "visible": true
+      },
+      {
+        "i": 5,
+        "src": "https://jaiswalelectronic.wishlan.in/images/Switch.jpeg",
+        "alt": "Switch",
+        "cls": "product-img",
+        "w": 960,
+        "h": 1280,
+        "y": 2968.53125,
+        "visible": true
+      },
+      {
+        "i": 6,
+        "src": "https://jaiswalelectronic.wishlan.in/images/Switch_Board.jpeg",
+        "alt": "Switch_Board",
+        "cls": "product-img",
+        "w": 780,
+        "h": 1040,
+        "y": 2968.53125,
+        "visible": true
+      },
+      {
+        "i": 7,
+        "src": "https://jaiswalelectronic.wishlan.in/images/Logo.jpeg",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 421,
+        "h": 429,
+        "y": 4641.296875,
+        "visible": true
+      }
+    ],
+    "logoSource": "https://jaiswalelectronic.wishlan.in/images/Logo.jpeg",
+    "logo": "meke-web/logo/jaiswalelectronic-original.jpg",
+    "logoNote": "Original image downloaded from website"
+  },
+  {
+    "slug": "rajbrushfactory",
+    "name": "Raj Brush Factory",
+    "url": "https://rajbrushfactory.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "Raj Brush Factory – Premium Cleaning Brush Solutions",
+    "finalUrl": "https://rajbrushfactory.wishlan.in/",
+    "excerpt": "Raj Brush Factory\nHome\nAbout\nProducts\nContact\nPremium Cleaning Brushes, Reliable Manufacturing & Supply\n\nLeading manufacturer and supplier of cleaning brushes and tools. From surgical and kitchen brushes to specialty cleaning solutions, we deliver reliable products that ensure hygiene, durability, and performance..\n\nLEARN MORE\nGET STARTED\nAbout Raj Brush Factory\n\nYour Trusted Partner in Cleaning Brushes and Hygiene Solutions.\n\nWho We Are\n\nEstablished in 2021, Raj Brush Factory is a trusted manufacturer and supplier of cleaning brushes and tools, including laparoscopy cleaning brushes, steel straw brushes, nylon glass and tube cleaning brushes, plastic hookah shaft cleaning brushes, brass boiler wire brushes, and bottle cleaning brushes. We serve businesses and households with high-quality ",
+    "screenshot": "meke-web/webphoto/rajbrushfactory.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://rajbrushfactory.wishlan.in/images/Logo.png",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 520,
+        "h": 480,
+        "y": 16,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://rajbrushfactory.wishlan.in/images/nylon-brush.jpg",
+        "alt": "Aak Long Glass and Plastic Bottle Cleaning Nylon Brush",
+        "cls": "product-img",
+        "w": 748,
+        "h": 669,
+        "y": 2409.4375,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://rajbrushfactory.wishlan.in/images/brass-boiler-wire-brush.jpg",
+        "alt": "Brass Boiler Wire Brush",
+        "cls": "product-img",
+        "w": 681,
+        "h": 585,
+        "y": 2409.4375,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://rajbrushfactory.wishlan.in/images/wire-brush.jpg",
+        "alt": "Brass Boiler Wire Brush Bottle Cleaning",
+        "cls": "product-img",
+        "w": 526,
+        "h": 500,
+        "y": 2409.4375,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://rajbrushfactory.wishlan.in/images/laparoscopy-cleaning-brush.jpg",
+        "alt": "Laparoscopy Cleaning Brush (4 Brush Set)",
+        "cls": "product-img",
+        "w": 809,
+        "h": 621,
+        "y": 2869.375,
+        "visible": true
+      },
+      {
+        "i": 5,
+        "src": "https://rajbrushfactory.wishlan.in/images/tube-cleaning-brush.jpg",
+        "alt": "Nylone Glass Tube Cleaning Brush",
+        "cls": "product-img",
+        "w": 593,
+        "h": 587,
+        "y": 2869.375,
+        "visible": true
+      },
+      {
+        "i": 6,
+        "src": "https://rajbrushfactory.wishlan.in/images/hookkah-shaft-brush.jpg",
+        "alt": "Plastic Hookah Shaft Cleaning Brush",
+        "cls": "product-img",
+        "w": 584,
+        "h": 734,
+        "y": 2869.390625,
+        "visible": true
+      },
+      {
+        "i": 7,
+        "src": "https://rajbrushfactory.wishlan.in/images/Logo.png",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 520,
+        "h": 480,
+        "y": 4522.953125,
+        "visible": true
+      }
+    ],
+    "logoSource": "https://rajbrushfactory.wishlan.in/images/Logo.png",
+    "logo": "meke-web/logo/rajbrushfactory-original.png",
+    "logoNote": "Original image downloaded from website"
+  },
+  {
+    "slug": "mahakfurniture",
+    "name": "Mahak Furniture",
+    "url": "https://mahakfurniture.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "Mahak Home Furniture Manufacturer - Premium Solid Wood Furniture Solutions",
+    "finalUrl": "https://mahakfurniture.wishlan.in/",
+    "excerpt": "Mahak Home Furniture Manufacturer\nHome\nAbout\nProducts\nContact\nPremium Solid Wood Living & Dining Furniture Solutions\n\nLeading manufacturer of high-quality solid wood furniture, from sofas and beds to dining sets and orthopedic mattresses. We deliver durable and elegant solutions that enhance homes with comfort and style.\n\nLEARN MORE\nGET STARTED\nAbout Mahak Home Furniture Manufacturer\n\nYour trusted partner in home furniture solutions.\n\nWho We Are\n\nEstablished in 2019, Mahak Home Furniture Manufacturer serves households and businesses with premium sofas, double beds with storage boxes, solid teak wood dining sets, Santar Teval furniture, and orthopedic mattresses. Our mission is to provide long-lasting, stylish, and functional furniture solutions that meet diverse home and office needs.\n\nOur",
+    "screenshot": "meke-web/webphoto/mahakfurniture.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://mahakfurniture.wishlan.in/images/Elite%20Comfort%20Bed.jpeg",
+        "alt": "Double bed with box",
+        "cls": "product-img",
+        "w": 523,
+        "h": 628,
+        "y": 2309.609375,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://mahakfurniture.wishlan.in/images/Santar%20teval%204%C3%972%20solid%20plywood%20%20heavy%20material.jpeg",
+        "alt": "Santar teval 4×2 solid plywood  heavy material",
+        "cls": "product-img",
+        "w": 618,
+        "h": 591,
+        "y": 2309.609375,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://mahakfurniture.wishlan.in/images/Santer%20Table.jpeg",
+        "alt": "Santer Table",
+        "cls": "product-img",
+        "w": 492,
+        "h": 473,
+        "y": 2309.609375,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://mahakfurniture.wishlan.in/images/3+1+1%20Sofa%20Solid%20%20tick%20wood.jpeg",
+        "alt": "sofa solid tick wood",
+        "cls": "product-img",
+        "w": 509,
+        "h": 659,
+        "y": 2769.546875,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://mahakfurniture.wishlan.in/images/Solid%20Thik%20Wood%20dinner%20Kavad.jpeg",
+        "alt": "Solid Thik Wood dinner Kavad",
+        "cls": "product-img",
+        "w": 603,
+        "h": 628,
+        "y": 2769.546875,
+        "visible": true
+      }
+    ],
+    "logoNote": "Website brand mark captured after full load",
+    "logo": "meke-web/logo/mahakfurniture.png"
+  },
+  {
+    "slug": "balindsolarsynergy",
+    "name": "Balind Solar Synergy",
+    "url": "https://balindsolarsynergy.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "unavailable",
+    "reason": "page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://balindsolarsynergy.wishlan.in/"
+  },
+  {
+    "slug": "svsexim",
+    "name": "SVS Exim",
+    "url": "https://svsexim.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "S V S EXIM - Premium Fresh Fruits & Vegetables Export Solutions",
+    "finalUrl": "https://svsexim.wishlan.in/",
+    "excerpt": "S V S EXIM\nHome\nAbout\nProducts\nContact\nFresh Produce & Agri Products, Trusted Export-Import Solutions.\n\nLeading exporter of high-quality fresh onions, sugarcane, green chilli, pomegranate, ginger, and bananas. We deliver fresh fruits and vegetables across global markets with consistency and reliability.\n\nLEARN MORE\nGET STARTED\nAbout S V S EXIM\n\nYour trusted partner in fresh fruits and vegetable exports.\n\nWho We Are\n\nEstablished in 2018, SVS Exim is a fast-growing export-import company specializing in premium fresh produce. With a wide network and strict quality standards, we serve international clients with fresh onions, fruits, and vegetables, ensuring freshness, safety, and global compliance. Our mission is to deliver natural, healthy, and sustainable agri solutions worldwide.\n\nOur Missi",
+    "screenshot": "meke-web/webphoto/svsexim.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://svsexim.wishlan.in/images/Logo.jpeg",
+        "alt": "Logo",
+        "cls": "",
+        "w": 300,
+        "h": 296,
+        "y": 16,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://svsexim.wishlan.in/images/Banana.jpeg",
+        "alt": "Banana",
+        "cls": "product-img",
+        "w": 604,
+        "h": 607,
+        "y": 2335.203125,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://svsexim.wishlan.in/images/Ginger.jpeg",
+        "alt": "Ginger",
+        "cls": "product-img",
+        "w": 471,
+        "h": 548,
+        "y": 2335.203125,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://svsexim.wishlan.in/images/Green%20Chilli.jpeg",
+        "alt": "Green Chilli",
+        "cls": "product-img",
+        "w": 402,
+        "h": 405,
+        "y": 2335.203125,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://svsexim.wishlan.in/images/Onion.jpeg",
+        "alt": "Onion",
+        "cls": "product-img",
+        "w": 599,
+        "h": 632,
+        "y": 2773.390625,
+        "visible": true
+      },
+      {
+        "i": 5,
+        "src": "https://svsexim.wishlan.in/images/Pomigranate.jpeg",
+        "alt": "Pomigranate",
+        "cls": "product-img",
+        "w": 611,
+        "h": 409,
+        "y": 2773.390625,
+        "visible": true
+      },
+      {
+        "i": 6,
+        "src": "https://svsexim.wishlan.in/images/Sugarcane.jpeg",
+        "alt": "Sugarcane",
+        "cls": "product-img",
+        "w": 516,
+        "h": 617,
+        "y": 2773.390625,
+        "visible": true
+      },
+      {
+        "i": 7,
+        "src": "https://svsexim.wishlan.in/images/Logo.jpeg",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 300,
+        "h": 296,
+        "y": 4401.828125,
+        "visible": true
+      }
+    ],
+    "logoSource": "https://svsexim.wishlan.in/images/Logo.jpeg",
+    "logo": "meke-web/logo/svsexim-original.jpg",
+    "logoNote": "Original image downloaded from website",
+    "note": "Opened successfully and screenshot saved; a later refresh had an intermittent SSL protocol error."
+  },
+  {
+    "slug": "madhuveboutique",
+    "name": "Madhuve Boutique",
+    "url": "https://madhuveboutique.wishlan.in/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "Madhuve Boutique - Premium Women’s Ethnic & Trendy Apparel Solutions",
+    "finalUrl": "https://madhuveboutique.wishlan.in/",
+    "excerpt": "Madhuve Boutique\nHome\nAbout\nProducts\nContact\nEthnic Wear & Women’s Clothing, Trusted Retail & Wholesale Solutions.\n\nLeading retailer and wholesaler of high-quality women’s readymade garments, including sarees, ethnic wear, and trendy dresses. We deliver fashion that blends tradition with modern elegance.\n\nLEARN MORE\nGET STARTED\nAbout Madhuve Boutique\n\nYour trusted partner in women’s fashion and ethnic clothing.\n\nWho We Are\n\nEstablished 6 years ago, Madhuve Boutique is a Jaipur-based women’s clothing store offering premium ethnic wear, exquisite sarees, and stylish readymade garments. With a strong reputation for quality and elegance, we cater to women seeking timeless ethnic styles and modern fashion trends. Our mission is to empower women with apparel that reflects beauty, comfort, and co",
+    "screenshot": "meke-web/webphoto/madhuveboutique.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://madhuveboutique.wishlan.in/images/Logo.jpeg",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 895,
+        "h": 628,
+        "y": 16,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://madhuveboutique.wishlan.in/images/Ajrakh%20Disiner%20Sari.jpeg",
+        "alt": "Ajrakh Disiner Sari",
+        "cls": "product-img",
+        "w": 526,
+        "h": 763,
+        "y": 2430.53125,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://madhuveboutique.wishlan.in/images/Ghaghara%20Choli.jpeg",
+        "alt": "Ghaghara Choli",
+        "cls": "product-img",
+        "w": 502,
+        "h": 615,
+        "y": 2430.53125,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://madhuveboutique.wishlan.in/images/Gota%20Patti%20Diginer%20Sari.jpeg",
+        "alt": "Gota Patti Diginer Sari",
+        "cls": "product-img",
+        "w": 425,
+        "h": 730,
+        "y": 2430.546875,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://madhuveboutique.wishlan.in/images/Kolapuri%20chappal.jpeg",
+        "alt": "Kolapuri Chappal",
+        "cls": "product-img",
+        "w": 604,
+        "h": 493,
+        "y": 2868.71875,
+        "visible": true
+      },
+      {
+        "i": 5,
+        "src": "https://madhuveboutique.wishlan.in/images/kurtis.jpeg",
+        "alt": "Kurtis",
+        "cls": "product-img",
+        "w": 618,
+        "h": 554,
+        "y": 2868.71875,
+        "visible": true
+      },
+      {
+        "i": 6,
+        "src": "https://madhuveboutique.wishlan.in/images/women-ethinic.jpeg",
+        "alt": "Women’s Ethnic Outfit Fabric Set",
+        "cls": "product-img",
+        "w": 617,
+        "h": 726,
+        "y": 2868.71875,
+        "visible": true
+      },
+      {
+        "i": 7,
+        "src": "https://madhuveboutique.wishlan.in/images/Logo.jpeg",
+        "alt": "harshu-logo",
+        "cls": "",
+        "w": 895,
+        "h": 628,
+        "y": 4522.296875,
+        "visible": true
+      }
+    ],
+    "logoSource": "https://madhuveboutique.wishlan.in/images/Logo.jpeg",
+    "logo": "meke-web/logo/madhuveboutique-original.jpg",
+    "logoNote": "Original image downloaded from website"
+  },
+  {
+    "slug": "techwin",
+    "name": "Techwin",
+    "url": "https://techwin.wishlan.com/",
+    "checkedAt": "2026-10-16",
+    "status": "open",
+    "httpStatus": 200,
+    "title": "Techwin",
+    "finalUrl": "https://techwin.wishlan.com/",
+    "excerpt": "Search\nProfile\nWishlist\nHelp\nHome\nAbout Us\nProduct Category\nContact\nApplication\nRequest Quote\nSingle-Frequency Fiber Lasers — Ultra-narrow linewidth, high stability\n\nCustom solutions for LiDAR, sensing, quantum and communications.\n\nRequest Quote\nOur Product\nHigh-power & low-noise lasers for long-range LiDAR\n\nReliable, high-power sources with industry-leading stability.\n\nRequest Quote\nOur Application\nFrequency-stabilized seed lasers for precision sensing\n\nOptimized for fiber sensing and quantum experiments.\n\nRequest Quote\nContact Us\nTechwin — World-class Single-Frequency Fiber Laser Solutions\n\nTechwin is a high-tech enterprise specializing in high-performance fiber lasers, amplifiers, and laser sources for scientific and industrial use. With 20+ years of innovation, it leads in single-frequ",
+    "screenshot": "meke-web/webphoto/techwin.png",
+    "logoCandidates": [
+      {
+        "i": 0,
+        "src": "https://techwin.wishlan.com/techwin-logo-rectangle.png",
+        "alt": "Techwin Logo",
+        "cls": "object-contain h-8 sm:h-10 w-auto",
+        "w": 1000,
+        "h": 353,
+        "y": 12,
+        "visible": true
+      },
+      {
+        "i": 1,
+        "src": "https://techwin.wishlan.com/hero/laser-1.jpg",
+        "alt": "Single-Frequency Fiber Lasers — Ultra-narrow linewidth, high stability",
+        "cls": "object-cover object-center",
+        "w": 1536,
+        "h": 1024,
+        "y": -8.3582763671875,
+        "visible": true
+      },
+      {
+        "i": 2,
+        "src": "https://techwin.wishlan.com/hero/laser-2.jpg",
+        "alt": "High-power & low-noise lasers for long-range LiDAR",
+        "cls": "object-cover object-center",
+        "w": 1536,
+        "h": 1024,
+        "y": -0.141693115234375,
+        "visible": true
+      },
+      {
+        "i": 3,
+        "src": "https://techwin.wishlan.com/hero/laser-3.jpg",
+        "alt": "Frequency-stabilized seed lasers for precision sensing",
+        "cls": "object-cover object-center",
+        "w": 1536,
+        "h": 1024,
+        "y": -8.5,
+        "visible": true
+      },
+      {
+        "i": 4,
+        "src": "https://techwin.wishlan.com/techwin-company/techwin-building.jpg",
+        "alt": "Techwin — World-class Single-Frequency Fiber Laser Solutions",
+        "cls": "object-cover object-center",
+        "w": 1696,
+        "h": 608,
+        "y": 919,
+        "visible": true
+      },
+      {
+        "i": 5,
+        "src": "https://techwin.wishlan.com/category/Single-Frequency-Fiber-Lasers.jpg",
+        "alt": "What is a Single-Frequency Fiber Laser?",
+        "cls": "object-cover object-center group-hover:scale-105 transition-transform duration-500",
+        "w": 477,
+        "h": 675,
+        "y": 1564,
+        "visible": true
+      },
+      {
+        "i": 6,
+        "src": "https://techwin.wishlan.com/category/High-Precision-Seed-Fiber-Lasers.jpg",
+        "alt": "What is a Seed Fiber Laser?",
+        "cls": "object-cover object-center group-hover:scale-105 transition-transform duration-500",
+        "w": 477,
+        "h": 675,
+        "y": 1564,
+        "visible": true
+      },
+      {
+        "i": 7,
+        "src": "https://techwin.wishlan.com/category/High-Power-Single-Frequency-Fiber-Lasers.jpg",
+        "alt": "High Power Single-Frequency Fiber Lasers",
+        "cls": "object-cover object-center group-hover:scale-105 transition-transform duration-500",
+        "w": 477,
+        "h": 675,
+        "y": 1564,
+        "visible": true
+      }
+    ],
+    "logoSource": "https://techwin.wishlan.com/techwin-logo-rectangle.png",
+    "logo": "meke-web/logo/techwin-original.png",
+    "logoNote": "Original image downloaded from website"
+  }
+]
