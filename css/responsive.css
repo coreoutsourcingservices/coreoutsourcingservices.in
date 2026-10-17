@@ -519,6 +519,180 @@ body {
     }
 }
 
+body.cos-inner-page footer.custom-footer {
+    background: #dcdcdc04;
+    padding: 5px 0 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+body.cos-inner-page footer.custom-footer .footer-grid {
+    display: block;
+}
+
+body.cos-inner-page footer.custom-footer .footer-box:not(:last-child)::after {
+    display: none;
+}
+
+body.cos-inner-page footer.custom-footer .divid-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+body.cos-inner-page footer.custom-footer .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 180px;
+}
+
+body.cos-inner-page footer.custom-footer .footer-logo img {
+    width: 70px;
+    height: 70px;
+    margin-top: 10px !important;
+    object-fit: cover;
+}
+
+body.cos-inner-page footer.custom-footer .footer-logo p {
+    margin-top: 10px;
+    color: #dd9315;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+body.cos-inner-page footer.custom-footer .divide-by-content {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+body.cos-inner-page footer.custom-footer .footer-box h3 {
+    margin-bottom: 3px !important;
+    color: #b58121;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+body.cos-inner-page footer.custom-footer .footer-box ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 4px 40px !important;
+    margin-top: 3px;
+    padding: 0;
+    list-style: none;
+}
+
+body.cos-inner-page footer.custom-footer .footer-box ul li {
+    margin: 0 !important;
+}
+
+body.cos-inner-page footer.custom-footer .footer-box ul li a {
+    color: #c7c3c3;
+    font-size: 15px;
+    font-weight: 200 !important;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+body.cos-inner-page footer.custom-footer .footer-box ul li a:hover {
+    color: rgb(247, 198, 6);
+    text-decoration: underline;
+}
+
+body.cos-inner-page footer.custom-footer .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 3px;
+}
+
+body.cos-inner-page footer.custom-footer .contact-item i {
+    margin-top: 3px;
+    margin-right: 8px;
+    color: #d4a910;
+    font-size: 18px;
+}
+
+body.cos-inner-page footer.custom-footer .contact-item a {
+    color: #b3b0b0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+body.cos-inner-page footer.custom-footer .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+body.cos-inner-page footer.custom-footer .social-icons a {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #9d8f8f0f;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+body.cos-inner-page footer.custom-footer .social-icons a i {
+    color: #cecccc;
+    font-size: 10px;
+}
+
+body.cos-inner-page footer.custom-footer .social-icons a:hover {
+    transform: translateY(-5px);
+    background: #a77b1d;
+}
+
+body.cos-inner-page footer.custom-footer .page_copyright {
+    margin-top: 5px;
+    border-top: 1px solid rgba(241, 237, 237, 0.022) !important;
+    padding: 5px 0;
+    text-align: center;
+}
+
+body.cos-inner-page footer.custom-footer .page_copyright p {
+    margin: 0;
+    color: #cac5c5;
+    font-size: 14px;
+}
+
+@media (max-width: 1199px) {
+    body.cos-inner-page footer.custom-footer {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    body.cos-inner-page footer.custom-footer .divid-div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    body.cos-inner-page footer.custom-footer .divide-by-content {
+        width: 100%;
+        justify-content: center;
+        gap: 35px;
+        text-align: center;
+    }
+
+    body.cos-inner-page footer.custom-footer .contact-item,
+    body.cos-inner-page footer.custom-footer .social-icons {
+        justify-content: center;
+    }
+}
+
 @media (max-width: 359px) {
     .team-slider-track,
     #teamSlider,
