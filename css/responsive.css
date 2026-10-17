@@ -656,14 +656,25 @@ body.cos-inner-page footer.custom-footer .social-icons a:hover {
 body.cos-inner-page footer.custom-footer .page_copyright {
     margin-top: 5px;
     border-top: 1px solid rgba(241, 237, 237, 0.022) !important;
-    padding: 5px 0;
-    text-align: center;
+    padding: 5px clamp(16px, 3vw, 48px);
+    text-align: left;
+}
+
+body.cos-inner-page footer.custom-footer .page_copyright .text-center {
+    text-align: left !important;
 }
 
 body.cos-inner-page footer.custom-footer .page_copyright p {
     margin: 0;
     color: #cac5c5;
     font-size: 14px;
+    text-align: left;
+}
+
+body.cos-inner-page #toTop {
+    right: 30px;
+    bottom: 100px;
+    left: auto;
 }
 
 @media (max-width: 1199px) {

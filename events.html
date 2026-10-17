@@ -911,7 +911,25 @@ LOADER
       </script>
     </footer>
 
+    <script>
+      (function () {
+        var button = document.createElement("a");
+        button.id = "toTop";
+        button.href = "#";
+        button.setAttribute("aria-label", "Back to top");
+        document.body.appendChild(button);
 
-</body>
+        button.addEventListener("click", function (event) {
+          event.preventDefault();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        window.addEventListener("scroll", function () {
+          button.style.display = window.scrollY > 200 ? "block" : "none";
+        });
+      })();
+    </script>
+
+    </body>
 
 </html>

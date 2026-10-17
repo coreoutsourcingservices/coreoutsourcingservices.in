@@ -691,8 +691,9 @@
       .page_copyright {
         margin-top: 5px;
         border-top: 1px solid rgba(241, 237, 237, 0.022) !important;
-        text-align: center;
+        text-align: left;
         padding: 5px 0;
+        padding-left: clamp(16px, 3vw, 48px);
       }
 
       .page_copyright p {
@@ -756,6 +757,13 @@
     </style>
 
     <link rel="stylesheet" href="css/responsive.css?v=20261015-1" />
+    <style>
+      #toTop {
+        bottom: 100px;
+        right: 30px;
+        left: auto;
+      }
+    </style>
   </head>
 
   <body class="">
@@ -5123,8 +5131,8 @@
           </div>
         </div>
       </div>
-      <section class="page_copyright ds s-py-20">
-        <div class="col-md-12 text-center animate" data-animation="fadeInUp">
+      <section class="page_copyright ds s-py-20 " style="padding: 20px;">
+        <div class="  animate" data-animation="fadeInUp">
           <p style="font-size: 15px">
             &copy; <span class="copyright_year"></span> Copyright Core Outsourcing Services Private Limited
           </p>
