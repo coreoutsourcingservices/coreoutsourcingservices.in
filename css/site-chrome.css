@@ -1,0 +1,250 @@
+/* Shared page chrome: hide scrollbar tracks while preserving native scrolling. */
+html,
+body,
+#canvas,
+#box_wrapper {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#canvas::-webkit-scrollbar,
+#box_wrapper::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* Add 20px to the previous 5px top padding on every page. */
+body footer.custom-footer {
+    padding: 25px 0 0;
+    background: #232323;
+}
+body footer.custom-footer .footer-grid {
+    display: block;
+}
+body footer.custom-footer .divid-div {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+body footer.custom-footer .divide-by-content {
+    display: grid;
+    grid-template-columns: minmax(160px, 1fr) minmax(0, 1.5fr);
+    flex: 1;
+    min-width: 0;
+    gap: 24px 40px;
+}
+body footer.custom-footer .footer-box {
+    min-width: 0;
+}
+body footer.custom-footer .footer-box:not(:last-child)::after {
+    display: none;
+}
+body footer.custom-footer .footer-box h3 {
+    line-height: 1.4;
+}
+body footer.custom-footer .contact-item a {
+    overflow-wrap: anywhere;
+}
+body footer.custom-footer .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+body footer.custom-footer .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+body footer.custom-footer .page_copyright {
+    margin-top: 0;
+    padding: 20px clamp(16px, 2vw, 48px) !important;
+    background: #1d1d1d;
+    border-top: 1px solid #ffffff0a !important;
+    text-align: left;
+}
+body footer.custom-footer .page_copyright p,
+body footer.custom-footer .page_copyright .text-center {
+    margin: 0;
+    text-align: left !important;
+    line-height: 1.6;
+}
+@media (max-width: 768px) {
+    body footer.custom-footer .divid-div {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    body footer.custom-footer .divide-by-content {
+        width: 100%;
+        text-align: left;
+        gap: 24px;
+    }
+    body footer.custom-footer .contact-item,
+    body footer.custom-footer .social-icons {
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 540px) {
+    body footer.custom-footer .divide-by-content {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+/* Full-width footer with copyright and social links on one bottom row. */
+body footer.custom-footer {
+    width: 100%;
+    max-width: none;
+}
+body footer.custom-footer .footer-container {
+    width: 100%;
+    max-width: none !important;
+    padding-bottom: 24px;
+}
+body footer.custom-footer .page_copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px 24px;
+    width: 100%;
+    padding-right: clamp(100px, 7vw, 140px) !important;
+}
+body footer.custom-footer .page_copyright > div:first-child {
+    min-width: 0;
+}
+body footer.custom-footer .page_copyright .social-icons {
+    flex: 0 0 auto;
+    margin: 0;
+    justify-content: flex-end;
+}
+body footer.custom-footer .page_copyright .social-icons a {
+    width: 36px;
+    height: 36px;
+    background: #ffffff0a;
+    color: #cecccc;
+}
+body footer.custom-footer .page_copyright .social-icons a i {
+    font-size: 15px;
+}
+body footer.custom-footer .page_copyright .social-icons a:hover,
+body footer.custom-footer .page_copyright .social-icons a:focus-visible {
+    background: #a77b1d;
+}
+@media (max-width: 600px) {
+    body footer.custom-footer .page_copyright {
+        flex-wrap: wrap;
+    }
+}
+
+/* Brand at left, two link columns in the middle, contact at the right edge. */
+body footer.custom-footer .divid-div {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.9fr) minmax(0, 2fr);
+    gap: clamp(32px, 5vw, 96px);
+    align-items: start;
+}
+body footer.custom-footer .footer-logo {
+    min-width: 0;
+    align-items: flex-start;
+    text-align: left;
+}
+body footer.custom-footer .footer-logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+body footer.custom-footer .footer-logo .footer-description {
+    margin: 8px 0 0;
+    max-width: 370px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #bdbdbd;
+}
+body footer.custom-footer .divide-by-content {
+    grid-template-columns: minmax(240px, 1fr) minmax(300px, auto);
+    gap: clamp(32px, 5vw, 96px);
+    width: 100%;
+}
+body footer.custom-footer .divide-by-content > .footer-box:last-child {
+    justify-self: end;
+}
+body footer.custom-footer .footer-box ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 32px !important;
+    padding: 0;
+    margin: 8px 0 0;
+    list-style: none;
+}
+body footer.custom-footer .footer-box ul li {
+    margin: 0 !important;
+}
+@media (max-width: 1000px) {
+    body footer.custom-footer .divid-div {
+        grid-template-columns: minmax(200px, 0.8fr) minmax(0, 1.6fr);
+        gap: 28px;
+    }
+    body footer.custom-footer .divide-by-content {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+    body footer.custom-footer .divide-by-content > .footer-box:last-child {
+        justify-self: start;
+    }
+}
+@media (max-width: 600px) {
+    body footer.custom-footer .divid-div {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+/* Keep the logo, tagline and description together without inherited paragraph gaps. */
+body footer.custom-footer .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+}
+body footer.custom-footer .footer-logo img {
+    display: block;
+    margin: 0 0 12px !important;
+}
+body footer.custom-footer .footer-logo > p:not(.footer-description) {
+    margin: 0 0 10px !important;
+    padding: 0;
+    color: #f5a400;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+body footer.custom-footer .footer-logo > p.footer-description {
+    margin: 0 !important;
+    padding: 0;
+    max-width: 370px;
+    color: #bdbdbd;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: left;
+}
+
+/* Leave comfortable space between the contact details and the screen edge. */
+@media (min-width: 1001px) {
+    body footer.custom-footer .footer-container {
+        padding-right: clamp(64px, 6vw, 120px);
+    }
+    body footer.custom-footer .divide-by-content {
+        grid-template-columns: minmax(240px, 1fr) minmax(320px, 360px);
+        column-gap: clamp(32px, 4vw, 72px);
+    }
+    body footer.custom-footer .divide-by-content > .footer-box:last-child {
+        width: 100%;
+        justify-self: stretch;
+    }
+}
