@@ -448,3 +448,19 @@ body:is(.cos-inner-page, *) footer.custom-footer .footer-logo > p.footer-descrip
         justify-self: stretch;
     }
 }
+
+/* Center Explore above two evenly separated link columns on every page. */
+body:is(.cos-inner-page, *) footer.custom-footer .divide-by-content > .footer-box:first-child {
+    width: 100%;
+    max-width: 390px;
+    min-width: 0;
+    justify-self: center;
+}
+body:is(.cos-inner-page, *) footer.custom-footer .divide-by-content > .footer-box:first-child h3 {
+    text-align: center;
+}
+body:is(.cos-inner-page, *) footer.custom-footer .divide-by-content > .footer-box:first-child ul {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    gap: 8px 32px !important;
+}
