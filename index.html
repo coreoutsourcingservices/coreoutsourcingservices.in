@@ -4762,13 +4762,13 @@
         </div>
       </div>
 
-	  <!-- Client cards: show 8 initially, reveal the rest on demand -->
+	  <!-- Client cards: fill complete rows, reveal the rest on demand -->
 <style>
-  #cos-websites-showcase .cos-client-card-grid > :nth-child(n + 9) {
+  #cos-websites-showcase .cos-client-card-grid > .cos-card-hidden {
     display: none !important;
   }
 
-  #cos-websites-showcase.cos-show-all .cos-client-card-grid > :nth-child(n + 9) {
+  #cos-websites-showcase.cos-show-all .cos-client-card-grid > .cos-card-hidden {
     display: block !important;
   }
 
@@ -4837,11 +4837,18 @@
         return element.nodeType === 1;
       });
 
-      // Hide the button if there are eight or fewer cards.
-      if (cards.length <= 8) {
-        button.parentElement.style.display = "none";
-        return;
+      // Fill complete rows so wide screens never end with empty card slots.
+      function updateVisibleCards() {
+        var columns = getComputedStyle(grid).gridTemplateColumns.split(" ").filter(Boolean).length || 1;
+        var visibleCount = Math.ceil(10 / columns) * columns;
+        cards.forEach(function (card, index) {
+          card.classList.toggle("cos-card-hidden", index >= visibleCount);
+        });
+        button.parentElement.style.display = cards.length <= visibleCount ? "none" : "";
       }
+      updateVisibleCards();
+      var cardResizeObserver = new ResizeObserver(updateVisibleCards);
+      cardResizeObserver.observe(grid);
 
       button.addEventListener("click", function () {
         var isExpanded = section.classList.toggle("cos-show-all");
